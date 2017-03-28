@@ -1,6 +1,6 @@
 # sir-simian
-##Sir Simian: an online tool to make html newsletters
-###Structure of Sir Simian
+## Sir Simian: an online tool to make html newsletters
+### Structure of Sir Simian
 * *index.php*: Main entry file. Contains input boxes for all newsletter elements
 * *Individual newsletter template files*: Each contain newsletter specific code
 	* econundrum-template.php
@@ -15,7 +15,7 @@
 * *head_main.css*: Sir Simian site CSS. Not for newsletter HTML code.
 * *archives/index.php*: Code to control display & view of the archives section of Sir Simian.
 
-###Directories not included in the repo that is necessary for Sir Simian function
+### Directories not included in the repo that is necessary for Sir Simian function
 * *temp*: This directory stores temporary files (snapshots) of newsletters in case of errors.
 * *images*: Sir Simian website images.
 * *ckeditor*: CKEditor wysiwyg app directory.
