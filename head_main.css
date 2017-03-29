@@ -16,7 +16,8 @@ h4 {margin:10px 0 3px 0;
   width:600px;
   border-bottom:1px #000000 solid;}
 #head_text {text-align:center;
-  font-weight:bold;}
+  font-weight:bold;
+  font-size: 24px;}
 #head_row {margin:5px auto;
   width:810px;
   clear:both;}
