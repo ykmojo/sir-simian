@@ -59,7 +59,7 @@ $today = date("Y-m-d", time());
 </head>
 <body>
   <div id="header">
-    <h2 id="head_text">Headlines Preparation Tool</h2>
+    <h2 id="head_text">Sir Simian</h2>
     <a href="" id="section_image" target="_blank"><img src="logo_inside.gif" border="0" id="type_img" width="600" style="max-width:600px;margin: 0 auto;" /></a>
     <br style="clear:both;margin-bottom:5px;" />
   </div>
