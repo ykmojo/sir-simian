@@ -67,7 +67,7 @@ $today = date("Y-m-d", time());
     <div id="head_row">
     	<div id="top_section">
     		<p style="float:left;width:300px;">To get started, choose a newsletter under Headline Category.<br /><br /><span style="color:#c33;font-weight:bold;">IMPORTANT: Before adding stories, click on View Headlines Archives to see if there is already a newsletter created for the date that you want. If so, use that one. If not, go ahead and create the newsletter as usual.</span></p>
-    		<div style="width:300px;float:left;">
+    		<div style="width:400px;float:left;">
     		<p>Headlines's date (format:2012-02-29): <input type="text" id="hed_date" name="date_today" size="10" value="" /></p>
         	<p>Headlines category:
       		<select id="hed_type" name="hed_type" onchange="javascript:getTypeImg(this.value);">
