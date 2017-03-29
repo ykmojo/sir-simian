@@ -12,7 +12,7 @@ $today = date("Y-m-d", time());
   <script type="text/javascript" language="javascript" src="headlines_script.js"></script>
   <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
   <script type="text/javascript">
-  CKEDITOR.config.customConfig = '/headlines/headlines-new-dev/ckeditor/custom-config.js';
+  CKEDITOR.config.customConfig = 'custom-config.js';
     function makeEditor(numId) {
       var editor_height = 0;
       if(numId == "conundrum_dek" || numId == "maindish_dek" || numId == "twmustread_dek" || numId == "topstory_dek" || numId == "fft_hidden_kitchen" || numId == "fft_ioe_item1" || numId == "fft_ioe_item2" || numId == "fft_ioe_item3" || numId == "lift_note" || numId == "main_text") {
