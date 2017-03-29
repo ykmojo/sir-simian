@@ -60,7 +60,7 @@ $today = date("Y-m-d", time());
 <body>
   <div id="header">
     <h2 id="head_text">Sir Simian</h2>
-    <a href="" id="section_image" target="_blank"><img src="logo_inside.gif" border="0" id="type_img" width="600" style="max-width:600px;margin: 0 auto;" /></a>
+    <a href="" id="section_image" target="_blank"><img src="logo_inside.gif" border="0" id="type_img" width="480" style="max-width:480px;margin: 0 auto;" /></a>
     <br style="clear:both;margin-bottom:5px;" />
   </div>
   <form id="headlinesForm" action="" method="post">
