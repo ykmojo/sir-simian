@@ -8,7 +8,7 @@ $today = date("Y-m-d", time());
   <title>Sir Simian</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="head_main.css" />
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" language="javascript" src="headlines_script.js"></script>
   <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
   <script type="text/javascript">
