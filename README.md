@@ -19,3 +19,4 @@
 * *temp*: This directory stores temporary files (snapshots) of newsletters in case of errors.
 * *images*: Sir Simian website images.
 * *ckeditor*: CKEditor wysiwyg app directory.
+* *credentials.inc*: Necessary for DB operations.
