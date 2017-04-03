@@ -59,45 +59,43 @@ $today = date("Y-m-d", time());
 </head>
 <body>
   <div id="header">
-    <h2 id="head_text">Headlines Preparation Tool</h2>
-    <a href="" id="section_image" target="_blank"><img src="logo_inside.gif" border="0" id="type_img" width="600" style="max-width:600px;margin: 0 auto;" /></a>
-    <br style="clear:both;margin-bottom:5px;" />
+    <h2 id="head_text">Sir Simian [A Newsletter HTML Creation Helper]</h2>
+    <a href="" id="section_image" target="_blank"><img src="logo_inside.gif" border="0" id="type_img" width="450" style="display:block;text-align:center;width:100%;margin: 0 auto;" /></a>
   </div>
   <form id="headlinesForm" action="" method="post">
     <div id="head_row">
     	<div id="top_section">
-    		<p style="float:left;width:300px;">To get started, choose a newsletter under Headline Category.<br /><br /><span style="color:#c33;font-weight:bold;">IMPORTANT: Before adding stories, click on View Headlines Archives to see if there is already a newsletter created for the date that you want. If so, use that one. If not, go ahead and create the newsletter as usual.</span></p>
-    		<div style="width:300px;float:left;">
-    		<p>Headlines's date (format:2012-02-29): <input type="text" id="hed_date" name="date_today" size="10" value="" /></p>
-        	<p>Headlines category:
-      		<select id="hed_type" name="hed_type" onchange="javascript:getTypeImg(this.value);">
-        		<option value="not">Make a choice...</option>
-        		<option value="breaking_news" disabled>Breaking News</option>
-        		<option value="econundrums_new">Econundrum</option>
-        		<option value="food_for_thought_redesign">Food for Thought Redesign</option>
-        		<option value="food_for_thought_new">Food for Thought</option>
-        		<option value="in_the_mix_new">In The Mix</option>
-        		<option value="political_mojo_new">Political Mojo</option>
-      		</select>
-      		</p>
-        	<p>Headlines archives:
-        		<select id="archives" onchange="javascript:getArchive();">
-        		</select>
-        	</p>
-        	<br />
-        	<input type="button" value="Refresh data" onclick="javascript:getArchive();" style="margin-top:10px;float:left;background-color:#c21;color:#fff;font-weight:bold;" id="refresh_data" />
-        	<br />
-        	<input type="button" value="View Headlines Archives" onclick="location.href='archives/'" style="margin:5px 0;padding:0 0;float:left;font-size:.75em;color:#ffffff;background-color:#000000;clear:both;" />
-        	<input type="button" value="Newsletter Stats" onclick="window.open('news-stats.html', 'Newsletter Stats', 'toolbar=no,width=1200,scrollbars=yes');" style="margin-left: 0;padding: 10px;color:#fff;background-color:#000;" />
-        	</div>
+    		<p style="float:left;width:300px;padding:5px;">To get started, choose a newsletter under Headline Category.<br /><br /><span style="color:#c33;font-weight:bold;">IMPORTANT: Before adding stories, click on View Headlines Archives to see if there is already a newsletter created for the date that you want. If so, use that one. If not, go ahead and create the newsletter as usual.</span></p>
+    		<div style="width:300px;float:left;border-left: 1px dotted #00f;padding: 5px 0 5px 15px;">
+    			<p>Headlines's date (format:2012-02-29): <input type="text" id="hed_date" name="date_today" size="10" value="" /></p>
+        		<p>Headlines category:
+      			<select id="hed_type" name="hed_type" onchange="javascript:getTypeImg(this.value);">
+        			<option value="not">Make a choice...</option>
+        			<option value="breaking_news" disabled>Breaking News</option>
+        			<option value="econundrums_new">Econundrum</option>
+        			<option value="food_for_thought_redesign">Food for Thought Redesign</option>
+        			<option value="food_for_thought_new">Food for Thought</option>
+        			<option value="in_the_mix_new">In The Mix</option>
+        			<option value="political_mojo_new">Political Mojo</option>
+      			</select>
+      			</p>
+        		<p>Headlines archives:
+        			<select id="archives" onchange="javascript:getArchive();">
+        			</select>
+        		</p>
+        		<br />
+        </div>
+        <div style="width:450px;margin:5px auto;border-top:1px dotted #00f;display:table;">
+        	<input type="button" value="View Headlines Archives" onclick="location.href='archives/'" style="margin:5px 20px 5px 10px;padding:5px 5px;float:left;color:#ffffff;background-color:#000000;" />
+        	<input type="button" value="Newsletter Stats" onclick="window.open('news-stats.html', 'Newsletter Stats', 'toolbar=no,width=1200,scrollbars=yes');" style="float:left;margin: 5px 20px 5px 10px;padding: 5px;color:#fff;background-color:#000;" />
+        	<input type="button" value="Refresh data" onclick="javascript:getArchive();" style="margin:5px 0 5px 10px;padding:5px 5px;float:left;background-color:#c21;color:#fff;font-weight:bold;" id="refresh_data" />
+        </div>
       </div>
     </div>
-		<div style="text-align:center;clear:both;width:555px;margin:0 auto;padding: 20px 0;">
-     	<p id="subject_line_label">Email subject line: <input type="text" id="subject_line" name="subject_line" value="" size="80" spellcheck="true" /></p>
-    </div>
-    <br style="clear:both;" />
     <p id="wysiwig_msg" class="block_hidden">Please wait until the WYSIWIG loads completely.  Thank you.</p>
-    <br style="clear:both;" />
+	<div style="text-align:center;clear:both;width:600px;margin:0 auto;">
+     	<p style="font-size:14px;">Subject line: <input type="text" id="subject_line" name="subject_line" value="" size="75" spellcheck="true" /></p>
+    </div>
   <div id="main_container">
   </div>
   <br style="clear:both;" />

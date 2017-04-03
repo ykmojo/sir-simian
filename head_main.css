@@ -13,8 +13,12 @@ h4 {margin:10px 0 3px 0;
 #main_container {margin:0 auto;
   width:1024px;}
 #header {margin:5px auto;
-  width:600px;
-  border-bottom:1px #000000 solid;}
+  width:450px;
+  display:table;
+  border: 1px #000 solid;
+  /*border-bottom:1px #000 solid;*/
+  padding: 0 10px;
+  clear:both;}
 #head_text {text-align:center;
   font-weight:bold;}
 #head_row {margin:5px auto;
@@ -41,8 +45,11 @@ h4 {margin:10px 0 3px 0;
   padding:0 0;
   font-size:14px;
   font-style: bold;}
-#top_section {margin: 5px auto;
-	width:700px;}	
+#top_section {margin: 10px auto;
+	width:650px;
+	padding:0;
+	border-top:1px dotted #00f;
+	display:table;}	
 .category {margin:0 0 0 20px;
   padding:5px 5px;
   width:400px;
@@ -81,11 +88,12 @@ h4 {margin:10px 0 3px 0;
   float:left;
   text-align:right;}
 /* warning message classes */
-#wysiwig_msg {margin:10px 0 0 10px;
-	float:left;
+#wysiwig_msg {margin:5px auto;
 	font-size:1.3em;
+	text-align:center;
 	padding: 5px 5px;
-	font-weight:bold;}
+	font-weight:bold;
+	clear:both;}
 .loading_warning {
 	background-color: #900;
 	color: #fff;
