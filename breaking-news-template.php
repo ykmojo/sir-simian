@@ -47,7 +47,7 @@ $breaking_news = <<<BREAKINGNEWS
 		</tr>
 		<tr>
 			<td style="margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;" valign="top">
-			<h3><strong>Breaking News: $breaking_lead_in</strong></h3>
+			<h3><strong>News Alert: $breaking_lead_in</strong></h3>
 			</td>
 		</tr>
 		<tr>

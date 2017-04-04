@@ -98,11 +98,24 @@ function breaking_news() {
 $breaking_news = <<<BREAKING
 <div class="head_types">
   <div class="columns">
-	<h3>Breaking News</h3>
-	<p>Breaking News Lead: <input type="text" id="breaking" name="breaking" value="" size="50" maxlength="255" spellcheck="true" /></p>
-	<p>Breaking News Lead URL: <input type="text" id="breaking_url" name="breaking_url" value="" size="75" />
-	<p>Breaking News Main Text:</p>
-	<textarea rows='15' cols='45' id='main_text' name='main_text'></textarea>
+	<div id="items_left">
+	  <h3>Breaking News</h3>
+	  <div class="sections">
+	    <p>Breaking News Lead: <input type="text" id="breaking" name="breaking" value="" size="45" maxlength="255" spellcheck="true" /></p>
+	    <p>Breaking News Lead URL: <input type="text" id="breaking_url" name="breaking_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+	    <p>Breaking News Main Text:</p>
+	    <textarea rows='15' cols='45' id='main_text' name='main_text'></textarea>
+      </div>
+	</div>
+  </div>
+  <div class="columns">
+	<div id="items_right">
+	  <h3>More Section</h3>
+      <div class="sections">
+		<p>Item 1 text: <input type="text" id="breaking" name="breaking" value="" size="45" maxlength="255" spellcheck="true" /></p>
+	    <p>Item 1 URL: <input type="text" id="breaking_url" name="breaking_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+      </div>
+	</div>
   </div>
 </div>
 BREAKING;

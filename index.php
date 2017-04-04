@@ -71,7 +71,7 @@ $today = date("Y-m-d", time());
         		<p>Headlines category:
       			<select id="hed_type" name="hed_type" onchange="javascript:getTypeImg(this.value);">
         			<option value="not">Make a choice...</option>
-        			<option value="breaking_news" disabled>Breaking News</option>
+        			<option value="breaking_news">Breaking News</option>
         			<option value="econundrums_new">Econundrum</option>
         			<option value="food_for_thought_redesign">Food for Thought Redesign</option>
         			<option value="food_for_thought_new">Food for Thought</option>
@@ -121,7 +121,7 @@ $today = date("Y-m-d", time());
     
     <!-- <p style="float:left;margin:5px 10px 0 0;">Text Ad:</p> &nbsp;<textarea id="text_ad_dek" name="text_ad_dek" type="text" rows="5" cols="10"></textarea>-->
   </div>
-    <hr style="width:900px;clear:both;" />
+    <hr style="width:800px;clear:both;" />
     <div id="footer_row" class="block_hidden">
       <input type="button" value="Preview" onclick="checkForm('preview');" />
       <input type="button" value="Submit Headlines" onclick="checkForm('not');" />
