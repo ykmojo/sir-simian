@@ -182,7 +182,7 @@ $breaking_news = <<<BREAKINGNEWS
 			</td>
 		</tr>
 		<tr>
-			<td valign="bottom">
+			<td style="margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;" valign="top">
 				<h2 style="color: #FF6900;"><strong>MORE</strong></h2>
 				$more_sec
 			</td>
