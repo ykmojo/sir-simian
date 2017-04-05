@@ -275,17 +275,17 @@ else {
 if($fft_sb_attr != "" || $fft_sb_attr != null ) {
 	$fft_sb_attr = str_replace("<p>", $main_section_p, $fft_sb_attr);
 	$fft_sb_attr = str_replace("<a", $url_style, $fft_sb_attr);
-	$ogt_section .= $fft_sb_attr . "\n<!--[if (gte mso 9)|(IE)]><br /><![endif]--></td></tr></table>";
+	$ogt_section .= $fft_sb_attr . "\n<!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
 }
 else {
 	$fft_sb_attr = "";
 }
 
-if($fft_snack_box == "" && $image_code == "") {
+if($fft_snack_box == "" && $image_code == "" && $fft_sb_attr == "") {
 	$ogt_section = "";
 }
 else {
-	$ogt_section = "<tr>\n<td style=\"border-bottom: 1px solid #c8c8c8;\">\n<!--[if (gte mso 9)|(IE)]><br /><![endif]-->" . $ogt_section . "<!--[if (gte mso 9)|(IE)]><br /><![endif]--></td>\n</tr>\n";
+	$ogt_section = "<tr>\n<td style=\"border-bottom: 1px solid #c8c8c8;\">\n<!--[if (gte mso 9)|(IE)]><br /><![endif]-->" . $ogt_section . "\n</td>\n</tr>\n</table>\n" . "<!--[if (gte mso 9)|(IE)]><br /><![endif]--></td>\n</tr>\n";
 }
 
 //in our ears/podcast section

@@ -104,7 +104,7 @@ $breaking_news = <<<BREAKING
 	    <p>Breaking News Lead: <input type="text" id="breaking" name="breaking" value="" size="45" maxlength="255" spellcheck="true" /></p>
 	    <p>Breaking News Lead URL: <input type="text" id="breaking_url" name="breaking_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
 	    <p>Breaking News Main Text:</p>
-	    <textarea rows='15' cols='45' id='main_text' name='main_text'></textarea>
+	    <textarea rows="15" cols="45" id="main_text" name="main_text"></textarea>
       </div>
 	</div>
   </div>
@@ -112,8 +112,24 @@ $breaking_news = <<<BREAKING
 	<div id="items_right">
 	  <h3>More Section</h3>
       <div class="sections">
-		<p>Item 1 text: <input type="text" id="breaking" name="breaking" value="" size="45" maxlength="255" spellcheck="true" /></p>
-	    <p>Item 1 URL: <input type="text" id="breaking_url" name="breaking_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+		<p>Item 1 text: <input type="text" id="bn_item1" name="bn_item1" value="" size="45" maxlength="255" spellcheck="true" /></p>
+	    <p>Item 1 URL: <input type="text" id="bn_item1_url" name="bn_item1_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+      </div>
+      <div class="sections">
+		<p>Item 2 text: <input type="text" id="bn_item2" name="bn_item2" value="" size="45" maxlength="255" spellcheck="true" /></p>
+	    <p>Item 2 URL: <input type="text" id="bn_item2_url" name="bn_item2_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+      </div>
+      <div class="sections">
+		<p>Item 3 text: <input type="text" id="bn_item3" name="bn_item3" value="" size="45" maxlength="255" spellcheck="true" /></p>
+	    <p>Item 3 URL: <input type="text" id="bn_item3_url" name="bn_item3_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+      </div>
+      <div class="sections">
+		<p>Item 4 text: <input type="text" id="bn_item4" name="bn_item4" value="" size="45" maxlength="255" spellcheck="true" /></p>
+	    <p>Item 4 URL: <input type="text" id="bn_item4_url" name="bn_item4_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+      </div>
+      <div class="sections">
+		<p>Item 5 text: <input type="text" id="bn_item5" name="bn_item5" value="" size="45" maxlength="255" spellcheck="true" /></p>
+	    <p>Item 5 URL: <input type="text" id="bn_item5_url" name="bn_item5_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
       </div>
 	</div>
   </div>
