@@ -551,6 +551,8 @@ $fromarchive_title = strip_tags(addslashes($fromarchive_title));
 $subject_line = addslashes($subject_line);
 $sub_code = addslashes($sub_code);
 $lift_note = addslashes($lift_note);
+$pixel_tracker = addslashes($pixel_tracker);
+$pixel_tracker2 = addslashes($pixel_tracker2);
 
 //check if data exists in db
 $check_existing = "SELECT id, hed_date FROM in_the_mix_new WHERE hed_date='$headlines_date'";
@@ -595,11 +597,13 @@ if($exists) {
 	morefrommix_title='$morefrommix_title',
 	fromarchive_title='$fromarchive_title',
 	sub_code='$sub_code',
-	lift_note='$lift_note'
+	lift_note='$lift_note',
+	pixel_tracker='$pixel_tracker',
+	pixel_tracker2='$pixel_tracker2'
 	WHERE hed_date='$headlines_date'";
 }
 else {
-	$run_qry = "INSERT INTO in_the_mix_new(hed_date,twmustread_hed,twmustread_url,twmustread_dek,morefrommix1_hed,morefrommix1_url,morefrommix2_hed,morefrommix2_url,morefrommix3_hed,morefrommix3_url,fromarchive1_hed,fromarchive1_url,fromarchive2_hed,fromarchive2_url,ad_name,ad_link_bill,ad_billboard,ad_name2,ad_link_banner,ad_banner,subject_line,sub_url, sub_image, sub_text,twmustread_lead,twmustread_title,morefrommix_title,fromarchive_title, sub_code, lift_note)
+	$run_qry = "INSERT INTO in_the_mix_new(hed_date,twmustread_hed,twmustread_url,twmustread_dek,morefrommix1_hed,morefrommix1_url,morefrommix2_hed,morefrommix2_url,morefrommix3_hed,morefrommix3_url,fromarchive1_hed,fromarchive1_url,fromarchive2_hed,fromarchive2_url,ad_name,ad_link_bill,ad_billboard,ad_name2,ad_link_banner,ad_banner,subject_line,sub_url, sub_image, sub_text,twmustread_lead,twmustread_title,morefrommix_title,fromarchive_title, sub_code, lift_note,pixel_tracker,pixel_tracker2)
 	VALUES('$headlines_date',
 	'$twmustread_hed',
 	'$twmustread_url',
@@ -629,7 +633,9 @@ else {
 	'$morefrommix_title',
 	'$fromarchive_title',
 	'$sub_code',
-	'$lift_note')";
+	'$lift_note',
+	'$pixel_tracker',
+	'$pixel_tracker2')";
 }
 //free memory and close db connection
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly" . mysqli_error($db_connect));

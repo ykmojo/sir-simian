@@ -552,6 +552,9 @@ $mostread_title = strip_tags(addslashes($mostread_title));
 $subject_line = addslashes(addslashes($subject_line));
 $sub_code = addslashes($sub_code);
 $lift_note = addslashes($lift_note);
+$pixel_tracker = addslashes($pixel_tracker);
+$pixel_tracker2 = addslashes($pixel_tracker2);
+
 //check if data exists in db
 $check_existing = "SELECT id, hed_date FROM political_mojo_new WHERE hed_date='$headlines_date'";
 $existing_qry = mysqli_query($db_connect, $check_existing) or die("Can't run query now");
@@ -600,11 +603,13 @@ $run_qry = "UPDATE political_mojo_new
 	sub_image = '$sub_image',
 	sub_text = '$sub_text',
 	sub_code = '$sub_code',
-	lift_note = '$lift_note'
+	lift_note = '$lift_note',
+	pixel_tracker = '$pixel_tracker',
+	pixel_tracker2 = '$pixel_tracker2'
   WHERE hed_date='$headlines_date'";
 }
 else {
-$run_qry = "INSERT INTO political_mojo_new(hed_date,topstory_hed,topstory_url,topstory_dek,topstory_lead,topstory_byline,inothernews_hed,inothernews_url,inothernews2_hed,inothernews2_url,inothernews3_hed,inothernews3_url,mostread1_hed,mostread1_url,mostread2_hed,mostread2_url,ad_name,ad_link_bill,ad_billboard,ad_name2,ad_link_banner,ad_banner,topstory_title,inothernews_title,mostread_title,subject_line,sub_url,sub_image,sub_text, sub_code, lift_note)
+$run_qry = "INSERT INTO political_mojo_new(hed_date,topstory_hed,topstory_url,topstory_dek,topstory_lead,topstory_byline,inothernews_hed,inothernews_url,inothernews2_hed,inothernews2_url,inothernews3_hed,inothernews3_url,mostread1_hed,mostread1_url,mostread2_hed,mostread2_url,ad_name,ad_link_bill,ad_billboard,ad_name2,ad_link_banner,ad_banner,topstory_title,inothernews_title,mostread_title,subject_line,sub_url,sub_image,sub_text, sub_code, lift_note,pixel_tracker,pixel_tracker2)
 VALUES('$headlines_date',
        '$topstory_hed',
        '$topstory_url',
@@ -635,7 +640,9 @@ VALUES('$headlines_date',
        '$sub_image',
 		'$sub_text',
 		'$sub_code',
-		'$lift_note')";
+		'$lift_note',
+		'$pixel_tracker',
+		'$pixel_tracker2')";
 }
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly" . mysqli_error($db_connect));
 mysqli_close($db_connect);

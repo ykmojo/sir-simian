@@ -746,6 +746,8 @@ $billboard_url2 = addslashes($billboard_url2);
 $billboard_image2 = addslashes($billboard_image2);
 $advertiser_name2 = strip_tags(addslashes($advertiser_name2), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
 $ad_name = strip_tags(addslashes($advertiser_name), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$pixel_tracker = addslashes($pixel_tracker);
+$pixel_tracker2 = addslashes($pixel_tracker2);
 
 //check to see if data exists in db
 $check_existing = "SELECT id, hed_date FROM food_for_thought_redesign WHERE hed_date='$headlines_date'";
@@ -795,11 +797,13 @@ sub_image = '$sub_image',
 sub_text = '$sub_text',
 sub_code = '$sub_code',
 membership_slot = '$membership_slot',
-lift_note = '$lift_note'
+lift_note = '$lift_note',
+pixel_tracker = '$pixel_tracker',
+pixel_tracker2 = '$pixel_tracker2'
 WHERE hed_date='$headlines_date'";
 }
 else {
-$run_qry = "INSERT INTO food_for_thought_redesign(hed_date,fft_main_hed,fft_main_hed_url,fft_main_img,fft_article_1,fft_article_2,fft_article_3,fft_article_4,fft_article_5,fft_article_6,snack_box,fft_snack_box,fft_sb_image,fft_sb_attr,in_our_ears,fft_ioe_item1,fft_bite_add,fft_bite_link,fft_ioe_item2,fft_ioe_item3,hidden_kitchen,fft_hk_leadin,fft_hidden_kitchen,subject_line,ad_name,ad_billboard,ad_link_bill,ad_name2,ad_link_banner,ad_banner,sub_url,sub_image,sub_text,sub_code,membership_slot,lift_note)
+$run_qry = "INSERT INTO food_for_thought_redesign(hed_date,fft_main_hed,fft_main_hed_url,fft_main_img,fft_article_1,fft_article_2,fft_article_3,fft_article_4,fft_article_5,fft_article_6,snack_box,fft_snack_box,fft_sb_image,fft_sb_attr,in_our_ears,fft_ioe_item1,fft_bite_add,fft_bite_link,fft_ioe_item2,fft_ioe_item3,hidden_kitchen,fft_hk_leadin,fft_hidden_kitchen,subject_line,ad_name,ad_billboard,ad_link_bill,ad_name2,ad_link_banner,ad_banner,sub_url,sub_image,sub_text,sub_code,membership_slot,lift_note,pixel_tracker,pixel_tracker2)
 VALUES('$headlines_date',
 '$fft_main_hed',
 '$fft_main_hed_url',
@@ -835,7 +839,9 @@ VALUES('$headlines_date',
 '$sub_text',
 '$sub_code',
 '$membership_slot',
-'$lift_note')";
+'$lift_note',
+'$pixel_tracker',
+'$pixel_tracker2')";
 }
 //flush query and close db connections
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly". mysqli_error($db_connect));

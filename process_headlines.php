@@ -41,6 +41,22 @@ $subject_line = $_REQUEST['subject_line'];
 
 /* -----------------ads section-------------------- */
 $timestamp = time();
+
+//pixel tracker section
+if(isset($_REQUEST["pixel_tracker"]) && $_REQUEST["pixel_tracker"] != "") {
+	$pixel_tracker = trim($_REQUEST["pixel_tracker"]);
+}
+else {
+	$pixel_tracker = "";
+}
+
+if(isset($_REQUEST["pixel_tracker2"]) && $_REQUEST["pixel_tracker2"] != "") {
+	$pixel_tracker2 = trim($_REQUEST["pixel_tracker2"]);
+}
+else {
+	$pixel_tracker2 = "";
+}
+//end pixel tracker section
 //advertiser name billboard
 if(isset($_REQUEST['advertiser_name']) && $_REQUEST['advertiser_name'] != null) {
 	$advertiser_name = $_REQUEST['advertiser_name'];
@@ -156,10 +172,10 @@ if ((isset($_REQUEST['billboard_url']) && $_REQUEST['billboard_url'] != null) ||
   $billboard_image = $_REQUEST['billboard_img'];
   
   if($headlines_type == "food_for_thought_redesign") {
-  	$billboard_ad = "<div style=\"margin-top:10px;margin-bottom:20px;width:100% !important;\"><a href=\"$billboard_url\" name=\"Top Ad - $advertiser_name\"><img id=\"bill_a\" src=\"$billboard_image\" style=\"width:540px;border: none;\" alt=\"$advertiser_name\" width=\"540\" border=\"0\" /></a></div>\n";
+  	$billboard_ad = "<div style=\"margin-top:10px;margin-bottom:20px;width:100% !important;\"><a href=\"$billboard_url\" name=\"Top Ad - $advertiser_name\"><img id=\"bill_a\" src=\"$billboard_image\" style=\"width:540px;border: none;\" alt=\"$advertiser_name\" width=\"540\" border=\"0\" /></a>$pixel_tracker</div>\n";
   }
   else {
-  	$billboard_ad = "<div style=\"margin-top:7px;width:100% !important;\"><a href=\"$billboard_url\" name=\"Bottom Ad - $advertiser_name\"><img id=\"bill_a\" src=\"$billboard_image\" style=\"width:300px;height:auto;border: none;\" alt=\"$advertiser_name\" width=\"300\" height=\"250\" border=\"0\" /></a></div>\n";
+  	$billboard_ad = "<div style=\"margin-top:7px;width:100% !important;\"><a href=\"$billboard_url\" name=\"Bottom Ad - $advertiser_name\"><img id=\"bill_a\" src=\"$billboard_image\" style=\"width:300px;height:auto;border: none;\" alt=\"$advertiser_name\" width=\"300\" height=\"250\" border=\"0\" /></a>$pixel_tracker</div>\n";
   }
 }
 else {
@@ -177,9 +193,6 @@ else {
 		case "political_mojo_new":
 			$billboard_ad = "\n$politicalmojo_billboard\n";
 			break;
-		case "food_for_thought_new":
-			$billboard_ad = "\n$foodforthought_billboard\n";
-			break;
 		case "food_for_thought_redesign":
 			$billboard_ad = "\n$fft_redesign_billboard1\n";
 			break;
@@ -189,10 +202,10 @@ if ((isset($_REQUEST['billboard_url2']) && $_REQUEST['billboard_url2'] != null) 
 	$billboard_url2 = $_REQUEST['billboard_url2'];
 	$billboard_image2 = $_REQUEST['billboard_img2'];
 	if($headlines_type == "food_for_thought_redesign") {
-		$billboard_ad2 = "<div style=\"margin-top: 10px;margin-bottom:20px;width:100%;\"><a href=\"$billboard_url2\" name=\"Top Ad - $advertiser_name2\"><img id=\"bill_a\" src=\"$billboard_image2\" style=\"width:540px;border: none !important;\" alt=\"$advertiser_name2\" width=\"540\" border=\"0\" /></a></div>\n";
+		$billboard_ad2 = "<div style=\"margin-top: 10px;margin-bottom:20px;width:100%;\"><a href=\"$billboard_url2\" name=\"Top Ad - $advertiser_name2\"><img id=\"bill_a\" src=\"$billboard_image2\" style=\"width:540px;border: none !important;\" alt=\"$advertiser_name2\" width=\"540\" border=\"0\" /></a>$pixel_tracker2</div>\n";
 	}
 	else {
-		$billboard_ad2 = "<div style=\"margin-top:7px;width:100%;\"><a href=\"$billboard_url2\" name=\"Bottom Ad - $advertiser_name2\"><img id=\"bill_a\" src=\"$billboard_image2\" style=\"width:300px;border: none;\" alt=\"$advertiser_name2\" width=\"300\" height=\"250\" border=\"0\" /></a></div>\n";
+		$billboard_ad2 = "<div style=\"margin-top:7px;width:100%;\"><a href=\"$billboard_url2\" name=\"Bottom Ad - $advertiser_name2\"><img id=\"bill_a\" src=\"$billboard_image2\" style=\"width:300px;border: none;\" alt=\"$advertiser_name2\" width=\"300\" height=\"250\" border=\"0\" /></a>$pixel_tracker2</div>\n";
 	}
 }
 else {

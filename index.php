@@ -74,7 +74,6 @@ $today = date("Y-m-d", time());
         			<option value="breaking_news" disabled>Breaking News</option>
         			<option value="econundrums_new">Econundrum</option>
         			<option value="food_for_thought_redesign">Food for Thought Redesign</option>
-        			<option value="food_for_thought_new">Food for Thought</option>
         			<option value="in_the_mix_new">In The Mix</option>
         			<option value="political_mojo_new">Political Mojo</option>
       			</select>
@@ -98,34 +97,40 @@ $today = date("Y-m-d", time());
     </div>
   <div id="main_container">
   </div>
+    <hr style="width:800px;clear:both;" />
+    <div id="footer_row" class="block_hidden">
+      <input type="button" value="Preview" style="background-color:#960;color:#fff;font-size:16px;" onclick="checkForm('preview');" />
+      <input type="button" value="Submit Headlines" style="background-color:#393;color:#fff;font-size:16px;" onclick="checkForm('not');" />
+    </div>
   <br style="clear:both;" />
   <div id="ad_section" class="block_hidden">
+  	<div id="ad_slots">
+  	<p style="text-align:center;font-size:16px;font-weight:bold;border-top:1px dashed #000;">Paid Ads</p>
     <p class="ad_label">Advertiser: &nbsp;<input id="ad_name" name="advertiser_name" type="text" value="" size="40" /></p>
     <p class="ad_label">Billboard Url: &nbsp;<input id="ad_link_bill" name="billboard_url" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
     <p class="ad_label">Billboard Image: &nbsp;<input id="ad_billboard" name="billboard_img" type="text" value="" size="40" /></p>
-    <br /><br />
+    <br />
     <p class="ad_label">Advertiser 2: &nbsp;<input id="ad_name2" name="advertiser_name2" type="text" value="" size="40" /></p>
     <p class="ad_label">Billboard Url 2: &nbsp;<input id="ad_link_banner" name="billboard_url2" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
     <p class="ad_label">Billboard Image 2: &nbsp;<input id="ad_banner" name="billboard_img2" type="text" value="" size="40" /></p>
-    <p style="text-align:center;font-size:16px;font-weight:bold;border-top:1px dashed #000;">Membership ad slot override:</p>
+    <p class="ad_label" style="background:#000;color:#fff;text-align:center;font-size: 1.1em;">Pixel tracking code (top ad):</p>
+    <textarea id="pixel_tracker" name="pixel_tracker" type="text" value="" cols="60" rows="3" style="float:right;"></textarea>
+    <p class="ad_label" style="background:#000;color:#fff;text-align:center;font-size: 1.1em;">Pixel tracking code (bottom ad):</p>
+    <textarea id="pixel_tracker2" name="pixel_tracker2" type="text" value="" cols="60" rows="3" style="float:right;"></textarea>
+    <p style="text-align:center;font-size:16px;font-weight:bold;border-top:1px dashed #000;">Lift-Note Section</p>
+    <p class="ad_label"><textarea rows="10" cols="60" id="lift_note" name="lift_note"></textarea></p>
+    </div>
+    <div id="membership_slots">
+    <p style="font-size:16px;font-weight:bold;border-top:1px dashed #000;">Membership ad slot override:</p>
+    <p class="ad_label">Sub url: &nbsp;<input id="sub_url" name="sub_url" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
+    <p class="ad_label">Sub image: &nbsp;<input type="text" value="" id="sub_image" name="sub_image" size="40" /></p>
+    <p class="ad_label">Sub alt text: &nbsp;<input type="text" value="" id="sub_text" name="sub_text" size="40" /></p>
     <p class="ad_label">Membership text section for redesigned newsletter:<br />
     <textarea id="membership_slot" name="membership_slot" rows="5" cols="60"></textarea></p>
     <p class="ad_label">Code field for old newsletter format (for complex HTML ad: This field overrides the Sub url & Sub image fields):<br />
     <textarea rows="5" cols="60" id="sub_code" name="sub_code"></textarea></p>
-    <p class="ad_label">Sub url: &nbsp;<input id="sub_url" name="sub_url" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
-    <p class="ad_label">Sub image: &nbsp;<input type="text" value="" id="sub_image" name="sub_image" size="40" /></p>
-    <p class="ad_label">Sub alt text: &nbsp;<input type="text" value="" id="sub_text" name="sub_text" size="40" /></p>
-    
-    <p style="text-align:center;font-size:16px;font-weight:bold;border-top:1px dashed #000;">Lift-Note Section</p>
-    <p class="ad_label"><textarea rows="10" cols="60" id="lift_note" name="lift_note"></textarea></p>
-    
-    <!-- <p style="float:left;margin:5px 10px 0 0;">Text Ad:</p> &nbsp;<textarea id="text_ad_dek" name="text_ad_dek" type="text" rows="5" cols="10"></textarea>-->
   </div>
-    <hr style="width:800px;clear:both;" />
-    <div id="footer_row" class="block_hidden">
-      <input type="button" value="Preview" onclick="checkForm('preview');" />
-      <input type="button" value="Submit Headlines" onclick="checkForm('not');" />
-    </div>
+  </div>
   </form>
 </body>
 </html>

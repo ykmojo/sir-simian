@@ -1,5 +1,5 @@
 body {margin:5px 5px;
-  width:900px;}
+  width:100%;}
 p {font-size:12px;
   text-align:left;
   clear:both;}
@@ -11,7 +11,7 @@ input:disabled {background-color:#999;}
 h4 {margin:10px 0 3px 0;
 	clear: both;}
 #main_container {margin:0 auto;
-  width:1024px;}
+  width:1080px;}
 #header {margin:5px auto;
   width:450px;
   display:table;
@@ -66,9 +66,23 @@ h4 {margin:10px 0 3px 0;
 	float:left;
 	clear:both;
 }
-#ad_section {margin:5px auto;
-  width:768px;
+/*for ads*/
+#ad_section {margin:5px 5px;
+  width:1080px;
   border-top:1px #000000 solid;}
+#ad_slots {width:460px;
+	float:left;
+	padding: 10px 15px;
+	margin: 0;
+	border: 1px dotted #000;
+	display: table;}
+ #membership_slots{width:460px;
+	float:right;
+	padding: 10px 15px;
+	margin: 0;
+	border: 1px dotted #000;
+	display: table;}
+/*end ads*/
 .head_types {width:1024px;}
 .block_hidden {display:none;}
 .block_show {display:block;}
