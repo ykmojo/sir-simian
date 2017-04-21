@@ -71,7 +71,7 @@ $today = date("Y-m-d", time());
         		<p>Headlines category:
       			<select id="hed_type" name="hed_type" onchange="javascript:getTypeImg(this.value);">
         			<option value="not">Make a choice...</option>
-        			<option value="breaking_news" disabled>Breaking News</option>
+        			<option value="breaking_news">Breaking News</option>
         			<option value="econundrums_new">Econundrum</option>
         			<option value="food_for_thought_redesign">Food for Thought Redesign</option>
         			<option value="in_the_mix_new">In The Mix</option>
