@@ -559,10 +559,6 @@ $pixel_tracker2 = addslashes($pixel_tracker2);
 $check_existing = "SELECT id, hed_date FROM political_mojo_new WHERE hed_date='$headlines_date'";
 $existing_qry = mysqli_query($db_connect, $check_existing) or die("Can't run query now");
 
-/* obsolet fields
- text_ad_dek='$text_ad_dek',
- */
-
 if(mysqli_num_rows($existing_qry) > 0) {
     $exists = true;
 }
