@@ -146,41 +146,41 @@ $econundrum = <<<ECONUNDRUM
   <div class="columns">
     <div id="items_left">
 	  <h3>Main Article</h3>
-      <h4><input class="section_titles" id="this_week" name="this_week" type="text" value="This Week's Econundrum" /></h4>
+      <h4><input class="section_titles" id="this_week" name="this_week" type="text" value="This Week's Econundrum" onfocus="checkHedDate()" /></h4>
       <div class="sections">
-        <p>Headline: <input type="text" id="conundrum_hed" name="conundrum_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url: <input type='text' id='conundrum_url' name='conundrum_url' size='50' onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline: <input type="text" id="conundrum_hed" name="conundrum_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url: <input type='text' id='conundrum_url' name='conundrum_url' size='50' onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
         <p class='dek_sect'>Body Text:</p>
-        <textarea rows='15' cols='45' id='conundrum_dek' name='conundrum_dek'></textarea>
+        <textarea rows='15' cols='45' id='conundrum_dek' name='conundrum_dek' onfocus="checkHedDate()"></textarea>
       </div>
     </div>
   </div>
   <div class="columns">
 		<div id="items_right">
 			<h3>Section 2</h3>
-			<h4><input type="text" class="section_titles" id="envirohealth_title" name="envirohealth_title" value="More Environment &amp; Health Coverage" /></h4>
+			<h4><input type="text" class="section_titles" id="envirohealth_title" name="envirohealth_title" value="More Environment &amp; Health Coverage" onfocus="checkHedDate()" /></h4>
     	<div class="sections">
-      	<p>Headline 1: <input type="text" id="envirohealth1_hed" name="envirohealth1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-      <p>Url 1: <input type='text' id='envirohealth1_url' name='envirohealth1_url' size='50' onblur="this.value=fixURL(this.value)" /></p>
+      	<p>Headline 1: <input type="text" id="envirohealth1_hed" name="envirohealth1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+      <p>Url 1: <input type='text' id='envirohealth1_url' name='envirohealth1_url' size='50' onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
 		</div>
 		<div class="sections">
-			<p>Headline 2: <input type="text" id="envirohealth2_hed" name="envirohealth2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-		    <p>Url 2: <input type='text' id='envirohealth2_url' name='envirohealth2_url' size='50' onblur="this.value=fixURL(this.value)" /></p>
+			<p>Headline 2: <input type="text" id="envirohealth2_hed" name="envirohealth2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+		    <p>Url 2: <input type='text' id='envirohealth2_url' name='envirohealth2_url' size='50' onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
     </div>
 		<div class="sections">
-			<p>Headline 3: <input type="text" id="envirohealth3_hed" name="envirohealth3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-		    <p>Url 3: <input type='text' id='envirohealth3_url' name='envirohealth3_url' size='50' onblur="this.value=fixURL(this.value)" /></p>
+			<p>Headline 3: <input type="text" id="envirohealth3_hed" name="envirohealth3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+		    <p>Url 3: <input type='text' id='envirohealth3_url' name='envirohealth3_url' size='50' onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
     </div>
 
 		<h3>Bottom section</h3>
-    <h4><input type="text" class="section_titles" id="moremojo_title" name="moremojo_title" value="More from MoJo" /></h4>
+    <h4><input type="text" class="section_titles" id="moremojo_title" name="moremojo_title" value="More from MoJo" onfocus="checkHedDate()" /></h4>
     <div class="sections">
-			<p>Headline 1: <input type="text" id="moremojo_hed" name="moremojo_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-     	<p>Url 1: <input type="text" id="moremojo_url" name="moremojo_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+			<p>Headline 1: <input type="text" id="moremojo_hed" name="moremojo_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+     	<p>Url 1: <input type="text" id="moremojo_url" name="moremojo_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
     </div>
     <div class="sections">
-			<p>Headline 2: <input type="text" id="moremojo2_hed" name="moremojo2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-     	<p>Url 2: <input type="text" id="moremojo2_url" name="moremojo2_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+			<p>Headline 2: <input type="text" id="moremojo2_hed" name="moremojo2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+     	<p>Url 2: <input type="text" id="moremojo2_url" name="moremojo2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
     </div>
 	</div>
 </div>
@@ -196,41 +196,41 @@ $food = <<<FOOD
   <div class="columns">
     <div id="items_left">
 			<h3>Main Article</h3>
-      <h4><input type="text" class="section_titles" id="maindish_title" name="maindish_title" value="This Week's Main Dish" /></h4>
+      <h4><input type="text" class="section_titles" id="maindish_title" name="maindish_title" value="This Week's Main Dish" onfocus="checkHedDate()" /></h4>
       <div class="sections">
-        <p>Headline: <input type="text" id="maindish_hed" name="maindish_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
+        <p>Headline: <input type="text" id="maindish_hed" name="maindish_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
         <p>Url: <input type="text" id="maindish_url" name="maindish_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
         <p class="dek_sect">Body Text:</p>
-        <textarea rows="15" cols="45" id="maindish_dek" name="maindish_dek"></textarea>
+        <textarea rows="15" cols="45" id="maindish_dek" name="maindish_dek" onfocus="checkHedDate()"></textarea>
       </div>
     </div>
   </div>
 	<div class="columns">
 		<div id="items_right">
       <h3>Section 2</h3>
-			<h4><input type="text" class="section_titles" id="sidedish_title" name="sidedish_title" value="Side Dishes" /></h4>
+			<h4><input type="text" class="section_titles" id="sidedish_title" name="sidedish_title" value="Side Dishes" onfocus="checkHedDate()" /></h4>
       <div class="sections">
-        <p>Headline 1: <input type="text" id="sidedish_hed" name="sidedish_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 1: <input type="text" id="sidedish_url" name="sidedish_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 1: <input type="text" id="sidedish_hed" name="sidedish_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 1: <input type="text" id="sidedish_url" name="sidedish_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
       <div class="sections">
-        <p>Headline 2: <input type="text" id="sidedish2_hed" name="sidedish2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 2: <input type="text" id="sidedish2_url" name="sidedish2_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 2: <input type="text" id="sidedish2_hed" name="sidedish2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 2: <input type="text" id="sidedish2_url" name="sidedish2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
       <div class="sections">
-        <p>Headline 3: <input type="text" id="sidedish3_hed" name="sidedish3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 3: <input type="text" id="sidedish3_url" name="sidedish3_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 3: <input type="text" id="sidedish3_hed" name="sidedish3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 3: <input type="text" id="sidedish3_url" name="sidedish3_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
 			
 			<h3>Bottom Section</h3>
-			<h4><input type="text" class="section_titles" id="moremojo_title" name="moremojo_title" value="More From MoJo" /></h4>
+			<h4><input type="text" class="section_titles" id="moremojo_title" name="moremojo_title" value="More From MoJo" onfocus="checkHedDate()" /></h4>
 			<div class="sections">
-        <p>Headline 1: <input type="text" id="moremojo_hed" name="moremojo_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 1: <input type="text" id="moremojo_url" name="moremojo_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 1: <input type="text" id="moremojo_hed" name="moremojo_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 1: <input type="text" id="moremojo_url" name="moremojo_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
 			<div class="sections">
-        <p>Headline 2: <input type="text" id="moremojo2_hed" name="moremojo2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 2: <input type="text" id="moremojo2_url" name="moremojo2_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 2: <input type="text" id="moremojo2_hed" name="moremojo2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 2: <input type="text" id="moremojo2_url" name="moremojo2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
 		</div>
 	</div>
@@ -248,55 +248,55 @@ $fft_redesign = <<<FFTRED
     <div id="items_left">
 	  <h3>Main Section</h3>
 	  <div class="sections">
-		<p>Main hed: <input type="text" id="fft_main_hed" name="fft_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" /></p>
+		<p>Main hed: <input type="text" id="fft_main_hed" name="fft_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></p>
 		<p>Main url: <input type="text" id="fft_main_hed_url" name="fft_main_hed_url" size="50" maxlength="512" onblur="this.value=fixURL(this.value)" /></p>
-		<p>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50" />
+		<p>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50" onfocus="checkHedDate()" />
 		<p>Article 1:</p>
-		<textarea id="fft_article_1" name="fft_article_1" rows="4" cols="45"></textarea>
+		<textarea id="fft_article_1" name="fft_article_1" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 		<p>Article 2:</p>
-		<textarea id="fft_article_2" name="fft_article_2" rows="4" cols="45"></textarea>
+		<textarea id="fft_article_2" name="fft_article_2" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 		<p>Article 3:</p>
-		<textarea id="fft_article_3" name="fft_article_3" rows="4" cols="45"></textarea>
+		<textarea id="fft_article_3" name="fft_article_3" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 		<p>Article 4:</p>
-		<textarea id="fft_article_4" name="fft_article_4" rows="4" cols="45"></textarea>
+		<textarea id="fft_article_4" name="fft_article_4" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 		<p>Article 5:</p>
-		<textarea id="fft_article_5" name="fft_article_5" rows="4" cols="45"></textarea>
+		<textarea id="fft_article_5" name="fft_article_5" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 		<p>Article 6:</p>
-		<textarea id="fft_article_6" name="fft_article_6" rows="4" cols="45"></textarea>
+		<textarea id="fft_article_6" name="fft_article_6" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 	  </div>
-	  <h4><input type="text" class="section_titles" id="snack_box" name="snack_box" value="One Great Tidbit" onblur="this.value=cleanstring(this.value)" /></h4>
+	  <h4><input type="text" class="section_titles" id="snack_box" name="snack_box" value="One Great Tidbit" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></h4>
 	  <div class="sections">
 		<p>Body text:</p>
 		<textarea id="fft_snack_box" name="fft_snack_box"></textarea>
-		<p>Image source: <input type="text" id="fft_sb_image" name="fft_sb_image" size="50" maxlength="512" /></p>
+		<p>Image source: <input type="text" id="fft_sb_image" name="fft_sb_image" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
 		<p>Attribution/Caption:</p>
-		<textarea id="fft_sb_attr" name="fft_sb_attr"></textarea>
+		<textarea id="fft_sb_attr" name="fft_sb_attr" onfocus="checkHedDate()"></textarea>
 	  </div>
 	</div>
   </div>
   <div class="columns">
 	<div id="items_right">
-	  <h4><input type="text" class="section_titles" id="in_our_ears" name="in_our_ears" value="This Week in Podcasts" onblur="this.value=cleanstring(this.value)" /></h4>
+	  <h4><input type="text" class="section_titles" id="in_our_ears" name="in_our_ears" value="This Week in Podcasts" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></h4>
 	  <div class="sections">
 		<p>First Item: </p>
-		<textarea id="fft_ioe_item1" name="fft_ioe_item1"></textarea>
+		<textarea id="fft_ioe_item1" name="fft_ioe_item1" onfocus="checkHedDate()"></textarea>
 		<p>If this item is not a Bite plug, please leave blank.</p>
 		<div class="sections">
-		<p>Bite episode link: <input type="text" id="fft_bite_link" name="fft_bite_link" size="50" maxlength="512" /></p>
+		<p>Bite episode link: <input type="text" id="fft_bite_link" name="fft_bite_link" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
 		<p>Bite episode description:</p>
-		<textarea id="fft_bite_add" name="fft_bite_add"></textarea>
+		<textarea id="fft_bite_add" name="fft_bite_add" onfocus="checkHedDate()"></textarea>
 		</div>
 		<p>Second Item:</p>
-		<textarea id="fft_ioe_item2" name="fft_ioe_item2"></textarea>
+		<textarea id="fft_ioe_item2" name="fft_ioe_item2" onfocus="checkHedDate()"></textarea>
 		<p>Third Item:</p>
-		<textarea id="fft_ioe_item3" name="fft_ioe_item3"></textarea>
+		<textarea id="fft_ioe_item3" name="fft_ioe_item3" onfocus="checkHedDate()"></textarea>
 	  </div>
-	  <h4><input type="text" class="section_titles" id="hidden_kitchen" name="hidden_kitchen" value="Exclusive to Newsletter Subscribers" onblur="this.value=cleanstring(this.value)" /></h4>
+	  <h4><input type="text" class="section_titles" id="hidden_kitchen" name="hidden_kitchen" value="Exclusive to Newsletter Subscribers" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></h4>
 	  <div class="sections">
 		<p>Lead in:</p>
-		<textarea id="fft_hk_leadin" name="fft_hk_leadin"></textarea>
+		<textarea id="fft_hk_leadin" name="fft_hk_leadin" onfocus="checkHedDate()"></textarea>
 		<p>Body text:</p>
-		<textarea id="fft_hidden_kitchen" name="fft_hidden_kitchen"></textarea>
+		<textarea id="fft_hidden_kitchen" name="fft_hidden_kitchen" onfocus="checkHedDate()"></textarea>
 	  </div>
 	</div>
   </di>
@@ -313,41 +313,41 @@ $inthemix = <<<INTHEMIX
   <div class="columns">
     <div id="items_left">
 			<h3>Main Article</h3>
-			<h4><input type="text" class="section_titles" id="twmustread_title" name="twmustread_title" value="Must-Read" /></h4>
+			<h4><input type="text" class="section_titles" id="twmustread_title" name="twmustread_title" value="Must-Read" onfocus="checkHedDate()" /></h4>
       <div class="sections">
-        <p>Headline: <input type="text" id="twmustread_hed" name="twmustread_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url: <input type="text" id="twmustread_url" name="twmustread_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline: <input type="text" id="twmustread_hed" name="twmustread_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url: <input type="text" id="twmustread_url" name="twmustread_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
 				<p class="dek_sect">Body Text:</p>
-        <textarea rows="8" cols="45" id="twmustread_dek" name="twmustread_dek"></textarea>
+        <textarea rows="8" cols="45" id="twmustread_dek" name="twmustread_dek" onfocus="checkHedDate()"></textarea>
       </div>
     </div>
 	</div>
 	<div class="columns">
 		<div id="items_right">
 			<h3>Section 2</h3>
-      <h4><input type="text" class="section_titles" id="morefrommix_title" name="morefrommix_title" value="More News" /></h4>
+      <h4><input type="text" class="section_titles" id="morefrommix_title" name="morefrommix_title" value="More News" onfocus="checkHedDate()" /></h4>
       <div class="sections">
-        <p>Headline 1: <input type="text" id="morefrommix1_hed" name="morefrommix1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 1: <input type="text" id="morefrommix1_url" name="morefrommix1_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 1: <input type="text" id="morefrommix1_hed" name="morefrommix1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 1: <input type="text" id="morefrommix1_url" name="morefrommix1_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
       <div class="sections">
-        <p>Headline 2: <input type="text" id="morefrommix2_hed" name="morefrommix2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 2: <input type="text" id="morefrommix2_url" name="morefrommix2_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 2: <input type="text" id="morefrommix2_hed" name="morefrommix2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 2: <input type="text" id="morefrommix2_url" name="morefrommix2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
       <div class="sections">
-        <p>Headline 3: <input type="text" id="morefrommix3_hed" name="morefrommix3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 3: <input type="text" id="morefrommix3_url" name="morefrommix3_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 3: <input type="text" id="morefrommix3_hed" name="morefrommix3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 3: <input type="text" id="morefrommix3_url" name="morefrommix3_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
 			
 			<h3>Bottom Section</h3>
-      <h4><input type="text" class="section_titles" id="fromarchive_title" name="fromarchive_title" value="Don't Miss" /></h4>
+      <h4><input type="text" class="section_titles" id="fromarchive_title" name="fromarchive_title" value="Don't Miss" onfocus="checkHedDate()" /></h4>
 			<div class="sections">
-				<p>Headline 1: <input type="text" id="fromarchive1_hed" name="fromarchive1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-				<p>Url 1: <input type="text" id="fromarchive1_url" name="fromarchive1_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+				<p>Headline 1: <input type="text" id="fromarchive1_hed" name="fromarchive1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+				<p>Url 1: <input type="text" id="fromarchive1_url" name="fromarchive1_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
 			</div>
 			<div class="sections">
-				<p>Headline 2: <input type="text" id="fromarchive2_hed" name="fromarchive2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-				<p>Url 2: <input type="text" id="fromarchive2_url" name="fromarchive2_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+				<p>Headline 2: <input type="text" id="fromarchive2_hed" name="fromarchive2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+				<p>Url 2: <input type="text" id="fromarchive2_url" name="fromarchive2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
 			</div>
 		</div>
 	</div>
@@ -364,41 +364,41 @@ $political = <<<POLITICAL
   <div class="columns">
     <div id="items_left">
 			<h3>Main Article</h3>
-      <h4><input class="section_titles" id="topstory_title" name="topstory_title" type="text" value="This Week's Top Story" /></h4>
+      <h4><input class="section_titles" id="topstory_title" name="topstory_title" type="text" value="This Week's Top Story" onfocus="checkHedDate()" /></h4>
       <div class="sections">
-        <p>Headline: <input type="text" id="topstory_hed" name="topstory_hed" size="50" value="" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url: <input type="text" id="topstory_url" name="topstory_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline: <input type="text" id="topstory_hed" name="topstory_hed" size="50" value="" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url: <input type="text" id="topstory_url" name="topstory_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
 				<p class="dek_sect">Body Text</p>
-        <textarea rows="5" cols="45" id="topstory_dek" name="topstory_dek"></textarea>
+        <textarea rows="5" cols="45" id="topstory_dek" name="topstory_dek" onfocus="checkHedDate()"></textarea>
       </div>
     </div>
   </div>
   <div class="columns">
 		<div id="items_right">
 			<h3>Section 2</h3>
-      <h4><input class="section_titles" id="inothernews_title" name="inothernews_title" type="text" value="In Other News" /></h4>
+      <h4><input class="section_titles" id="inothernews_title" name="inothernews_title" type="text" value="In Other News" onfocus="checkHedDate()" /></h4>
       <div class="sections">
-        <p>Headline 1: <input type="text" id="inothernews_hed" name="inothernews_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 1: <input type="text" id="inothernews_url" name="inothernews_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 1: <input type="text" id="inothernews_hed" name="inothernews_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 1: <input type="text" id="inothernews_url" name="inothernews_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
       <div class="sections">
-        <p>Headline 2: <input type="text" id="inothernews2_hed" name="inothernews2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 2: <input type="text" id="inothernews2_url" name="inothernews2_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 2: <input type="text" id="inothernews2_hed" name="inothernews2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 2: <input type="text" id="inothernews2_url" name="inothernews2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
       <div class="sections">
-        <p>Headline 3: <input type="text" id="inothernews3_hed" name="inothernews3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-        <p>Url 3: <input type="text" id="inothernews3_url" name="inothernews3_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+        <p>Headline 3: <input type="text" id="inothernews3_hed" name="inothernews3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+        <p>Url 3: <input type="text" id="inothernews3_url" name="inothernews3_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
       </div>
 
 			<h3>Bottom Section</h3>
-			<h4><input class="section_titles" id="mostread_title" name="mostread_title" type="text" value="Most Read" /></h4>
+			<h4><input class="section_titles" id="mostread_title" name="mostread_title" type="text" value="Most Read" onfocus="checkHedDate()" /></h4>
 			<div class="sections">
-				<p>Headline 1: <input type="text" id="mostread1_hed" name="mostread1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-				<p>Url 1: <input type="text" id="mostread1_url" name="mostread1_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+				<p>Headline 1: <input type="text" id="mostread1_hed" name="mostread1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+				<p>Url 1: <input type="text" id="mostread1_url" name="mostread1_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
 			</div>
 			<div class="sections">
-				<p>Headline 2: <input type="text" id="mostread2_hed" name="mostread2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" /></p>
-				<p>Url 2: <input type="text" id="mostread2_url" name="mostread2_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+				<p>Headline 2: <input type="text" id="mostread2_hed" name="mostread2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+				<p>Url 2: <input type="text" id="mostread2_url" name="mostread2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
 			</div>
 		</div>
 	</div>

@@ -6,6 +6,16 @@
   --3/15/2017: added refresh data functionality by modifying the getArchive() function.
 */
 
+//function to check if a headlines archive is chosen
+function checkHedDate() {
+	var hed_date = document.getElementById("archives").value;
+	var hed_type = document.getElementById("hed_type").value;
+	
+	if(hed_date == "none" && hed_type !== "breaking_news") {
+		alert("Please choose a Headlines Archive from the drop down menu before proceeding. Thanks.");
+	}
+}
+
 //function to print out the section drop down select
 function getTypeImg(type_img) {
   var theImg = "";                                            //var to hold image path for headlines type
@@ -87,6 +97,7 @@ function getTypeImg(type_img) {
     	$("#wysiwig_msg").addClass("loading_done");
   	    document.getElementById("wysiwig_msg").innerHTML = "WYSIWYG ready!";
   	} );
+    $(".message_check").css("display", "block");
     return true;
   }
   else {      //else give an alert and return false to abort processing
@@ -157,6 +168,13 @@ function getArchive() {
 
   httpxml.open("POST", "headlines_ajax_functions.php?arch_type=" + archive_type + "&date=" + date_value + "&r=" + rand_num, true);
   httpxml.send("null");
+  
+  if($("#archives").val() !== "none") {
+	  $(".message_check").css("display", "none");
+  }
+  else {
+	  $(".message_check").css("display", "block");
+  }
 }
 
 function delayedInsert(theArray) {

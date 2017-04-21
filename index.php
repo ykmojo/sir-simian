@@ -48,7 +48,6 @@ $today = date("Y-m-d", time());
              var temp_text = CKEDITOR.instances[numId].getData();
              var clean_text = cleanstring(temp_text);
              CKEDITOR.instances[numId].setData(clean_text);
-             //console.log(clean_text);
           });
       }
       else {
@@ -81,6 +80,7 @@ $today = date("Y-m-d", time());
         		<p>Headlines archives:
         			<select id="archives" onchange="javascript:getArchive();">
         			</select>
+        			<span class="message_check" style="background-color:#c34;color:#fff;font-size:18px;display:none;">Please choose an archive before continuing</span>
         		</p>
         		<br />
         </div>
@@ -92,8 +92,9 @@ $today = date("Y-m-d", time());
       </div>
     </div>
     <p id="wysiwig_msg" class="block_hidden">Please wait until the WYSIWIG loads completely.  Thank you.</p>
+    <p style="text-align:center;width:100%;"><span class="message_check" style="background-color:#c34;color:#fff;font-size:18px;display:none;">Please choose an archive before continuing</span></p>
 	<div style="text-align:center;clear:both;width:600px;margin:0 auto;">
-     	<p style="font-size:14px;">Subject line: <input type="text" id="subject_line" name="subject_line" value="" size="75" spellcheck="true" /></p>
+     	<p style="font-size:14px;">Subject line: <input type="text" id="subject_line" name="subject_line" value="" size="75" spellcheck="true" onfocus="checkHedDate()" /></p>
     </div>
   <div id="main_container">
   </div>
