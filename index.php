@@ -5,8 +5,9 @@ $today = date("Y-m-d", time());
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Headlines Preparation Tool</title>
+  <title>Sir Simian</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="head_main.css" />
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script type="text/javascript" language="javascript" src="headlines_script.js"></script>
@@ -61,7 +62,7 @@ $today = date("Y-m-d", time());
     <h2 id="head_text">Sir Simian [A Newsletter HTML Creation Helper]</h2>
     <a href="" id="section_image" target="_blank"><img src="logo_inside.gif" border="0" id="type_img" width="450" style="display:block;text-align:center;width:100%;margin: 0 auto;" /></a>
   </div>
-  <form id="headlinesForm" action="" method="post">
+  <form id="headlinesForm" action="" method="post" accept-charset="utf-8">
     <div id="head_row">
     	<div id="top_section">
     		<p style="float:left;width:300px;padding:5px;">To get started, choose a newsletter under Headline Category.<br /><br /><span style="color:#c33;font-weight:bold;">IMPORTANT: Before adding stories, click on View Headlines Archives to see if there is already a newsletter created for the date that you want. If so, use that one. If not, go ahead and create the newsletter as usual.</span></p>

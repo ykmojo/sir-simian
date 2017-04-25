@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Headlines App</title>
+  <title>Sir Simian Archives</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
   <style type="text/css">
     #header {margin: 5px auto;
     	width:680px;
