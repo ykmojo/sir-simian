@@ -1,4 +1,5 @@
 <?php
+header("Content-Type: text/html;charset=UTF-8");
 //for error reporting
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
@@ -252,7 +253,8 @@ $allowed_html = "<a><br /><br><b><i><em><strong><blockquote><table>";
 $html_title = ucwords($headlines_type);
 //$html_header = "<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n<title>$html_title</title>\n</head>\n<body>";
 //$html_footer = "</body></html>";
-$subject_formatting = "<p style=\"text-align:center;\"><em>Subject line:</em> $subject_line</p>\n <!-- start headlines code -->";
+$subject_line_display = str_replace("–","&#8212;", $subject_line);
+$subject_formatting = "<p style=\"text-align:center;\"><em>Subject line:</em> $subject_line_display</p>\n <!-- start headlines code -->";
 //end global items for all headlines
 
 /* headlines template section */
@@ -327,14 +329,18 @@ $global_footer = <<<FOOTER
 </table>
 FOOTER;
 
+$page_name = $headlines_date . " | " . $headlines_type;
+$html_headers = sprintf("<!DOCTYPE html>\n<html>\n<head><title>%s</title><meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\"></head><body>", $page_name);
+$html_footers = "</body>\n</html>";
+
 switch($headlines_type) {
   case "econundrums_new":
      include "econundrum-template.php";
      $econundrum = trim(cleanChars($econundrum));
      $econundrum_code = htmlspecialchars($econundrum);
-     $subj_line_esc = htmlspecialchars(stripslashes($subject_line));
+     $subj_line_esc = htmlspecialchars(stripslashes(str_replace("â€“", "–", $subject_line)));
      $get_code = "<div id=\"get_code\" style=\"clear:both;width:1024px;margin:10px auto;\"><p>Subject line: <input type=\"text\" size=\"120\" value=\"$subj_line_esc\" /></p><p>Newsletter code:</p><textarea cols=\"100\" rows=\"50\">$econundrum_code</textarea>";
-    $html_file = $view_code . $subject_formatting . $econundrum . $get_code;
+    $html_file = $html_headers . $view_code . $subject_formatting . $econundrum . $get_code . $html_footers;
     $newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 16px; color: #000;\"><em>Econundrums</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
     break;
   case "in_the_mix_new":
@@ -343,7 +349,7 @@ switch($headlines_type) {
      $inthemix_code = htmlspecialchars($inthemix);
      $subj_line_esc = htmlspecialchars(stripslashes($subject_line));
      $get_code = "<div id=\"get_code\" style=\"clear:both;width:1024px;margin:10px auto;\"><p>Subject line: <input type=\"text\" size=\"120\" value=\"$subj_line_esc\" /></p><p>Newsletter code:</p><textarea cols=\"100\" rows=\"50\">$inthemix_code</textarea>";
-    $html_file = $view_code . $subject_formatting . $inthemix . $get_code;
+    $html_file = $html_headers . $view_code . $subject_formatting . $inthemix . $get_code . $html_footers;
     $newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 16px; color: #000;\"><em>In the Mix</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
    	break;
   case "political_mojo_new":
@@ -352,7 +358,7 @@ switch($headlines_type) {
   	$politics_code = htmlspecialchars($politics);
   	$subj_line_esc = htmlspecialchars(stripslashes($subject_line));
   	$get_code = "<div id=\"get_code\" style=\"clear:both;width:1024px;margin:10px auto;\"><p>Subject line: <input type=\"text\" size=\"120\" value=\"$subj_line_esc\" /></p><p>Newsletter code:</p><textarea cols=\"100\" rows=\"50\">$politics_code</textarea>";
-  	$html_file = $view_code. $subject_formatting . $politics . $get_code;
+  	$html_file = $html_headers . $view_code. $subject_formatting . $politics . $get_code . $html_footers;
   	$newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 16px; color: #000;\"><em>Political MoJo</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
   	break;
   case "food_for_thought_new":
@@ -370,7 +376,7 @@ switch($headlines_type) {
   	$fft_code = htmlspecialchars($fft_redesign);
   	$subj_line_esc = htmlspecialchars(stripslashes($subject_line));
   	$get_code = "<div id=\"get_code\" style=\"clear:both;width:1024px;margin:10px auto;\"><p>Subject line: <input type=\"text\" size=\"120\" value=\"$subj_line_esc\" /></p><p>Newsletter code:</p><textarea cols=\"100\" rows=\"50\">$fft_code</textarea>";
-  	$html_file = $view_code . $subject_formatting . $fft_redesign . $get_code;
+  	$html_file = $html_headers . $view_code . $subject_formatting . $fft_redesign . $get_code . $html_footers;
   	$newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 16px; color: #000;\"><em>Food for Thought</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
   	break;
   case "breaking_news":
@@ -379,7 +385,7 @@ switch($headlines_type) {
   	$bn_code = htmlspecialchars($breaking_news);
   	$subj_line_esc = htmlspecialchars(stripslashes($subject_line));
   	$get_code = "<div id=\"get_code\" style=\"clear:both;width:1024px;margin:10px auto;\"><p>Subject line: <input type=\"text\" size=\"120\" value=\"$subj_line_esc\" /></p><p>Newsletter code:</p><textarea cols=\"100\" rows=\"50\">$bn_code</textarea>";
-  	$html_file = $view_code . $subject_formatting . $breaking_news . $get_code;
+  	$html_file = $html_headers . $view_code . $subject_formatting . $breaking_news . $get_code . $html_footers;
   	$newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 16px; color: #000;\"><em>Breaking News</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
   	break;
 }
@@ -423,6 +429,7 @@ function cleanChars($wip) {
 	$wip = str_replace("—", "&#8212;", $wip);
 	$wip = str_replace("ﬁ", "fi", $wip);
 	$wip = str_replace("­", "", $wip);
+	$wip = str_replace("â€”", "–", $wip);
 
 	return $wip;
 }

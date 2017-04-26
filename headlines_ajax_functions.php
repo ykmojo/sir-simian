@@ -1,4 +1,5 @@
 <?php
+header("Content-Type: text/html;charset=UTF-8");
 include "credentials.inc";
 //ajax functions for headlines app
 
@@ -32,6 +33,7 @@ function retrieveArchive($arch_type, $arch_date) {
   $db_con = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbdb) or die("Can't connect to DB");
   $qry_string = sprintf("SELECT * FROM %s WHERE hed_date='%s'", $arch_type, $arch_date);
   $arch_qry = mysqli_query($db_con, $qry_string) or die("Can't run query" . mysqli_error($db_con));
+  mysql_query("set names 'utf8'");
   $data_return = "";
   $result = mysqli_fetch_assoc($arch_qry);
 

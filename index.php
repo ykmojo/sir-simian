@@ -1,4 +1,5 @@
 <?php
+header("Content-Type: text/html;charset=UTF-8");
 include "credentials.inc";
 $today = date("Y-m-d", time());
 ?>

@@ -1,5 +1,6 @@
 <?php
 /* econundrum template */
+header("Content-Type: text/html;charset=UTF-8");
 /* sections variables */
 $allowed_html = "<a><br><b><i><em><strong><span><ol><ul><li><blockquote><sup><sub><img><table><td><tr><p>";
 
@@ -510,7 +511,8 @@ $moremojo2_url = addslashes($moremojo2_url);
 $this_week = strip_tags(addslashes($this_week), "<i><em><b><strong>");
 $envirohealth_title = strip_tags(addslashes($envirohealth_title), "<i><em><b><strong>");
 $moremojo_title = strip_tags(addslashes($moremojo_title));
-$subject_line = addslashes(htmlspecialchars($subject_line));
+//$subject_line = addslashes(htmlspecialchars(utf8_encode($subject_line)));
+$subject_line = str_replace("â€”","–", $subject_line);
 $sub_code = addslashes($sub_code);
 $lift_note = addslashes($lift_note);
 $pixel_tracker = addslashes($pixel_tracker);
@@ -600,6 +602,7 @@ VALUES('$headlines_date',
 }
 //flush query and close db connections
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly". mysqli_error($db_connect));
+mysql_query("set names 'utf8'");
 mysqli_close($db_connect);
 /* end db section */
 ?>
