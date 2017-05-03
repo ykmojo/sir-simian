@@ -597,6 +597,7 @@ $fft_redesign = <<<FOODREDESIGN
                       <img src="http://assets.motherjones.com/newsletters/newsletter_test/fft-header.png" width="620" style="width: 100%;background-color: #000;color: #000;" />
                     </div>
                     <table width="580" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 580px;background-color: #fff;margin: 0 auto;padding: 0;text-align: left;">
+                       <tr>
                         <td>
                           <table width="540" border="0" cellspacing="0" cellpadding="0" align="center" style="width: 540px;max-width: 540px;background-color: #fff;margin: 5px auto;padding: 0;">
                           	<tr>
