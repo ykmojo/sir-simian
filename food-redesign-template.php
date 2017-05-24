@@ -4,10 +4,10 @@
 $allowed_html = "<a><br><b><i><em><strong><span><ol><ul><li><blockquote><sup><sub><img><table><td><tr><p>";
 
 if(isset($_REQUEST['fft_main_hed']) && $_REQUEST['fft_main_hed'] != "") {
-    $fft_main_hed = trim($_REQUEST['fft_main_hed']);
+	$fft_main_hed = trim($_REQUEST['fft_main_hed']);
 }
 else {
-    $fft_main_hed = "";
+	$fft_main_hed = "";
 }
 if(isset($_REQUEST['fft_main_hed_url']) && $_REQUEST['fft_main_hed_url'] != "") {
 	$fft_main_hed_url = trim($_REQUEST['fft_main_hed_url']);
@@ -17,7 +17,7 @@ else {
 }
 
 if(isset($_REQUEST['fft_main_img']) && $_REQUEST['fft_main_img'] != "") {
-    $fft_main_img = trim($_REQUEST['fft_main_img']);
+	$fft_main_img = trim($_REQUEST['fft_main_img']);
 }
 else {
 	$fft_main_img = "";
@@ -38,16 +38,16 @@ else {
 }
 
 if(isset($_REQUEST['fft_article_3']) && $_REQUEST['fft_article_3'] != "") {
-    $fft_article_3 = trim($_REQUEST['fft_article_3']);
+	$fft_article_3 = trim($_REQUEST['fft_article_3']);
 }
 else {
-    $fft_article_3 = "";
+	$fft_article_3 = "";
 }
 if(isset($_REQUEST['fft_article_4']) && $_REQUEST['fft_article_4'] != "") {
-    $fft_article_4 = trim($_REQUEST['fft_article_4']);
+	$fft_article_4 = trim($_REQUEST['fft_article_4']);
 }
 else {
-    $fft_article_4 = "";
+	$fft_article_4 = "";
 }
 
 if(isset($_REQUEST['fft_article_5']) && $_REQUEST['fft_article_5'] != "") {
@@ -105,10 +105,10 @@ else {
 }
 
 if(isset($_REQUEST['fft_bite_add']) && $_REQUEST['fft_bite_add'] != "") {
-    $fft_bite_add = trim($_REQUEST['fft_bite_add']);
+	$fft_bite_add = trim($_REQUEST['fft_bite_add']);
 }
 else {
-    $fft_bite_add = "";
+	$fft_bite_add = "";
 }
 
 if(isset($_REQUEST['fft_bite_link']) && $_REQUEST['fft_bite_link'] != "") {
@@ -119,10 +119,10 @@ else {
 }
 
 if(isset($_REQUEST['fft_ioe_item2']) && $_REQUEST['fft_ioe_item2'] != "") {
-    $fft_ioe_item2 = trim($_REQUEST['fft_ioe_item2']);
+	$fft_ioe_item2 = trim($_REQUEST['fft_ioe_item2']);
 }
 else {
-    $fft_ioe_item2 = "";
+	$fft_ioe_item2 = "";
 }
 
 if(isset($_REQUEST['fft_ioe_item3']) && $_REQUEST['fft_ioe_item3'] != "") {
@@ -173,10 +173,10 @@ $lead_in_bold = "<span style=\"font-family: Verdana, sans-serif;font-weight: bol
 $url_style = "<a style=\"color: #ff6900;\"";
 
 if($fft_main_hed_url != "" || $fft_main_hed_url != null) {
-  $main_title = "<h3 style=\"margin: 0 0 10px 0; padding: 0; font-family: 'Arial Black', sans-serif; font-weight: bold; color: #000;font-size: 38px;line-height:42px;clear:both;\"><a href=\"$fft_main_hed_url\" style=\"text-decoration: none;color: #000;\">$fft_main_hed</a></h3>";
+	$main_title = "<h3 style=\"margin: 0 0 10px 0; padding: 0; font-family: 'Arial Black', sans-serif; font-weight: bold; color: #000;font-size: 38px;line-height:42px;clear:both;\"><a href=\"$fft_main_hed_url\" style=\"text-decoration: none;color: #000;\">$fft_main_hed</a></h3>";
 }
 else {
-  $main_title = "<h3 style=\"margin: 0 0 10px 0; padding: 0; font-family: 'Arial Black', sans-serif; font-weight: bold; color: #000;font-size: 38px;line-height:42px;clear:both;\">$fft_main_hed</h3>";
+	$main_title = "<h3 style=\"margin: 0 0 10px 0; padding: 0; font-family: 'Arial Black', sans-serif; font-weight: bold; color: #000;font-size: 38px;line-height:42px;clear:both;\">$fft_main_hed</h3>";
 }
 
 if($fft_article_1 != "" || $fft_article_1 != null) {
@@ -410,11 +410,11 @@ $safe_rbt = "";
 
 //safe RBT
 if($liveintent_billboard || $liveintent_banner || $liveintent_billboard2) {
-$safe_rbt = <<<SAFERBT
+	$safe_rbt = <<<SAFERBT
 <table cellpadding="0" cellspacing="0" border="0" width="40" height="6"><tbody><tr><td><img src="http://li.motherjones.com/imp?s=68954&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68955&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68956&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68957&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68958&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68959&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68960&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68961&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68962&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68963&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68964&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=68965&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=123399312&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=123399313&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=123399314&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=123399315&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=123399316&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=123399317&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=123399318&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=123399319&sz=2x1&li=foodforthought&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td></tr></tbody></table>
 SAFERBT;
-
-$liveintent_toptags = <<<LIVETOP
+	
+	$liveintent_toptags = <<<LIVETOP
 <table align="center" cellpadding="0" cellspacing="0" border="0" width="768">
 	<tbody>
 		<tr>
@@ -428,8 +428,8 @@ $liveintent_toptags = <<<LIVETOP
 			</td>
 			<td valign="top" width="100%">
 LIVETOP;
-
-$liveintent_bottomtags = <<<LIVEBOTTOM
+	
+	$liveintent_bottomtags = <<<LIVEBOTTOM
 			</td>
 			<td align="left" valign="top" width="1">
 				<table border="0" cellpadding="0" cellspacing="0">
@@ -460,8 +460,8 @@ $liveintent_bottomtags = <<<LIVEBOTTOM
 	</tbody>
 </table>
 LIVEBOTTOM;
-
-$liveintnet_rba = <<<LIVERBA
+	
+	$liveintnet_rba = <<<LIVERBA
 <table cellpadding="0" cellspacing="0" border="0" width="24" height="6">
 	<tbody>
 		<tr>
@@ -597,7 +597,7 @@ $fft_redesign = <<<FOODREDESIGN
                       <img src="http://assets.motherjones.com/newsletters/newsletter_test/fft-header.png" width="620" style="width: 100%;background-color: #000;color: #000;" />
                     </div>
                     <table width="580" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 580px;background-color: #fff;margin: 0 auto;padding: 0;text-align: left;">
-                       <tr>
+                      <tr>
                         <td>
                           <table width="540" border="0" cellspacing="0" cellpadding="0" align="center" style="width: 540px;max-width: 540px;background-color: #fff;margin: 5px auto;padding: 0;">
                           	<tr>
@@ -734,7 +734,7 @@ $hidden_kitchen = strip_tags(addslashes($hidden_kitchen), "<a><br /><br><b><i><e
 $fft_hk_leadin = strip_tags(addslashes($fft_hk_leadin), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
 $fft_hidden_kitchen = strip_tags(addslashes($fft_hidden_kitchen), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td><p>");
 $lift_note = strip_tags(addslashes($lift_note), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td><p>");
-$subject_line = addslashes(str_replace("â€”","–", $subject_line), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$subject_line = strip_tags(addslashes(str_replace("â€”","–", $subject_line)), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
 $sub_url = addslashes($sub_url);
 $sub_image = addslashes($sub_image);
 $sub_text = strip_tags(addslashes($sub_text), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
@@ -754,95 +754,95 @@ $pixel_tracker2 = addslashes($pixel_tracker2);
 $check_existing = "SELECT id, hed_date FROM food_for_thought_redesign WHERE hed_date='$headlines_date'";
 $existing_qry = mysqli_query($db_connect, $check_existing) or die("Can't run query now");
 if(mysqli_num_rows($existing_qry) > 0) {
-    $exists = true;
+	$exists = true;
 }
 else {
-    $exists = false;
+	$exists = false;
 }
 
 //if data exists, update, otherwise insert data
 if($exists) {
-$run_qry = "UPDATE food_for_thought_redesign
-  SET hed_date = '$headlines_date',
-fft_main_hed = '$fft_main_hed',
-fft_main_hed_url = '$fft_main_hed_url',
-fft_main_img = '$fft_main_img',
-fft_article_1 = '$fft_article_1',
-fft_article_2 = '$fft_article_2',
-fft_article_3 = '$fft_article_3',
-fft_article_4 = '$fft_article_4',
-fft_article_5 = '$fft_article_5',
-fft_article_6 = '$fft_article_6',
-snack_box = '$snack_box',
-fft_snack_box = '$fft_snack_box',
-fft_sb_image = '$fft_sb_image',
-fft_sb_attr = '$fft_sb_attr',
-in_our_ears = '$in_our_ears',
-fft_ioe_item1 = '$fft_ioe_item1',
-fft_bite_add = '$fft_bite_add',
-fft_bite_link = '$fft_bite_link',
-fft_ioe_item2 = '$fft_ioe_item2',
-fft_ioe_item3 = '$fft_ioe_item3',
-hidden_kitchen = '$hidden_kitchen',
-fft_hk_leadin = '$fft_hk_leadin',
-fft_hidden_kitchen = '$fft_hidden_kitchen',
-subject_line = '$subject_line',
-ad_name = '$advertiser_name',
-ad_billboard = '$billboard_image',
-ad_link_bill = '$billboard_url',
-ad_name2 = '$advertiser_name2',
-ad_link_banner = '$billboard_url2',
-ad_banner = '$billboard_image2',
-sub_url = '$sub_url',
-sub_image = '$sub_image',
-sub_text = '$sub_text',
-sub_code = '$sub_code',
-membership_slot = '$membership_slot',
-lift_note = '$lift_note',
-pixel_tracker = '$pixel_tracker',
-pixel_tracker2 = '$pixel_tracker2'
-WHERE hed_date='$headlines_date'";
+	$run_qry = "UPDATE food_for_thought_redesign
+	SET hed_date = '$headlines_date',
+	fft_main_hed = '$fft_main_hed',
+	fft_main_hed_url = '$fft_main_hed_url',
+	fft_main_img = '$fft_main_img',
+	fft_article_1 = '$fft_article_1',
+	fft_article_2 = '$fft_article_2',
+	fft_article_3 = '$fft_article_3',
+	fft_article_4 = '$fft_article_4',
+	fft_article_5 = '$fft_article_5',
+	fft_article_6 = '$fft_article_6',
+	snack_box = '$snack_box',
+	fft_snack_box = '$fft_snack_box',
+	fft_sb_image = '$fft_sb_image',
+	fft_sb_attr = '$fft_sb_attr',
+	in_our_ears = '$in_our_ears',
+	fft_ioe_item1 = '$fft_ioe_item1',
+	fft_bite_add = '$fft_bite_add',
+	fft_bite_link = '$fft_bite_link',
+	fft_ioe_item2 = '$fft_ioe_item2',
+	fft_ioe_item3 = '$fft_ioe_item3',
+	hidden_kitchen = '$hidden_kitchen',
+	fft_hk_leadin = '$fft_hk_leadin',
+	fft_hidden_kitchen = '$fft_hidden_kitchen',
+	subject_line = '$subject_line',
+	ad_name = '$advertiser_name',
+	ad_billboard = '$billboard_image',
+	ad_link_bill = '$billboard_url',
+	ad_name2 = '$advertiser_name2',
+	ad_link_banner = '$billboard_url2',
+	ad_banner = '$billboard_image2',
+	sub_url = '$sub_url',
+	sub_image = '$sub_image',
+	sub_text = '$sub_text',
+	sub_code = '$sub_code',
+	membership_slot = '$membership_slot',
+	lift_note = '$lift_note',
+	pixel_tracker = '$pixel_tracker',
+	pixel_tracker2 = '$pixel_tracker2'
+	WHERE hed_date='$headlines_date'";
 }
 else {
-$run_qry = "INSERT INTO food_for_thought_redesign(hed_date,fft_main_hed,fft_main_hed_url,fft_main_img,fft_article_1,fft_article_2,fft_article_3,fft_article_4,fft_article_5,fft_article_6,snack_box,fft_snack_box,fft_sb_image,fft_sb_attr,in_our_ears,fft_ioe_item1,fft_bite_add,fft_bite_link,fft_ioe_item2,fft_ioe_item3,hidden_kitchen,fft_hk_leadin,fft_hidden_kitchen,subject_line,ad_name,ad_billboard,ad_link_bill,ad_name2,ad_link_banner,ad_banner,sub_url,sub_image,sub_text,sub_code,membership_slot,lift_note,pixel_tracker,pixel_tracker2)
-VALUES('$headlines_date',
-'$fft_main_hed',
-'$fft_main_hed_url',
-'$fft_main_img',
-'$fft_article_1',
-'$fft_article_2',
-'$fft_article_3',
-'$fft_article_4',
-'$fft_article_5',
-'$fft_article_6',
-'$snack_box',
-'$fft_snack_box',
-'$fft_sb_image',
-'$fft_sb_attr',
-'$in_our_ears',
-'$fft_ioe_item1',
-'$fft_bite_add',
-'$fft_bite_link',
-'$fft_ioe_item2',
-'$fft_ioe_item3',
-'$hidden_kitchen',
-'$fft_hk_leadin',
-'$fft_hidden_kitchen',
-'$subject_line',
-'$advertiser_name',
-'$billboard_image',
-'$billboard_url',
-'$advertiser_name2',
-'$billboard_url2',
-'$billboard_image2',
-'$sub_url',
-'$sub_image',
-'$sub_text',
-'$sub_code',
-'$membership_slot',
-'$lift_note',
-'$pixel_tracker',
-'$pixel_tracker2')";
+	$run_qry = "INSERT INTO food_for_thought_redesign(hed_date,fft_main_hed,fft_main_hed_url,fft_main_img,fft_article_1,fft_article_2,fft_article_3,fft_article_4,fft_article_5,fft_article_6,snack_box,fft_snack_box,fft_sb_image,fft_sb_attr,in_our_ears,fft_ioe_item1,fft_bite_add,fft_bite_link,fft_ioe_item2,fft_ioe_item3,hidden_kitchen,fft_hk_leadin,fft_hidden_kitchen,subject_line,ad_name,ad_billboard,ad_link_bill,ad_name2,ad_link_banner,ad_banner,sub_url,sub_image,sub_text,sub_code,membership_slot,lift_note,pixel_tracker,pixel_tracker2)
+	VALUES('$headlines_date',
+	'$fft_main_hed',
+	'$fft_main_hed_url',
+	'$fft_main_img',
+	'$fft_article_1',
+	'$fft_article_2',
+	'$fft_article_3',
+	'$fft_article_4',
+	'$fft_article_5',
+	'$fft_article_6',
+	'$snack_box',
+	'$fft_snack_box',
+	'$fft_sb_image',
+	'$fft_sb_attr',
+	'$in_our_ears',
+	'$fft_ioe_item1',
+	'$fft_bite_add',
+	'$fft_bite_link',
+	'$fft_ioe_item2',
+	'$fft_ioe_item3',
+	'$hidden_kitchen',
+	'$fft_hk_leadin',
+	'$fft_hidden_kitchen',
+	'$subject_line',
+	'$advertiser_name',
+	'$billboard_image',
+	'$billboard_url',
+	'$advertiser_name2',
+	'$billboard_url2',
+	'$billboard_image2',
+	'$sub_url',
+	'$sub_image',
+	'$sub_text',
+	'$sub_code',
+	'$membership_slot',
+	'$lift_note',
+	'$pixel_tracker',
+	'$pixel_tracker2')";
 }
 //flush query and close db connections
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly". mysqli_error($db_connect));
