@@ -457,10 +457,10 @@ $mobile_styles
     <tr>
         <td style="$news_main_logo" align="center">
             <img src="http://assets.motherjones.com/newsletters/images/politicalmojo_header_3.png" alt="Political MoJo" style="width:600px;border:none !important;" border="0" />
-				</td>
+		</td>
     </tr>
     <tr>
-				<td align="left" valign="top" style="$section_title">$topstory_title</td>
+		<td align="left" valign="top" style="$section_title">$topstory_title</td>
     </tr>
     <tr>
         <td style="$standard_td">
@@ -489,7 +489,7 @@ $mobile_styles
             <br />
         </td>
     </tr>
-		$mostread_section
+	$mostread_section
     <tr>
         <td align="center" style="$no_top_pad20">
             <br />
@@ -500,10 +500,10 @@ $mobile_styles
     </tr>
     <tr>
         <td class="no_top_pad" align="center" style="$no_top_pad20">
-				<br />
-				<hr style="$separator_border" />
+			<br />
+			<hr style="$separator_border" />
         	$global_footer
-					<br />
+			<br />
         </td>
     </tr>
 </table>

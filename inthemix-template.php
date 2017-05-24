@@ -457,10 +457,10 @@ $mobile_styles
     <tr>
         <td style="$news_main_logo" align="center">
             <img src="http://assets.motherjones.com/newsletters/images/inthemix-header-new-2017.png" alt="In the Mix" style="width:600px;border: none !important;" border="0" />
-				</td>
+		</td>
     </tr>
     <tr>
-				<td align="left" valign="top" style="$section_title">$twmustread_title</td>
+		<td align="left" valign="top" style="$section_title">$twmustread_title</td>
     </tr>
     <tr>
         <td style="$standard_td">
@@ -479,17 +479,17 @@ $mobile_styles
             $billboard_ad
         </td>
     </tr>
-		$morefrommix_section
+	$morefrommix_section
     <tr>
         <td align="center" style="$no_top_pad20">
-        		<br />
-        		<hr style="$separator_border" />
+        	<br />
+        	<hr style="$separator_border" />
             <br />
             $small_sub_ad
             <br />
         </td>
     </tr>
-		$fromarchive_section
+	$fromarchive_section
     <tr>
         <td align="center" style="$no_top_pad20">
             <hr style="$separator_border" />
@@ -500,10 +500,10 @@ $mobile_styles
     </tr>
     <tr>
         <td class="no_top_pad" align="center" style="$no_top_pad20">
-				<br />
-				<hr style="$separator_border" />
+			<br />
+			<hr style="$separator_border" />
         	$global_footer
-					<br />
+			<br />
         </td>
     </tr>
 </table>

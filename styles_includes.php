@@ -3,7 +3,7 @@
 //updated for new headlines 3/25/2015
 $main_div = "background-color: #e7e7e7;";
 $date_style = "font-size:14px;line-height:18px;text-align:right;color:#767676;text-decoration:none !important;";
-$main_table_styles = "width: 640px !important;background-color: #fff;";
+$main_table_styles = "Margin:0 auto;width: 640px;max-width:640px;background-color: #fff;";
 $news_main_logo = "background-color:#fff;padding: 0 !important;";
 $news_title_td = "padding: 10px 20px 0 20px !important;text-transform: uppercase;font-family: Arial,Helvetica,sans-serif;font-size: 2.0em;font-weight: 800;";
 $new_tag_line = "color: #969696;font-family: Georgia,Helvetica,Arial,sans-serif;font-size: .50em;font-style: italic;font-weight: 400;text-align: right;";

@@ -429,29 +429,30 @@ $econundrum = <<<ECO
 $mobile_styles
 </div>
 <div style="$main_div" id="main_background">
-<table id="table_content" style="$main_table_styles" width="640" align="center" cellpadding="5" cellspacing="0" border="0">$lift_note_section
+<table id="table_content" style="$main_table_styles" width="640" align="center" cellpadding="5" cellspacing="0" border="0">
+	$lift_note_section
     <tr>
         <td style="$news_main_logo" align="center">
             <img src="http://assets.motherjones.com/newsletters/images/econ_header_3.png" alt="Econundrums" style="width:600px;border: none !important;" width="600" height="230" border="0" />
-				</td>
+		</td>
     </tr>
     <tr>
-				<td align="left" valign="top" style="$section_title">$this_week</td>
+		<td align="left" valign="top" style="$section_title">$this_week</td>
     </tr>
     <tr>
         <td class="standard_td" style="$standard_td">
             <a id="main_art_hed" href="$conun_url" style="$hed_styles_main" name="$conun_hed_anchor">$conun_hed</a>
             <div id="main_article" style="margin-top:5px;">
             	<span id="dek_font_size" style="$dek_style">$conun_dek</span>
-						</div>
+			</div>
             <sup><a id="read_more" href="$conun_url" style="$read_more">[READ MORE]</a></sup> <sub><a href="http://www.facebook.com/sharer/sharer.php?u=$conun_url" name="$conun_hed_anchor_fb">$facebook_icon</a>\n<a href="http://twitter.com/intent/tweet?url=$conun_url&text=$conun_hed_enc&via=MotherJones" target=\"_blank\" name="$conun_hed_anchor_tt">$twitter_icon</a></sub>
         </td>
     </tr>
     <tr>
         <td class="no_top_pad" align="center" style="$no_top_pad20">
-        		<br />
-						<hr style="$separator_border" />
-						<br />
+        	<br />
+			<hr style="$separator_border" />
+			<br />
             <span style="$ad_style">&#8212;Advertisement&#8212;</span>
             $billboard_ad
         </td>
@@ -469,19 +470,19 @@ $mobile_styles
 		$moremojo_section
     <tr>
         <td class="no_top_pad" align="center" style="$no_top_pad20">
-        		<br />
-						<hr style="$separator_border" />
-						<br />
+        	<br />
+			<hr style="$separator_border" />
+			<br />
             <span style="$ad_style">&#8212;Advertisement&#8212;</span>
             $billboard_ad2
         </td>
     </tr>
     <tr>
         <td class="no_top_pad" align="center" style="padding:0;">
-				<br />
-				<hr style="$separator_border" />
+			<br />
+			<hr style="$separator_border" />
         	$global_footer
-					<br />
+			<br />
         </td>
     </tr>
 </table>
