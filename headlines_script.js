@@ -71,6 +71,12 @@ function getTypeImg(type_img) {
       the_link = "http://www.motherjones.com";
       day_int = 1;
       break;
+    case "trumpocracy":
+      theImg = "images/trumpocracy-updated-052317.png";
+      section = "trumpocracy";
+      the_link = "http://www.motherjones.com";
+      day_int = 0;
+      break;
     default:
       theImg = "false";
       break;

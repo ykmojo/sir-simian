@@ -17,7 +17,7 @@ $today = date("Y-m-d", time());
   CKEDITOR.config.customConfig = 'custom-config.js';
     function makeEditor(numId) {
       var editor_height = 0;
-      if(numId == "conundrum_dek" || numId == "maindish_dek" || numId == "twmustread_dek" || numId == "topstory_dek" || numId == "fft_hidden_kitchen" || numId == "fft_ioe_item1" || numId == "fft_ioe_item2" || numId == "fft_ioe_item3" || numId == "lift_note" || numId == "main_text") {
+      if(numId == "conundrum_dek" || numId == "maindish_dek" || numId == "twmustread_dek" || numId == "topstory_dek" || numId == "fft_hidden_kitchen" || numId == "fft_ioe_item1" || numId == "fft_ioe_item2" || numId == "fft_ioe_item3" || numId == "lift_note" || numId == "main_text" || numId == "trum_main_dek" || numId == "trump_main2_dek") {
           CKEDITOR.replace(numId, {
               width: 470,
               height: 200
@@ -35,7 +35,7 @@ $today = date("Y-m-d", time());
              //console.log(clean_text);
           });
       }
-      else if(numId == "fft_article_1" || numId == "fft_article_2" || numId == "fft_article_3" || numId == "fft_article_4" || numId == "fft_article_5" || numId == "fft_article_6" || numId == "fft_snack_box" || numId == "fft_sb_attr" || numId == "fft_hk_leadin" || numId == "fft_bite_add" || numId == "membership_slot") {
+      else if(numId == "fft_article_1" || numId == "fft_article_2" || numId == "fft_article_3" || numId == "fft_article_4" || numId == "fft_article_5" || numId == "fft_article_6" || numId == "fft_snack_box" || numId == "fft_sb_attr" || numId == "fft_hk_leadin" || numId == "fft_bite_add" || numId == "membership_slot" || numId == "topnews1_dek" || numId == "topnews2_dek" || numId == "topnews3_dek" || numId == "topnews4_dek" || numId == "topnews5_dek" || numId == "wors1_dek" || numId == "wors2_dek" || numId == "wors3_dek" || numId == "wors4_dek") {
           CKEDITOR.replace(numId, {
               width: 470,
               height: 100
@@ -77,6 +77,7 @@ $today = date("Y-m-d", time());
         			<option value="food_for_thought_redesign">Food for Thought Redesign</option>
         			<option value="in_the_mix_new">In The Mix</option>
         			<option value="political_mojo_new">Political Mojo</option>
+        			<option value="trumpocracy">Trumpocracy</option>
       			</select>
       			</p>
         		<p>Headlines archives:

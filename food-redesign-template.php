@@ -9,6 +9,7 @@ if(isset($_REQUEST['fft_main_hed']) && $_REQUEST['fft_main_hed'] != "") {
 else {
 	$fft_main_hed = "";
 }
+
 if(isset($_REQUEST['fft_main_hed_url']) && $_REQUEST['fft_main_hed_url'] != "") {
 	$fft_main_hed_url = trim($_REQUEST['fft_main_hed_url']);
 }
@@ -43,6 +44,7 @@ if(isset($_REQUEST['fft_article_3']) && $_REQUEST['fft_article_3'] != "") {
 else {
 	$fft_article_3 = "";
 }
+
 if(isset($_REQUEST['fft_article_4']) && $_REQUEST['fft_article_4'] != "") {
 	$fft_article_4 = trim($_REQUEST['fft_article_4']);
 }
@@ -56,6 +58,7 @@ if(isset($_REQUEST['fft_article_5']) && $_REQUEST['fft_article_5'] != "") {
 else {
 	$fft_article_5 = "";
 }
+
 if(isset($_REQUEST['fft_article_6']) && $_REQUEST['fft_article_6'] != "") {
 	$fft_article_6 = trim($_REQUEST['fft_article_6']);
 }
@@ -83,6 +86,7 @@ if(isset($_REQUEST['fft_sb_image']) && $_REQUEST['fft_sb_image'] != "") {
 else {
 	$fft_sb_image = "";
 }
+
 if(isset($_REQUEST['fft_sb_attr']) && $_REQUEST['fft_sb_attr'] != "") {
 	$fft_sb_attr = trim($_REQUEST['fft_sb_attr']);
 }
@@ -131,6 +135,7 @@ if(isset($_REQUEST['fft_ioe_item3']) && $_REQUEST['fft_ioe_item3'] != "") {
 else {
 	$fft_ioe_item3 = "";
 }
+
 if(isset($_REQUEST['hidden_kitchen']) && $_REQUEST['hidden_kitchen'] != "") {
 	$hidden_kitchen = trim($_REQUEST['hidden_kitchen']);
 }

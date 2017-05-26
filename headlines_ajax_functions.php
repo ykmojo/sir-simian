@@ -74,9 +74,6 @@ function createDivs($section) {
     case "econundrums_new":
       	$get_divs = econundrum();
       	break;
-    case "food_for_thought_new":
-      	$get_divs = food();
-      	break;
     case "food_for_thought_redesign":
     	$get_divs = fft_redesign();
     	break;
@@ -89,6 +86,8 @@ function createDivs($section) {
 	case "breaking_news":
 		$get_divs = breaking_news();
 		break;
+	case "trumpocracy":
+		$get_divs = trumpocracy();
     default:
   }
 
@@ -189,57 +188,6 @@ $econundrum = <<<ECONUNDRUM
 ECONUNDRUM;
 
 return $econundrum;
-}
-
-//Food for Thought
-function food() {
-$food = <<<FOOD
-<div class="head_types">
-  <div class="columns">
-    <div id="items_left">
-			<h3>Main Article</h3>
-      <h4><input type="text" class="section_titles" id="maindish_title" name="maindish_title" value="This Week's Main Dish" onfocus="checkHedDate()" /></h4>
-      <div class="sections">
-        <p>Headline: <input type="text" id="maindish_hed" name="maindish_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-        <p>Url: <input type="text" id="maindish_url" name="maindish_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
-        <p class="dek_sect">Body Text:</p>
-        <textarea rows="15" cols="45" id="maindish_dek" name="maindish_dek" onfocus="checkHedDate()"></textarea>
-      </div>
-    </div>
-  </div>
-	<div class="columns">
-		<div id="items_right">
-      <h3>Section 2</h3>
-			<h4><input type="text" class="section_titles" id="sidedish_title" name="sidedish_title" value="Side Dishes" onfocus="checkHedDate()" /></h4>
-      <div class="sections">
-        <p>Headline 1: <input type="text" id="sidedish_hed" name="sidedish_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-        <p>Url 1: <input type="text" id="sidedish_url" name="sidedish_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
-      </div>
-      <div class="sections">
-        <p>Headline 2: <input type="text" id="sidedish2_hed" name="sidedish2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-        <p>Url 2: <input type="text" id="sidedish2_url" name="sidedish2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
-      </div>
-      <div class="sections">
-        <p>Headline 3: <input type="text" id="sidedish3_hed" name="sidedish3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-        <p>Url 3: <input type="text" id="sidedish3_url" name="sidedish3_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
-      </div>
-			
-			<h3>Bottom Section</h3>
-			<h4><input type="text" class="section_titles" id="moremojo_title" name="moremojo_title" value="More From MoJo" onfocus="checkHedDate()" /></h4>
-			<div class="sections">
-        <p>Headline 1: <input type="text" id="moremojo_hed" name="moremojo_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-        <p>Url 1: <input type="text" id="moremojo_url" name="moremojo_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
-      </div>
-			<div class="sections">
-        <p>Headline 2: <input type="text" id="moremojo2_hed" name="moremojo2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-        <p>Url 2: <input type="text" id="moremojo2_url" name="moremojo2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
-      </div>
-		</div>
-	</div>
-</div>
-FOOD;
-
-return $food;
 }
 
 //Food for Thought Redesign
@@ -408,6 +356,86 @@ $political = <<<POLITICAL
 POLITICAL;
 
 return $political;
+}
+
+function trumpocracy() {
+$trumpocracy = <<<TRUMP
+<div class="head_types">
+	<div class="columns">
+		<div id="items_left">
+			<fieldset>
+			<legend>Main Article</legend>
+			<div class="sections">
+				<p>Headline: <input type="text" id="trump_main_hed" name="trump_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+				<p>Url: <input type="text" id="trum_main_url" name="trum_main_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+				<p class="dek_sect">Dek:</p>
+				<textarea rows="15" cols="45" id="trum_main_dek" name="trum_main_dek" onfocus="checkHedDate()"></textarea>
+			</div>
+			</fieldset>
+
+			<fieldset>
+			<legend><input type="text" class="section_titles" id="topnews_title" name="topnews_title" value="TOP NEWS" onfocus="checkHedDate()" /></legend>
+			<div class="sections">
+				<p>Headline 1:</p>
+				<textarea id="topnews1_dek" name="topnews1_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			<div class="sections">
+				<p>Headline 2:</p>
+				<textarea id="topnews2_dek" name="topnews2_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			<div class="sections">
+				<p>Headline 3:</p>
+				<textarea id="topnews3_dek" name="topnews3_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			<div class="sections">
+				<p>Headline 4:</p>
+				<textarea id="topnews4_dek" name="topnews4_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			<div class="sections">
+				<p>Headline 5:</p>
+				<textarea id="topnews5_dek" name="topnews5_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			</fieldset>
+		</div>
+	</div>
+	<div class="columns">
+		<div id="items_right">
+			<fieldset>
+			<legend>Second Main Article</legend>
+			<div class="sections">
+				<p>Headline: <input type="text" id="trump_main2_hed" name="trump_main2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+				<p>Url: <input type="text" id="trump_main2_url" name="trump_main2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Image: <input type="text" id="trump_main2_img" name="trump_main2_img" size="50" onblur="this.value=fixURL(this.value)" /></p>
+				<p class="dek_sect">Dek:</p>
+				<textarea rows="15" cols="45" id="trump_main2_dek" name="trump_main2_dek" onfocus="checkHedDate()"></textarea>
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend><input type="text" class="section_titles" id="wors_title" name="wors_title" value="What Others are Saying" onfocus="checkHedDate()" /></legend>
+			<div class="sections">
+				<p>Headline 1:</p>
+				<textarea id="wors1_dek" name="wors1_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			<div class="sections">
+				<p>Headline 2:</p>
+				<textarea id="wors2_dek" name="wors2_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			<div class="sections">
+				<p>Headline 3:</p>
+				<textarea id="wors3_dek" name="wors3_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			<div class="sections">
+				<p>Headline 4:</p>
+				<textarea id="wors4_dek" name="wors4_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+			</div>
+			</fieldset>
+		</div>
+	</div>
+</div>
+TRUMP;
+
+return $trumpocracy;
 }
 
 function getArchives($type, $date) {
