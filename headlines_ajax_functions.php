@@ -368,8 +368,10 @@ $trumpocracy = <<<TRUMP
 			<div class="sections">
 				<p>Headline: <input type="text" id="trump_main_hed" name="trump_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
 				<p>Url: <input type="text" id="trum_main_url" name="trum_main_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
+				<p>Image url: <input type="text" id="trump_main_img" size="50" onblur="this.value=fixURL(this.value)" /></p>
 				<p class="dek_sect">Dek:</p>
 				<textarea rows="15" cols="45" id="trum_main_dek" name="trum_main_dek" onfocus="checkHedDate()"></textarea>
+				<p class="sources"><fieldset style="float:left;width:50%;clear:both;"><legend>Source name</legend> <input type="text" id="trump_main_source" name="trump_main_source" style="width:95%;" onblur="this.value=fixURL(this.value)"></fieldset> <fieldset style="float:left;width:25%;"><legend>Italicize source?</legend> <input type="checkbox" id="trump_main_ital" name="trump_main_ital" style="float:left;"></fieldset></p>
 			</div>
 			</fieldset>
 

@@ -24,6 +24,27 @@ else {
 	$trum_main_dek = "";
 }
 
+if(isset($_REQUEST['trump_main_img']) && $_REQUEST['trump_main_img'] != "") {
+	$trump_main_img = trim($_REQUEST['trump_main_img']);
+}
+else {
+	$trump_main_img = "";
+}
+
+if(isset($_REQUEST["trump_main_source"]) && $_REQUEST["trump_main_source"] != "") {
+	$trump_main_source = trim($_REQUEST["trump_main_source"]);
+}
+else {
+	$trump_main_source = "";
+}
+
+if(isset($_REQUEST["trump_main_ital"]) && $_REQUEST["trump_main_ital"] !== "") {
+	$trump_main_ital = ($_REQUEST["trump_main_ital"]);
+}
+else {
+	$trump_main_ital = "";
+}
+
 if(isset($_REQUEST['trump_main2_hed']) && $_REQUEST['trump_main2_hed'] != "") {
 	$trump_main2_hed = strip_tags(trim($_REQUEST['trump_main2_hed']),$allowed_html);
 }
@@ -140,14 +161,62 @@ $url_style = "<a style=\"color: #ff6900;\"";
 
 if($trum_main_url !== "" || $trum_main_url !== null) {
 	$main_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\"><a href=\"$trum_main_url\" style=\"text-decoration: none;color: #000;\">$trump_main_hed</a></h3>";
+	$trump_main_source_format = "<a href=\"$trum_main_url\" style=\"color:#ff6900;\">$trump_main_source</a>";
 }
 else {
 	$main_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\">$trump_main_hed</h3>";
+	$trump_main_source_format = $trump_main_source;
+}
+
+if($trump_main_img !== "" || $trump_main_img !== null) {
+	$main_img_sec = "<tr>\n\t<td align=\"center\" style=\"line-height:0;\">\n\t<img src=\"http://assets.motherjones.com/newsletters/newsletter_test/trump-main-test.jpg\" style=\"Margin: 0 auto;width:100%;max-width: 100%; height: auto;\" width=\"540\" alt=\"Trumpocracy\" />\n\t</td>\n\t</tr>\n";
+}
+else {
+	$main_img_sec = "";
 }
 
 $main_dek_p = "<p style=\"color: #767676;font-family:Georgia, serif;font-size: 16px; line-height: 21px;\">";
 $trum_main_dek = str_replace("<p>", $main_dek_p, $trum_main_dek);
 $trum_main_dek = str_replace("<a", $url_style, $trum_main_dek);
+//add source name & url
+$get_last_p = strripos($trum_main_dek, "</p>");
+$get_substr = substr($trum_main_dek, 0, $get_last_p);
 
-$main_section = $main_hed . "\n" . $trum_main_dek . "\n";
+if($trump_main_source !== "" || $trump_main_source !== null) {
+	if($trump_main_ital) {
+		$trum_main_dek = $get_substr . " (<em>$trump_main_source_format</em>)</p>\n";
+	}
+	else {
+		$trum_main_dek = $get_substr . " ($trump_main_source_format)</p>\n";
+	}
+}
+
+$main_section = $main_img_sec . "<tr>\n\t<td style=\"border-bottom: 1px solid #767676;\">\n\t" . $main_hed . "\n\t" . $trum_main_dek . "\n\t</td>\n\t</tr>\n";
+//end main article section
+
+//Secondary main article section
+$main2_section = "";
+$main2_opener = "<tr>\n\t<td style=\"display:inline-block;border-bottom: 1px solid #767676;\">\n\t<!--[if (gte mso 9)|(IE)]>\n\t<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\">\n\t<tr>\n\t<td width=\"200\">\n\t<![endif]-->\n";
+$main2_closer = "<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t</tr>\n\t</table>\n\t<![endif]-->\n\t</td>\n\t</tr>";
+
+$main2_img_sec = "";
+
+if($trump_main2_img !== "" || $trump_main2_img!== null) {
+	$main2_img_sec = "<table class=\"narrow\" align=\"left\" style=\"width:33%;max-width:100%;margin-bottom: 20px;margin-top:10px;vertical-align:top;\">\n\t<tr><td valign=\"top\">\n\t<img src=\"$trump_main2_img\" width=\"270\" style=\"max-width:100%;width:100%;\" />\n\t</td>\n\t</tr>\n\t</table>";
+}
+else {
+	$main2_img_sec = "";
+}
+
+$main2_text_sec = "";
+
+if($trump_main2_url !== "" || $trump_main2_url !== null) {
+	
+}
+
+$main2_p = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px; font-weight:bold;\">";
+$trump_main2_dek = str_replace("<p>", $main2_p, $trump_main2_dek);
+$trump_main2_dek = str_replace("<a", $url_style, $trump_main2_dek);
+
+//end secondary main article section
 ?>
