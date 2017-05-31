@@ -73,6 +73,20 @@ else {
 	$trump_main2_dek = "";
 }
 
+if(isset($_REQUEST["trump_main2_source"]) && $_REQUEST["trump_main2_source"] != "") {
+	$trump_main2_source = trim($_REQUEST["trump_main2_source"]);
+}
+else {
+	$trump_main2_source = "";
+}
+
+if(isset($_REQUEST["trump_main2_ital"]) && $_REQUEST["trump_main2_ital"] != "") {
+	$trump_main2_ital = trim($_REQUEST["trump_main2_ital"]);
+}
+else {
+	$trump_main2_ital = "";
+}
+
 if(isset($_REQUEST['topnews_title']) && $_REQUEST['topnews_title'] != "") {
 	$topnews_title = trim($_REQUEST['topnews_title']);
 }
@@ -184,14 +198,14 @@ $get_substr = substr($trum_main_dek, 0, $get_last_p);
 
 if($trump_main_source !== "" || $trump_main_source !== null) {
 	if($trump_main_ital) {
-		$trum_main_dek = $get_substr . " (<em>$trump_main_source_format</em>)</p>\n";
+		$trum_main_dek_cat = $get_substr . " (<em>$trump_main_source_format</em>)</p>\n";
 	}
 	else {
-		$trum_main_dek = $get_substr . " ($trump_main_source_format)</p>\n";
+		$trum_main_dek_cat = $get_substr . " ($trump_main_source_format)</p>\n";
 	}
 }
 
-$main_section = $main_img_sec . "<tr>\n\t<td style=\"border-bottom: 1px solid #767676;\">\n\t" . $main_hed . "\n\t" . $trum_main_dek . "\n\t</td>\n\t</tr>\n";
+$main_section = $main_img_sec . "<tr>\n\t<td style=\"border-bottom: 1px solid #767676;\">\n\t" . $main_hed . "\n\t" . $trum_main_dek_cat . "\n\t</td>\n\t</tr>\n";
 //end main article section
 
 //Secondary main article section
@@ -209,14 +223,35 @@ else {
 }
 
 $main2_text_sec = "";
+$main2_hed = "";
 
 if($trump_main2_url !== "" || $trump_main2_url !== null) {
-	
+	$main2_hed = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px; font-weight:bold;\"><a href=\"$trump_main2_url\" style=\"color:#000;text-decoration:none;\">" . $trump_main2_hed . "</a></p>";
+}
+else {
+	$main2_hed = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px; font-weight:bold;\">" . $trump_main2_hed . "</p>";
 }
 
 $main2_p = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px; font-weight:bold;\">";
 $trump_main2_dek = str_replace("<p>", $main2_p, $trump_main2_dek);
 $trump_main2_dek = str_replace("<a", $url_style, $trump_main2_dek);
+//add source name & url
+$get_last_p = strripos($trump_main2_dek, "</p>");
+$get_substr = substr($trump_main2_dek, 0, $get_last_p);
 
+if($trump_main2_source !== "" || $trump_main2_source !== null) {
+	if($trump_main2_ital) {
+		$trump_main2_dek_cat = $get_substr . " (<em>$trump_main2_source</em>)</p>\n";
+	}
+	else {
+		$trump_main2_dek_cat = $get_substr . " ($trump_main2_source)</p>\n";
+	}
+}
+
+$main2_text_sec = "<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t<td>\n\t<![endif]-->\n\t<table class=\"wide\" align=\"left\" style=\"max-width:65%;margin-bottom: 20px;margin-top: 10px;vertical-align:top;\">\n\t<tr>\n\t<td valign=\"top\">" . $main2_hed . $trump_main2_dek_cat . "</td>\n\t</tr>\n\t</table>\n\t<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t</tr>\n\t</table>";
+
+$main2_section = $main2_opener . $main2_img_sec . $main2_text_sec . $main2_closer;
 //end secondary main article section
+
+
 ?>

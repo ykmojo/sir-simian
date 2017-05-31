@@ -10,6 +10,10 @@ input {margin:2px 0px 2px 5px;
 input:disabled {background-color:#999;}
 h4 {margin:10px 0 3px 0;
 	clear: both;}
+fieldset {margin:0 auto;
+	border: none;}
+textarea {margin-bottom: 10px;
+	padding-bottom:10px;}
 #main_container {margin:0 auto;
   width:1080px;}
 #header {margin:5px auto;
@@ -60,10 +64,7 @@ h4 {margin:10px 0 3px 0;
   text-align:left;
   font-weight:bold;
   font-size:14px;}
-.section_titles {margin:10px 10px;
-	font-size:18px;
-	width:350px;
-	float:left;
+.section_titles {font-size:18px;
 	clear:both;
 }
 /*for ads*/
@@ -90,9 +91,16 @@ h4 {margin:10px 0 3px 0;
   /*text-align:right;*/
   clear:both;}
 .sections {margin:2px 2px;
-  width:475px;
+  width:485px;
   padding:5px 5px;
-  border:2px #000000 groove;}
+  border:2px groove #000 !important;}
+.sub_sections {margin:5px auto;
+	width:465px;
+	padding: 5px;
+	border: 3px ridge #f99;}
+.sub_sections legend {font-weight:bold;
+	font-size: 14px;
+	line-height: 18px;}
 .columns {margin:0 5px;
   width:500px;
   float:left;}
@@ -116,9 +124,11 @@ h4 {margin:10px 0 3px 0;
 	background-color: #090;
 	color: #fff;
 }
-.sources {float:left;}
-.sources legend {font-size: 16px;
-	font-weight:bold;}
+.sources {margin-top:2px;
+	float:left;}
+.sources legend {font-size: 14px;
+	font-style:italic !important;
+	font-weight:normal !important;}
 /* format specific elements [textarea] */
 #conundrum_lead___Frame, #maindish_lead___Frame, #twmustread_lead___Frame, #topstory_lead___Frame {height:120px !important;}
 #bite_section {display: none;}
