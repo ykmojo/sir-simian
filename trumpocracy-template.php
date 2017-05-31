@@ -101,11 +101,53 @@ else {
 	$topnews1_dek = "";
 }
 
+if(isset($_REQUEST["topnews1_source"]) && $_REQUEST["topnews1_source"] != "") {
+	$topnews1_source = trim($_REQUEST["topnews1_source"]);
+}
+else {
+	$topnews1_source = "";
+}
+
+if(isset($_REQUEST["topnews1_ital"]) && $_REQUEST["topnews1_ital"] != "") {
+	$topnews1_ital = trim($_REQUEST["topnews1_ital"]);
+}
+else {
+	$topnews1_ital = "";
+}
+
+if(isset($_REQUEST["topnews1_url"]) && $_REQUEST["topnews1_url"] != "") {
+	$topnews1_url = trim($_REQUEST["topnews1_url"]);
+}
+else {
+	$topnews1_url = "";
+}
+
 if(isset($_REQUEST['topnews2_dek']) && $_REQUEST['topnews2_dek'] != "") {
 	$topnews2_dek = trim($_REQUEST['topnews2_dek']);
 }
 else {
 	$topnews2_dek = "One Great Tidbit";
+}
+
+if(isset($_REQUEST["topnews2_source"]) && $_REQUEST["topnews2_source"] != "") {
+	$topnews2_source = trim($_REQUEST["topnews2_source"]);
+}
+else {
+	$topnews2_source = "";
+}
+
+if(isset($_REQUEST["topnews2_ital"]) && $_REQUEST["topnews2_ital"] != "") {
+	$topnews2_ital = trim($_REQUEST["topnews2_ital"]);
+}
+else {
+	$topnews2_ital = "";
+}
+
+if(isset($_REQUEST["topnews2_url"]) && $_REQUEST["topnews2_url"] != "") {
+	$topnews2_url = trim($_REQUEST["topnews2_url"]);
+}
+else {
+	$topnews2_url = "";
 }
 
 if(isset($_REQUEST['topnews3_dek']) && $_REQUEST['topnews3_dek'] != "") {
@@ -115,6 +157,27 @@ else {
 	$topnews3_dek = "";
 }
 
+if(isset($_REQUEST["topnews3_source"]) && $_REQUEST["topnews3_source"] != "") {
+	$topnews3_source = trim($_REQUEST["topnews3_source"]);
+}
+else {
+	$topnews3_source = "";
+}
+
+if(isset($_REQUEST["topnews3_ital"]) && $_REQUEST["topnews3_ital"] != "") {
+	$topnews3_ital = trim($_REQUEST["topnews3_ital"]);
+}
+else {
+	$topnews3_ital = "";
+}
+
+if(isset($_REQUEST["topnews3_url"]) && $_REQUEST["topnews3_url"] != "") {
+	$topnews3_url = trim($_REQUEST["topnews3_url"]);
+}
+else {
+	$topnews3_url = "";
+}
+
 if(isset($_REQUEST['topnews4_dek']) && $_REQUEST['topnews4_dek'] != "") {
 	$topnews4_dek = trim($_REQUEST['topnews4_dek']);
 }
@@ -122,11 +185,53 @@ else {
 	$topnews4_dek = "";
 }
 
+if(isset($_REQUEST["topnews4_source"]) && $_REQUEST["topnews4_source"] != "") {
+	$topnews4_source = trim($_REQUEST["topnews4_source"]);
+}
+else {
+	$topnews4_source = "";
+}
+
+if(isset($_REQUEST["topnews4_ital"]) && $_REQUEST["topnews4_ital"] != "") {
+	$topnews4_ital = trim($_REQUEST["topnews4_ital"]);
+}
+else {
+	$topnews4_ital = "";
+}
+
+if(isset($_REQUEST["topnews4_url"]) && $_REQUEST["topnews4_url"] != "") {
+	$topnews4_url = trim($_REQUEST["topnews4_url"]);
+}
+else {
+	$topnews4_url = "";
+}
+
 if(isset($_REQUEST['topnews5_dek']) && $_REQUEST['topnews5_dek'] != "") {
 	$topnews5_dek = trim($_REQUEST['topnews5_dek']);
 }
 else {
 	$topnews5_dek = "";
+}
+
+if(isset($_REQUEST["topnews5_source"]) && $_REQUEST["topnews5_source"] != "") {
+	$topnews5_source = trim($_REQUEST["topnews5_source"]);
+}
+else {
+	$topnews5_source = "";
+}
+
+if(isset($_REQUEST["topnews5_ital"]) && $_REQUEST["topnews5_ital"] != "") {
+	$topnews5_ital = trim($_REQUEST["topnews5_ital"]);
+}
+else {
+	$topnews5_ital = "";
+}
+
+if(isset($_REQUEST["topnews5_url"]) && $_REQUEST["topnews5_url"] != "") {
+	$topnews5_url = trim($_REQUEST["topnews5_url"]);
+}
+else {
+	$topnews5_url = "";
 }
 
 if(isset($_REQUEST['wors_title']) && $_REQUEST['wors_title'] != "") {
@@ -143,11 +248,53 @@ else {
 	$wors1_dek = "";
 }
 
+if(isset($_REQUEST["wors1_source"]) && $_REQUEST["wors1_source"] != "") {
+	$wors1_source = trim($_REQUEST["wors1_source"]);
+}
+else {
+	$wors1_source = "";
+}
+
+if(isset($_REQUEST["wors1_ital"]) && $_REQUEST["wors1_ital"] != "") {
+	$wors1_ital = trim($_REQUEST["wors1_ital"]);
+}
+else {
+	$wors1_ital = "";
+}
+
+if(isset($_REQUEST["wors1_url"]) && $_REQUEST["wors1_url"] != "") {
+	$wors1_url = trim($_REQUEST["wors1_url"]);
+}
+else {
+	$wors1_url = "";
+}
+
 if(isset($_REQUEST['wors2_dek']) && $_REQUEST['wors2_dek'] != "") {
 	$wors2_dek = trim($_REQUEST['wors2_dek']);
 }
 else {
 	$wors2_dek = "";
+}
+
+if(isset($_REQUEST["wors2_source"]) && $_REQUEST["wors2_source"] != "") {
+	$wors2_source = trim($_REQUEST["wors2_source"]);
+}
+else {
+	$wors2_source = "";
+}
+
+if(isset($_REQUEST["wors2_ital"]) && $_REQUEST["wors2_ital"] != "") {
+	$wors2_ital = trim($_REQUEST["wors2_ital"]);
+}
+else {
+	$wors2_ital = "";
+}
+
+if(isset($_REQUEST["wors2_url"]) && $_REQUEST["wors2_url"] != "") {
+	$wors2_url = trim($_REQUEST["wors2_url"]);
+}
+else {
+	$wors2_url = "";
 }
 
 if(isset($_REQUEST['wors3_dek']) && $_REQUEST['wors3_dek'] != "") {
@@ -157,11 +304,53 @@ else {
 	$wors3_dek = "";
 }
 
+if(isset($_REQUEST["wors3_source"]) && $_REQUEST["wors3_source"] != "") {
+	$wors3_source = trim($_REQUEST["wors3_source"]);
+}
+else {
+	$wors3_source = "";
+}
+
+if(isset($_REQUEST["wors3_ital"]) && $_REQUEST["wors3_ital"] != "") {
+	$wors3_ital = trim($_REQUEST["wors3_ital"]);
+}
+else {
+	$wors3_ital = "";
+}
+
+if(isset($_REQUEST["wors3_url"]) && $_REQUEST["wors3_url"] != "") {
+	$wors3_url = trim($_REQUEST["wors3_url"]);
+}
+else {
+	$wors3_url = "";
+}
+
 if(isset($_REQUEST['wors4_dek']) && $_REQUEST['wors4_dek'] != "") {
 	$wors4_dek = trim($_REQUEST['wors4_dek']);
 }
 else {
 	$wors4_dek = "";
+}
+
+if(isset($_REQUEST["wors4_source"]) && $_REQUEST["wors4_source"] != "") {
+	$wors4_source = trim($_REQUEST["wors4_source"]);
+}
+else {
+	$wors4_source = "";
+}
+
+if(isset($_REQUEST["wors4_ital"]) && $_REQUEST["wors4_ital"] != "") {
+	$wors4_ital = trim($_REQUEST["wors4_ital"]);
+}
+else {
+	$wors4_ital = "";
+}
+
+if(isset($_REQUEST["wors4_url"]) && $_REQUEST["wors4_url"] != "") {
+	$wors4_url = trim($_REQUEST["wors4_url"]);
+}
+else {
+	$wors4_url = "";
 }
 
 //Trumpocracy template section
