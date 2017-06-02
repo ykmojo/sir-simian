@@ -199,7 +199,16 @@ function delayedInsert(theArray) {
 			CKEDITOR.instances[key_pairs[0]].setData(key_pairs[1]);
 		  }
 		  else {
-        document.getElementById(key_pairs[0]).value = key_pairs[1];
+			document.getElementById(key_pairs[0]).value = key_pairs[1];
+		  }
+		  
+		  if(key_pairs[0].search(/ital/i) != -1) {
+			  if(key_pairs[1] == 1) {
+				  document.getElementById(key_pairs[0]).checked = true;
+			  }
+			  else {
+				  document.getElementById(key_pairs[0]).checked = false;
+			  }
 		  }
 		}
 	  }

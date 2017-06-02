@@ -38,11 +38,11 @@ else {
 	$trump_main_source = "";
 }
 
-if(isset($_REQUEST["trump_main_ital"]) && $_REQUEST["trump_main_ital"] !== "") {
-	$trump_main_ital = ($_REQUEST["trump_main_ital"]);
+if(isset($_REQUEST["trump_main_ital"])) {
+	$trump_main_ital = true;
 }
 else {
-	$trump_main_ital = "";
+	$trump_main_ital = false;
 }
 
 if(isset($_REQUEST['trump_main2_hed']) && $_REQUEST['trump_main2_hed'] != "") {
@@ -80,11 +80,11 @@ else {
 	$trump_main2_source = "";
 }
 
-if(isset($_REQUEST["trump_main2_ital"]) && $_REQUEST["trump_main2_ital"] != "") {
-	$trump_main2_ital = trim($_REQUEST["trump_main2_ital"]);
+if(isset($_REQUEST["trump_main2_ital"])) {
+	$trump_main2_ital = true;
 }
 else {
-	$trump_main2_ital = "";
+	$trump_main2_ital = false;
 }
 
 if(isset($_REQUEST['topnews_title']) && $_REQUEST['topnews_title'] != "") {
@@ -108,11 +108,11 @@ else {
 	$topnews1_source = "";
 }
 
-if(isset($_REQUEST["topnews1_ital"]) && $_REQUEST["topnews1_ital"] != "") {
-	$topnews1_ital = trim($_REQUEST["topnews1_ital"]);
+if(isset($_REQUEST["topnews1_ital"])) {
+	$topnews1_ital = true;
 }
 else {
-	$topnews1_ital = "";
+	$topnews1_ital = false;
 }
 
 if(isset($_REQUEST["topnews1_url"]) && $_REQUEST["topnews1_url"] != "") {
@@ -126,7 +126,7 @@ if(isset($_REQUEST['topnews2_dek']) && $_REQUEST['topnews2_dek'] != "") {
 	$topnews2_dek = trim($_REQUEST['topnews2_dek']);
 }
 else {
-	$topnews2_dek = "One Great Tidbit";
+	$topnews2_dek = "";
 }
 
 if(isset($_REQUEST["topnews2_source"]) && $_REQUEST["topnews2_source"] != "") {
@@ -136,11 +136,11 @@ else {
 	$topnews2_source = "";
 }
 
-if(isset($_REQUEST["topnews2_ital"]) && $_REQUEST["topnews2_ital"] != "") {
-	$topnews2_ital = trim($_REQUEST["topnews2_ital"]);
+if(isset($_REQUEST["topnews2_ital"])) {
+	$topnews2_ital = true;
 }
 else {
-	$topnews2_ital = "";
+	$topnews2_ital = false;
 }
 
 if(isset($_REQUEST["topnews2_url"]) && $_REQUEST["topnews2_url"] != "") {
@@ -164,11 +164,11 @@ else {
 	$topnews3_source = "";
 }
 
-if(isset($_REQUEST["topnews3_ital"]) && $_REQUEST["topnews3_ital"] != "") {
-	$topnews3_ital = trim($_REQUEST["topnews3_ital"]);
+if(isset($_REQUEST["topnews3_ital"])) {
+	$topnews3_ital = true;
 }
 else {
-	$topnews3_ital = "";
+	$topnews3_ital = false;
 }
 
 if(isset($_REQUEST["topnews3_url"]) && $_REQUEST["topnews3_url"] != "") {
@@ -192,11 +192,11 @@ else {
 	$topnews4_source = "";
 }
 
-if(isset($_REQUEST["topnews4_ital"]) && $_REQUEST["topnews4_ital"] != "") {
-	$topnews4_ital = trim($_REQUEST["topnews4_ital"]);
+if(isset($_REQUEST["topnews4_ital"])) {
+	$topnews4_ital = true;
 }
 else {
-	$topnews4_ital = "";
+	$topnews4_ital = false;
 }
 
 if(isset($_REQUEST["topnews4_url"]) && $_REQUEST["topnews4_url"] != "") {
@@ -220,11 +220,11 @@ else {
 	$topnews5_source = "";
 }
 
-if(isset($_REQUEST["topnews5_ital"]) && $_REQUEST["topnews5_ital"] != "") {
-	$topnews5_ital = trim($_REQUEST["topnews5_ital"]);
+if(isset($_REQUEST["topnews5_ital"])) {
+	$topnews5_ital = true;
 }
 else {
-	$topnews5_ital = "";
+	$topnews5_ital = false;
 }
 
 if(isset($_REQUEST["topnews5_url"]) && $_REQUEST["topnews5_url"] != "") {
@@ -255,11 +255,11 @@ else {
 	$wors1_source = "";
 }
 
-if(isset($_REQUEST["wors1_ital"]) && $_REQUEST["wors1_ital"] != "") {
-	$wors1_ital = trim($_REQUEST["wors1_ital"]);
+if(isset($_REQUEST["wors1_ital"])) {
+	$wors1_ital = true;
 }
 else {
-	$wors1_ital = "";
+	$wors1_ital = false;
 }
 
 if(isset($_REQUEST["wors1_url"]) && $_REQUEST["wors1_url"] != "") {
@@ -283,11 +283,11 @@ else {
 	$wors2_source = "";
 }
 
-if(isset($_REQUEST["wors2_ital"]) && $_REQUEST["wors2_ital"] != "") {
-	$wors2_ital = trim($_REQUEST["wors2_ital"]);
+if(isset($_REQUEST["wors2_ital"])) {
+	$wors2_ital = true;
 }
 else {
-	$wors2_ital = "";
+	$wors2_ital = false;
 }
 
 if(isset($_REQUEST["wors2_url"]) && $_REQUEST["wors2_url"] != "") {
@@ -311,11 +311,11 @@ else {
 	$wors3_source = "";
 }
 
-if(isset($_REQUEST["wors3_ital"]) && $_REQUEST["wors3_ital"] != "") {
-	$wors3_ital = trim($_REQUEST["wors3_ital"]);
+if(isset($_REQUEST["wors3_ital"])) {
+	$wors3_ital = true;
 }
 else {
-	$wors3_ital = "";
+	$wors3_ital = false;
 }
 
 if(isset($_REQUEST["wors3_url"]) && $_REQUEST["wors3_url"] != "") {
@@ -339,11 +339,11 @@ else {
 	$wors4_source = "";
 }
 
-if(isset($_REQUEST["wors4_ital"]) && $_REQUEST["wors4_ital"] != "") {
-	$wors4_ital = trim($_REQUEST["wors4_ital"]);
+if(isset($_REQUEST["wors4_ital"])) {
+	$wors4_ital = true;
 }
 else {
-	$wors4_ital = "";
+	$wors4_ital = false;
 }
 
 if(isset($_REQUEST["wors4_url"]) && $_REQUEST["wors4_url"] != "") {
@@ -364,7 +364,7 @@ $url_style = "<a style=\"color: #ff6900;\"";
 
 if($trum_main_url !== "" || $trum_main_url !== null) {
 	$main_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\"><a href=\"$trum_main_url\" style=\"text-decoration: none;color: #000;\">$trump_main_hed</a></h3>\n";
-	$trump_main_source_format = "<a href=\"$trum_main_url\" style=\"color:#ff6900;\">$trump_main_source</a>";
+	$trump_main_source_format = "<a href=\"$trum_main_url\" style=\"color:#ff6900;text-decoration:none;\">$trump_main_source</a>";
 }
 else {
 	$main_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\">$trump_main_hed</h3>\n";
@@ -372,7 +372,7 @@ else {
 }
 
 if($trump_main_img !== "" || $trump_main_img !== null) {
-	$main_img_sec = "<tr>\n\t<td align=\"center\" style=\"line-height:0;\">\n\t<img src=\"http://assets.motherjones.com/newsletters/newsletter_test/trump-main-test.jpg\" style=\"Margin: 0 auto;width:100%;max-width: 100%; height: auto;\" width=\"540\" alt=\"Trumpocracy\" />\n\t</td>\n\t</tr>\n";
+	$main_img_sec = "<tr>\n\t<td align=\"center\" style=\"line-height:0;\">\n\t<img src=\"$trump_main_img\" style=\"Margin: 0 auto;width:100%;max-width: 100%; height: auto;\" width=\"540\" alt=\"Trumpocracy\" />\n\t</td>\n\t</tr>\n";
 }
 else {
 	$main_img_sec = "";
@@ -384,8 +384,8 @@ $trum_main_dek = str_replace("<a", $url_style, $trum_main_dek);
 //add source name & url
 $get_last_p = strripos($trum_main_dek, "</p>");
 $get_substr = substr($trum_main_dek, 0, $get_last_p);
-
 if($trump_main_source !== "" || $trump_main_source !== null) {
+
 	if($trump_main_ital) {
 		$trum_main_dek_cat = $get_substr . " (<em>$trump_main_source_format</em>)</p>\n";
 	}
@@ -404,7 +404,7 @@ $main2_closer = "<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t</tr>\n\t</table>\n\t<![
 
 $main2_img_sec = "";
 
-if($trump_main2_img !== "" || $trump_main2_img!== null) {
+if($trump_main2_img !== "") {
 	$main2_img_sec = "<table class=\"narrow\" align=\"left\" style=\"width:33%;max-width:100%;margin-bottom: 20px;margin-top:10px;vertical-align:top;\">\n\t<tr><td valign=\"top\">\n\t<img src=\"$trump_main2_img\" width=\"270\" style=\"max-width:100%;width:100%;\" />\n\t</td>\n\t</tr>\n\t</table>\n";
 }
 else {
@@ -421,7 +421,7 @@ else {
 	$main2_hed = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px; font-weight:bold;\">" . $trump_main2_hed . "</p>\n";
 }
 
-$main2_p = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px; font-weight:bold;\">";
+$main2_p = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px;\">";
 $trump_main2_dek = str_replace("<p>", $main2_p, $trump_main2_dek);
 $trump_main2_dek = str_replace("<a", $url_style, $trump_main2_dek);
 //add source name & url
@@ -430,16 +430,26 @@ $get_substr = substr($trump_main2_dek, 0, $get_last_p);
 
 if($trump_main2_source !== "" || $trump_main2_source !== null) {
 	if($trump_main2_ital) {
-		$trump_main2_dek_cat = $get_substr . " (<em>$trump_main2_source</em>)</p>\n";
+		$trump_main2_dek_cat = $get_substr . " (<em><a href=\"$trump_main2_url\" style=\"text-decoration:none;color:#ff6900;\">$trump_main2_source</a></em>)</p>\n";
 	}
 	else {
-		$trump_main2_dek_cat = $get_substr . " ($trump_main2_source)</p>\n";
+		$trump_main2_dek_cat = $get_substr . " (<a href=\"$trump_main2_url\" style=\"text-decoration:none;color:#ff6900;\">$trump_main2_source</a>)</p>\n";
 	}
 }
 
-$main2_text_sec = "<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t<td>\n\t<![endif]-->\n\t<table class=\"wide\" align=\"left\" style=\"max-width:65%;margin-bottom: 20px;margin-top: 10px;vertical-align:top;\">\n\t<tr>\n\t<td valign=\"top\">" . $main2_hed . $trump_main2_dek_cat . "</td>\n\t</tr>\n\t</table>\n\t<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t</tr>\n\t</table>\n";
+if($trump_main2_hed !== "" || $trump_main2_dek !== "") {
+	$main2_text_sec = "<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t<td>\n\t<![endif]-->\n\t<table class=\"wide\" align=\"left\" style=\"max-width:65%;margin-bottom: 20px;margin-top: 10px;vertical-align:top;\">\n\t<tr>\n\t<td valign=\"top\">" . $main2_hed . $trump_main2_dek_cat . "</td>\n\t</tr>\n\t</table>\n\t<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t</tr>\n\t</table>\n";
+}
+else {
+	$main2_text_sec = "";
+}
 
-$main2_section = $main2_opener . $main2_img_sec . $main2_text_sec . $main2_closer;
+if($main2_img_sec !== "" ||$main2_text_sec !== "") {
+	$main2_section = $main2_opener . $main2_img_sec . $main2_text_sec . $main2_closer;
+}
+else {
+	$main2_section = "";
+}
 //end secondary main article section
 
 //Top News section
@@ -473,10 +483,10 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 		
 		if($topnews1_source !== "" || $topnews1_source !== null) {
 			if($topnews1_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$topnews1_url\" style=\"color: #ff6900;\">" . $topnews1_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$topnews1_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews1_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$topnews1_url\" style=\"color: #ff6900;\">" . $topnews1_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$topnews1_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews1_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -497,10 +507,10 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 		
 		if($topnews2_source !== "" || $topnews2_source !== null) {
 			if($topnews2_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$topnews2_url\" style=\"color: #ff6900;\">" . $topnews2_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$topnews2_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews2_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$topnews2_url\" style=\"color: #ff6900;\">" . $topnews2_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$topnews2_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews2_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -521,10 +531,10 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 		
 		if($topnews3_source !== "" || $topnews3_source !== null) {
 			if($topnews3_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$topnews3_url\" style=\"color: #ff6900;\">" . $topnews3_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$topnews3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews3_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$topnews3_url\" style=\"color: #ff6900;\">" . $topnews3_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$topnews3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews3_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -545,10 +555,10 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 		
 		if($topnews4_source !== "" || $topnews4_source !== null) {
 			if($topnews4_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$topnews4_url\" style=\"color: #ff6900;\">" . $topnews4_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$topnews4_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews4_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$topnews4_url\" style=\"color: #ff6900;\">" . $topnews4_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$topnews4_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews4_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -569,10 +579,10 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 		
 		if($topnews5_source !== "" || $topnews5_source !== null) {
 			if($topnews5_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$topnews5_url\" style=\"color: #ff6900;\">" . $topnews5_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$topnews5_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews5_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$topnews5_url\" style=\"color: #ff6900;\">" . $topnews5_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$topnews5_url\" style=\"text-decoration:none;color: #ff6900;\">" . $topnews5_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -609,7 +619,7 @@ else {
 }
 
 //Prepare the What Others Are Saying section stories
-if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !== "" || $wors5_dek !== "") {
+if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !== "") {
 	
 	if($wors1_dek !== "") {
 		$get_last_p = "";
@@ -622,10 +632,10 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		
 		if($wors1_source !== "" || $wors1_source !== null) {
 			if($wors1_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$wors1_url\" style=\"color: #ff6900;\">" . $wors1_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$wors1_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors1_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$wors1_url\" style=\"color: #ff6900;\">" . $wors1_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$wors1_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors1_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -646,10 +656,10 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		
 		if($wors2_source !== "" || $wors2_source !== null) {
 			if($wors2_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$wors2_url\" style=\"color: #ff6900;\">" . $wors2_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$wors2_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors2_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$wors2_url\" style=\"color: #ff6900;\">" . $wors2_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$wors2_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors2_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -670,10 +680,10 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		
 		if($wors3_source !== "" || $wors3_source !== null) {
 			if($wors3_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$wors3_url\" style=\"color: #ff6900;\">" . $wors3_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$wors3_url\" style=\"color: #ff6900;\">" . $wors3_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -694,10 +704,10 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		
 		if($wors4_source !== "" || $wors4_source !== null) {
 			if($wors4_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$wors4_url\" style=\"color: #ff6900;\">" . $wors4_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " (<em><a href=\"$wors4_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors4_source . "</a></em>)</p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$wors4_url\" style=\"color: #ff6900;\">" . $wors4_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " (<a href=\"$wors4_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors4_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -707,7 +717,7 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		$wors4 = "";
 	}
 	
-	$wors_sec = $wors_opener . $wors_title_format . $wors1 . $wors2 . $wors3 . $wors4 . $wors5 . $wors_closer;
+	$wors_sec = $wors_opener . $wors_title_format . $wors1 . $wors2 . $wors3 . $wors4 . $wors_closer;
 	
 }
 else {
@@ -856,7 +866,7 @@ $trump_mobile
       </td>
     </tr>
   </table>
-$safe_rbt;
+$safe_rbt
 </div>
 TRUMPOCRACY;
 

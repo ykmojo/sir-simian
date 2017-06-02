@@ -66,26 +66,26 @@ ini_set("display_errors", 1);
 $econundrum = glob("*econundrum*.html");
 $food = glob("*food_for_thought_new.html");
 $fft_red = glob("*food_for_thought_redesign.html");
-//$dcdecoder = glob("*dcdecoder*.html");
 $inthemix = glob("*in_the_mix*.html");
 $politics = glob("*political*.html");
 $breaking = glob("*breaking_news*.html");
+$trumpocracy = glob("*trumpocracy*.html");
 
 $count_eco = count($econundrum);
 $count_food = count($food);
 $count_fft = count($fft_red);
-//$count_dc = count($dcdecoder);
 $count_wt = count($inthemix);
 $count_pol = count($politics);
 $count_br = count($breaking);
+$count_trump = count($trumpocracy);
 
 $econundrum = array_reverse($econundrum);
 $food = array_reverse($food);
 $fft_red = array_reverse($fft_red);
-//$dcdecoder = array_reverse($dcdecoder);
 $inthemix = array_reverse($inthemix);
 $politics = array_reverse($politics);
 $breaking = array_reverse($breaking);
+$trumpocracy = array_reverse($trumpocracy);
 
 $cur_styles = "current_style";
 $norms_styles = "normal_style";
@@ -138,14 +138,14 @@ for($i = 0; $i < $count_eco; $i++) {
 }
 $print_eco .= "</td>";
 
-$print_food = "<td id='food' width='170' valign='top'><h3 style='border-bottom:1px #fff dashed;text-align:center;font-size:18px;'>Food for<br />Thought</h3>";
-for($i = 0; $i < $count_food; $i++) {
+$print_trump = "<td id='food' width='170' valign='top'><h3 style='border-bottom:1px #fff dashed;text-align:center;font-size:18px;'>Trumpocracy</h3>";
+for($i = 0; $i < $count_trump; $i++) {
   if($i == 0) {
     $new = "<span>Current: </span>";
     $apply_style = $cur_styles;
   }
   else {
-  	if (stripos($food[$i], "1492") === false) {
+  	if (stripos($trumpocracy[$i], "1492") === false) {
   		$new = "";
   		$apply_style = $norms_styles;
   	}
@@ -154,12 +154,12 @@ for($i = 0; $i < $count_food; $i++) {
   		$apply_style = $test_styles;
   	}
   }
-  $f_index = stripos($food[$i], "food_for_thought_new") - 1;
-  $display_date = substr($food[$i], 0, $f_index);
+  $f_index = stripos($trumpocracy[$i], "trumpocracy") - 1;
+  $display_date = substr($trumpocracy[$i], 0, $f_index);
   
-  $print_food .= "<p class=\"$apply_style\">$new<a href=\"" . $food[$i] . "\">" . $display_date . "</a></p>";
+  $print_trump .= "<p class=\"$apply_style\">$new<a href=\"" . $trumpocracy[$i] . "\">" . $display_date . "</a></p>";
 }
-$print_food .= "</td>";
+$print_trump .= "</td>";
 
 $print_fft_red = "<td id='fft_red' width='185' valign='top'><h3 style='border-bottom:1px #fff dashed; text-align:center;font-size:18px;'>Food for Thought Redesign</h3>";
 for($i = 0; $i < $count_fft; $i++) {
@@ -237,7 +237,7 @@ print $print_fft_red;
 print $print_wt;
 print $print_politics;
 print $print_bn;
-print $print_food;
+print $print_trump;
 print "</tr>";
 print "</table>";
 ?>

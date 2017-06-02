@@ -84,12 +84,17 @@ $membership_slot = "";
 $membership_area_p = "<p class=\"mobile-format\" style=\"margin: 20px 0; color: #ff6900;font-size: 18px;text-transform: uppercase;\">";
 
 if(isset($_REQUEST['membership_slot']) && $_REQUEST['membership_slot'] != null) {
-	$membership_slot = trim($_REQUEST['membership_slot']);
-	$membership_slot = str_replace("<p>", $membership_area_p, $membership_slot);
-	$membership_slot = str_replace("<a", "<a style=\"color: #000; \"", $membership_slot);
+	if($headlines_type !== "trumpocracy") {
+		$membership_slot = trim($_REQUEST['membership_slot']);
+		$membership_slot = str_replace("<p>", $membership_area_p, $membership_slot);
+		$membership_slot = str_replace("<a", "<a style=\"color: #000; \"", $membership_slot);
+	}
+	else {
+		$membership_slot = "<div id=\"membership-call-box\">\n\t<p style=\"font-weight:bold;font-family:Georgia, serif;color: #000;text-align:center;font-size: 16px; line-height: 21px;\">Support hard-hitting journalism</p>\n\t<p style=\"font-family:Georgia, serif;color:#000;text-align:center;font-size: 16px; line-height: 21px;\">Trumpocracy and all our reporting is made possible by readers like you. Support our investigations with a <a href=\"https://secure.motherjones.com/fnx/?action=subscription&pub_code=don&term_pub=don&b_country=united+states&list_source=7H6CNLP2&term=xx.1.50.00.don.d.0.2870\" style=\"color: #ff6900;\">tax-deductible donation</a>.</p>\n\t</div>\n";
+	}
 }
 else {
-	if($headlines_type === "trumpocracy") {
+	if($headlines_type == "trumpocracy") {
 		$membership_slot = "<div id=\"membership-call-box\">\n\t<p style=\"font-weight:bold;font-family:Georgia, serif;color: #000;text-align:center;font-size: 16px; line-height: 21px;\">Support hard-hitting journalism</p>\n\t<p style=\"font-family:Georgia, serif;color:#000;text-align:center;font-size: 16px; line-height: 21px;\">Trumpocracy and all our reporting is made possible by readers like you. Support our investigations with a <a href=\"https://secure.motherjones.com/fnx/?action=subscription&pub_code=don&term_pub=don&b_country=united+states&list_source=7H6CNLP2&term=xx.1.50.00.don.d.0.2870\" style=\"color: #ff6900;\">tax-deductible donation</a>.</p>\n\t</div>\n";
 	}
 	else {
@@ -285,6 +290,27 @@ $view_code = "<p style=\"margin:0 auto;width:250px;background-color:#003;border-
 
 $facebook_icon = "<img id=\"fb_icon_main\" src=\"http://assets.motherjones.com/newsletters/images/facebook_icon_btm.png\" style=\"$fb_icon_style\" width=\"54\" />";
 $twitter_icon = "<img id=\"tt_icon_main\" src=\"http://assets.motherjones.com/newsletters/images/twitter_icon_btm.png\" alt=\"tweet this\" style=\"$ttr_icon_style\" width=\"54\" />";
+
+switch($headlines_type) {
+	case "econundrums_new":
+		$newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 14px; color: #000;\"><em>Econundrums</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
+		break;
+	case "in_the_mix_new":
+		$newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 14px; color: #000;\"><em>In the Mix</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
+		break;
+	case "political_mojo_new":
+		$newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 14px; color: #000;\"><em>Political MoJo</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
+		break;
+	case "food_for_thought_redesign":
+		$newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 14px; color: #000;\"><em>Food for Thought</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
+		break;
+	case "breaking_news":
+		$newsletter_info = "<p class=\"ad_text\" style=\"margin: 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; font-size: 14px; color: #000;\">This news alert comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
+		break;
+	case "trumpocracy":
+		$newsletter_info = "<p class=\"ad_text\" style=\"font-family:Georgia, serif; font-size: 12px; color: #000;text-align:center;font-size: 16px; line-height: 21px;\"><em>Trumpocracy: The Russia Connection</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>";
+		break;
+}
 
 $trumpocracy_footer = <<<TRUMPFOOT
 <table width="100%" align="center" border="0" cellpadding="5" cellspacing="0">
