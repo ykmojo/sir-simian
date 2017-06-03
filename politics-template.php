@@ -506,26 +506,14 @@ $mobile_styles
 			<br />
         </td>
     </tr>
+    <tr>
+    	<td>
+    		$safe_rbt
+    	</td>
+    </tr>
 </table>
-$safe_rbt
 </div>
 POLITICS;
-
-/* text ad code
- 		<tr>
-			<td class="no_top_pad" align="center" style="$no_top_pad20">
-				<br />
-				<hr style="$separator_border" />
-				<br />
-				<span style="$ad_style">&#8212;Advertisement&#8212;</span>
-			</td>
-		</tr>
- 	  <tr>
-	  	<td class="standard_td" align="left" style="$no_top_pad80">
-	  			$text_ad
-	  	</td>
-	  </tr>
- */
 
 //print out template HTML code
 print $politics;

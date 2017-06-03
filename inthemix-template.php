@@ -506,8 +506,12 @@ $mobile_styles
 			<br />
         </td>
     </tr>
+    <tr>
+    	<td>
+        	$safe_rbt
+        </td>
+    </tr>
 </table>
-$safe_rbt
 </div>
 INTHEMIX;
 

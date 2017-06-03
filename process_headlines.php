@@ -30,7 +30,6 @@ else {
   //run db queries
   $close_btn = "";
   $db_run = true;
-  //$relocate_me = "<script type=\"text/javascript\">location.href='\/headlines\/new-headlines\/archives'</script>";
   $relocate_me = "<script type=\"text/javascript\">location.href='archives'</script>";
 }
 /* end check preview section */
@@ -286,7 +285,7 @@ if(isset($close_btn) && $close_btn != "") {
 
 /*$separator_format = "<p style=\"margin:0 0 2px 0;border-bottom:1px dotted #000000;\">&nbsp;</p>";*/
 /* <a href=""><img src="http://assets.motherjones.com/newsletters/images/subscribe.png" alt="Subscribe" style="width:200px;min-width:100px;" /></a>*/
-$view_code = "<p style=\"margin:0 auto;width:250px;background-color:#003;border-style: 2px outset #099;border-radius:5px;text-align:center;padding:10px;font-size:18px;\"><a href=\"#get_code\" style=\"color:#9ff;\">View Code</a></p>";
+$view_code = "<p style=\"margin:0 auto;width:640px;background-color:#003;border-style: 2px outset #099;border-radius:5px;text-align:center;padding:10px;font-size:16px;\"><a href=\"../\" style=\"color:#FFD700;\">Back to Main Page</a> | <a href=\"index.php\" style=\"color:#FFDF00;\">Back to Archives</a> <br /> <a href=\"#get_code\" style=\"color:#9ff;\">View Code</a></p>";
 
 $facebook_icon = "<img id=\"fb_icon_main\" src=\"http://assets.motherjones.com/newsletters/images/facebook_icon_btm.png\" style=\"$fb_icon_style\" width=\"54\" />";
 $twitter_icon = "<img id=\"tt_icon_main\" src=\"http://assets.motherjones.com/newsletters/images/twitter_icon_btm.png\" alt=\"tweet this\" style=\"$ttr_icon_style\" width=\"54\" />";

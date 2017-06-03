@@ -696,6 +696,11 @@ $fft_redesign = <<<FOODREDESIGN
                     $global_footer
                   </td>
                 </tr>
+                <tr>
+                	<td>
+                		$safe_rbt
+                	</td>
+                </tr>
               </table>
         <!--[if (gte mso 9)|(IE)]>
             </td>
@@ -705,7 +710,6 @@ $fft_redesign = <<<FOODREDESIGN
       </td>
     </tr>
   </table>
-$safe_rbt
 </body>
 </html>
 FOODREDESIGN;

@@ -632,10 +632,10 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		
 		if($wors1_source !== "" || $wors1_source !== null) {
 			if($wors1_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$wors1_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors1_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <em><a href=\"$wors1_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors1_source . "</a></em></p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$wors1_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors1_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <a href=\"$wors1_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors1_source . "</a></p>\n";
 			}
 		}
 		
@@ -656,10 +656,10 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		
 		if($wors2_source !== "" || $wors2_source !== null) {
 			if($wors2_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$wors2_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors2_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <em><a href=\"$wors2_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors2_source . "</a></em></p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$wors2_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors2_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <a href=\"$wors2_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors2_source . "</a></p>\n";
 			}
 		}
 		
@@ -680,10 +680,10 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		
 		if($wors3_source !== "" || $wors3_source !== null) {
 			if($wors3_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <em><a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a></em></p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a>)</p>\n";
 			}
 		}
 		
@@ -704,10 +704,10 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 		
 		if($wors4_source !== "" || $wors4_source !== null) {
 			if($wors4_ital) {
-				$get_substr = $get_substr . " (<em><a href=\"$wors4_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors4_source . "</a></em>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <em><a href=\"$wors4_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors4_source . "</a></em></p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " (<a href=\"$wors4_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors4_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <a href=\"$wors4_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors4_source . "</a></p>\n";
 			}
 		}
 		
@@ -857,6 +857,11 @@ $trump_mobile
               </table>
             </td>
           </tr>
+          <tr>
+          	<td>
+          		$safe_rbt
+          	</td>
+          </tr>
         </table>
         <!--[if (gte mso 9)|(IE)]>
             </td>
@@ -866,7 +871,6 @@ $trump_mobile
       </td>
     </tr>
   </table>
-$safe_rbt
 </div>
 TRUMPOCRACY;
 
