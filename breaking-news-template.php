@@ -93,6 +93,12 @@ else {
 	$bn_item5_url = "";
 }
 
+if(isset($_REQUEST['lift_note']) && $_REQUEST['lift_note'] != "") {
+	$lift_note = trim($_REQUEST['lift_note']);
+}
+else {
+	$lift_note = "";
+}
 
 //date portion
 $temp_date = strtotime($headlines_date);
@@ -100,99 +106,140 @@ $get_date = date("F j, Y", $temp_date);
 
 //lead in section
 $breaking_lead_in = "";
-$br_ld_url = "<a href=\"$breaking_lead_url\" style=\"color:#000;text-decoration:none;\"><strong>";
-$breaking_lead_in = $br_ld_url . $breaking_lead_hed. "</strong></a>";
+$br_ld_url = "<a href=\"$breaking_lead_url\" style=\"text-decoration:none;color:#000;\"><strong>";
+$breaking_lead_in = "<p class=\"mobile_text_brn\" style=\"$hed_styles_brn\">" . $br_ld_url . $breaking_lead_hed. "</strong></a></p>";
 
 //main text section
 $main_text_sec = "";
-$main_text_p = "<p style=\"margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;\">";
-$main_text_a = "<a style=\"color:#ff6940;\" ";
+$main_text_p = "<p class=\"main_dek\" style=\"font-family:Verdana, Arial, Helvetica, sans-serif;\">";
+$main_text_a = "<a style=\"color:#ff6940;text-decoration:none;\" ";
 $main_text = str_replace("<p>", $main_text_p, $main_text);
 $main_text = str_replace("<a", $main_text_a, $main_text);
 $main_text_sec = $main_text;
 
 //More section
 $more_sec = "";
+$more_text_p = "<p class=\"mobile_text_brn\" style=\"$hed_styles_brn\">";
 
 if($bn_item1 !== "" || $bn_item1 !== null) {
 	if($bn_item1_url !== "" || $bn_item1_url !== null) {
-		$br_i1_url = "<a href=\"$bn_item1_url\" style=\"text-decoration:none;color: #000;\">";
-		$more_sec .= $main_text_p . $br_i1_url . $bn_item1 . "</a></p>";
+		$br_i1_url = "<a href=\"$bn_item1_url\" style=\"color:#000;text-decoration:none;\">";
+		$more_sec .= $more_text_p . $br_i1_url . $bn_item1 . "</a></p>";
 	}
 	else {
-		$more_sec .= $main_text_p . $bn_item1 . "</p>";
+		$more_sec .= $more_text_p . $bn_item1 . "</p>";
 	}
 }
 
 if($bn_item2!== "" || $bn_item2!== null) {
 	if($bn_item2_url !== "" || $bn_item2_url !== null) {
-		$br_i2_url = "<a href=\"$bn_item2_url\" style=\"text-decoration:none;color: #000;\">";
-		$more_sec .= $main_text_p . $br_i2_url . $bn_item2. "</a></p>";
+		$br_i2_url = "<a href=\"$bn_item2_url\" style=\"color:#000;text-decoration:none;\">";
+		$more_sec .= $more_text_p . $br_i2_url . $bn_item2. "</a></p>";
 	}
 	else {
-		$more_sec .= $main_text_p . $bn_item2 . "</p>";
+		$more_sec .= $more_text_p . $bn_item2 . "</p>";
 	}
 }
 
 if($bn_item3!== "" || $bn_item3 !== null) {
 	if($bn_item3_url !== "" || $bn_item3_url !== null) {
-		$br_i3_url = "<a href=\"$bn_item3_url\" style=\"text-decoration:none;color: #000;\">";
-		$more_sec .= $main_text_p . $br_i3_url . $bn_item3 . "</a></p>";
+		$br_i3_url = "<a href=\"$bn_item3_url\" style=\"color:#000;text-decoration:none;\">";
+		$more_sec .= $more_text_p . $br_i3_url . $bn_item3 . "</a></p>";
 	}
 	else {
-		$more_sec .= $main_text_p . $bn_item3. "</p>";
+		$more_sec .= $more_text_p . $bn_item3. "</p>";
 	}
 }
 
 if($bn_item4 !== "" || $bn_item4 !== null) {
 	if($bn_item4_url !== "" || $bn_item4_url !== null) {
-		$br_i4_url = "<a href=\"$bn_item4_url\" style=\"text-decoration:none;color: #000;\">";
-		$more_sec .= $main_text_p . $br_i4_url . $bn_item4 . "</a></p>";
+		$br_i4_url = "<a href=\"$bn_item4_url\" style=\"color:#000;text-decoration:none;\">";
+		$more_sec .= $more_text_p . $br_i4_url . $bn_item4 . "</a></p>";
 	}
 	else {
-		$more_sec .= $main_text_p . $bn_item4 . "</p>";
+		$more_sec .= $more_text_p . $bn_item4 . "</p>";
 	}
 }
 
 if($bn_item5 !== "" || $bn_item5 !== null) {
 	if($bn_item5_url !== "" || $bn_item5_url !== null) {
-		$br_i5_url = "<a href=\"$bn_item5_url\" style=\"text-decoration:none;color: #000;\">";
-		$more_sec .= $main_text_p . $br_i5_url . $bn_item5 . "</a></p>";
+		$br_i5_url = "<a href=\"$bn_item5_url\" style=\"color:#000;text-decoration:none;\">";
+		$more_sec .= $more_text_p . $br_i5_url . $bn_item5 . "</a></p>";
 	}
 	else {
-		$more_sec .= $main_text_p . $bn_item5 . "</p>";
+		$more_sec .= $more_text_p . $bn_item5 . "</p>";
 	}
 }
 
 $breaking_news = <<<BREAKINGNEWS
-<table align="center" cellspacing="5" style="max-width: 640px;" width="640">
-	<tbody>
-		<tr>
-			<td><a href="http://www.motherjones.com"><img alt="Mother Jones" src="http://ei.motherjones.com/images/ads/2016/06/mojo_logo_cca.jpg" width="640" border="0" /></a></td>
-		</tr>
-		<tr>
-			<td style="margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;" valign="top">
-				<h2 style="color: #FF6900;"><strong>NEWS ALERT</strong></h2>
-			</td>
-		</tr>
-		<tr>
-			<td style="margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;" valign="top">
-				<h2 style="margin-top:0;padding-top:0;">$breaking_lead_in</h2>
-				$main_text_sec
-			</td>
-		</tr>
-		<tr>
-			<td style="margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;" valign="top">
-				<h2 style="color: #FF6900;"><strong>MORE</strong></h2>
-				$more_sec
-			</td>
-		</tr>
-		<tr>
-			<td>
-				$global_footer
-			</td>
-		</tr>
-	</tbody>
+<div>
+<style>
+	@media screen and (max-device-width: 480px) {
+		#main_content .main_dek {font-size: 28px;
+			line-height: 32px;
+		#main_content .mobile_text_brn {font-size: 42px;
+			line-height: 48px;
+		}
+	}
+</style>
+</div>
+<table id="main_content" align="center" cellpadding="10" cellspacing="0" style="width:620px;max-width: 620px;" width="620">
+	<tr>
+		<td align="center" valign="top">
+			<a href="http://www.motherjones.com"><img alt="Mother Jones" src="http://assets.motherjones.com/newsletters/images/breaking-news-header-201704.jpg" width="600" border="0" style="widdth:600px;max-width:600px;margin: 0 0 10px 0;" /></a>
+		</td>
+	</tr>
+	<tr>
+		<td valign="bottom" align="center">
+			<table align="center" cellpadding="5" cellspacing="0" style="width:540px;max-width:540px;" width="540">
+				<tr>
+					<td valign="top">
+						<p style="$section_title_bn"><strong>BREAKING NEWS</strong></p>
+						$breaking_lead_in
+						$main_text_sec
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<hr style="$separator_border_br" />
+		</td>
+	</tr>
+	<tr>
+		<td align="center" valign="bottom">
+			<table align="center" cellpadding="5" cellpadding="0" style="width:540px;max-width:540px;" width="540">
+				<tr>
+					<td valign="top">
+						<p style="$section_title_bn"><strong>MORE NEWS</strong></p>
+						$more_sec
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<hr style="$separator_border_br" />
+		</td>
+	</tr>
+	<tr>
+		<td align="center" style="margin: 30px 10px;" valign="bottom">
+			<span style="$ad_style">&#8212;Advertisement&#8212;</span>
+			$billboard_ad
+		</td>
+	</tr>
+	<tr>
+		<td valign="bottom">
+			<hr style="$separator_border_br" />
+		</td>
+	</tr>
+	<tr>
+		<td valign="top">
+			$global_footer
+		</td>
+	</tr>
 </table>
 BREAKINGNEWS;
 
@@ -225,27 +272,27 @@ else {
 }
 
 if($exists) {
-  $run_qry = "UPDATE breaking_news
-  	SET hed_date = '$headlines_date',
-  	breaking = '$breaking_lead_hed',
-  	breaking_url = '$breaking_lead_url',
-  	main_text = '$main_text',
-  	subject_line = '$subject_line',
-  	bn_item1 = '$bn_item1',
-  	bn_item1_url = '$bn_item1_url',
-  	bn_item2 = '$bn_item2',
-  	bn_item2_url = '$bn_item2_url',
-  	bn_item3 = '$bn_item3',
-  	bn_item3_url = '$bn_item3_url',
-  	bn_item4 = '$bn_item4',
-  	bn_item4_url = '$bn_item4_url',
-  	bn_item5 = '$bn_item5',
-  	bn_item5_url = '$bn_item5_url'
-  	WHERE hed_date='$headlines_date'";
+	$run_qry = "UPDATE breaking_news
+	SET hed_date = '$headlines_date',
+	breaking = '$breaking_lead_hed',
+	breaking_url = '$breaking_lead_url',
+	main_text = '$main_text',
+	subject_line = '$subject_line',
+	bn_item1 = '$bn_item1',
+	bn_item1_url = '$bn_item1_url',
+	bn_item2 = '$bn_item2',
+	bn_item2_url = '$bn_item2_url',
+	bn_item3 = '$bn_item3',
+	bn_item3_url = '$bn_item3_url',
+	bn_item4 = '$bn_item4',
+	bn_item4_url = '$bn_item4_url',
+	bn_item5 = '$bn_item5',
+	bn_item5_url = '$bn_item5_url'
+	WHERE hed_date='$headlines_date'";
 }
 else {
-$run_qry = "INSERT INTO breaking_news(hed_date,subject_line, breaking, breaking_url, main_text, bn_item1, bn_item1_url, bn_item2, bn_item2_url, bn_item3, bn_item3_url, bn_item4, bn_item4_url, bn_item5, bn_item5_url)
-VALUES('$headlines_date',
+	$run_qry = "INSERT INTO breaking_news(hed_date,subject_line, breaking, breaking_url, main_text, bn_item1, bn_item1_url, bn_item2, bn_item2_url, bn_item3, bn_item3_url, bn_item4, bn_item4_url, bn_item5, bn_item5_url)
+	VALUES('$headlines_date',
 	'$subject_line',
 	'$breaking_lead_hed',
 	'$breaking_lead_url',
