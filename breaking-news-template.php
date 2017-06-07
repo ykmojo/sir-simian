@@ -36,15 +36,18 @@ $get_date = date("F j, Y", $temp_date);
 //lead in section
 $breaking_lead_in = "";
 $br_ld_url = "<a href=\"$breaking_lead_url\" style=\"text-decoration:none;color:#000;\"><strong>";
-$breaking_lead_in = "<p class=\"mobile_text_brn\" style=\"$hed_styles_brn\">" . $br_ld_url . $breaking_lead_hed. "</strong></a></p>";
+$breaking_lead_in = "<h3 style=\"$hed_styles_brn\">" . $br_ld_url . $breaking_lead_hed. "</strong></a></h3>";
 
 //main text section
 $main_text_sec = "";
-$main_text_p = "<p class=\"main_dek\" style=\"font-family:Verdana, Arial, Helvetica, sans-serif;\">";
-$main_text_a = "<a style=\"color:#ff6940;text-decoration:none;\" ";
+$main_text_p = "<p class=\"main_dek\" style=\"margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;color:#767676;\">";
+$main_text_a = "<a style=\"color:#ff6900;text-decoration:none;\" ";
 $main_text = str_replace("<p>", $main_text_p, $main_text);
 $main_text = str_replace("<a", $main_text_a, $main_text);
-$main_text_sec = $main_text;
+//read more
+$read_more = "<p style=\"margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;\"><a href=\"$breaking_lead_url\" style=\"color: #ff6900;\">Read More</a></p>";
+
+$main_text_sec = $main_text . $read_more;
 
 $breaking_news = <<<BREAKINGNEWS
 <div>
@@ -61,7 +64,7 @@ $breaking_news = <<<BREAKINGNEWS
 <table id="main_content" align="center" cellpadding="10" cellspacing="0" style="width:620px;max-width: 620px;" width="620">
 	<tr>
 		<td align="center" valign="top">
-			<a href="http://www.motherjones.com"><img alt="Mother Jones" src="http://assets.motherjones.com/newsletters/images/breaking-news-header-201704.jpg" width="600" border="0" style="widdth:600px;max-width:600px;margin: 0 0 10px 0;" /></a>
+			<a href="http://www.motherjones.com"><img alt="Mother Jones" src="http://assets.motherjones.com/newsletters/images/breaking-news-header-201704.jpg" width="600" border="0" style="width:600px;max-width:600px;margin: 0 0 10px 0;" /></a>
 		</td>
 	</tr>
 	<tr>

@@ -12,6 +12,7 @@ $standard_td = "padding: 10px 40px !important;";
 $separator_border = "border:1px solid #e8e8e8;background-color: #f2eeed;width:100%;";
 $hed_styles = "font-family: Georgia, serif;font-size: 22px;line-height:24px;font-weight: 900;text-decoration:none;color:#000;";
 $hed_styles_main = "font-family: Georgia, serif;font-size: 30px;line-height:30px;font-weight: 900;text-decoration:none;color:#000;";
+$hed_styles_brn = "margin:0 2px 10px 2px; font-family: Georgia, serif;font-size: 22px;line-height:24px;font-weight: 900;";
 $no_top_pad = "padding: 0;";
 $no_top_pad20 = "padding: 0 20px;";
 $no_top_pad40 = "padding: 0 40px !important;";
