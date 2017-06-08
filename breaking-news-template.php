@@ -56,74 +56,86 @@ SAFERBT;
 
 $breaking_news = <<<BREAKINGNEWS
 <div>
-<style>
-	@media screen and (max-device-width: 480px) {
-		#main_content .main_dek {font-size: 28px;
-			line-height: 32px;
-		#main_content .mobile_text_brn {font-size: 42px;
-			line-height: 48px;
+	<style>
+		@media screen and (max-width: 480px) {
+			p {
+			font-size: 22px !important;
+			line-height: 26px !important;
+			}
+			.headers_text {
+			font-size: 16px !important;
+			line-height: 20px !important;
+			}
+			h3 {
+				font-size: 36px !important;
+				line-height: 40px !important;
+			}
 		}
-	}
-</style>
+	</style>
+	
+	<table align="center" width="100%" cellpadding="0" cellspacing="0" style="margin: 0;padding:0;background-color: #ccc;">
+		<tr>
+			<td>
+				<table align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;padding:0;max-width: 100%;background-color:#fff;border-collapse: collapse;" border="0" width="600">
+					<tbody>
+						<tr>
+							<td><a href="http://www.motherjones.com"><img alt="Mother Jones" src="http://assets.motherjones.com/newsletters/images/breaking-news-header.png" width="600" border="0" style="max-width:600px;width:100%;" /></a></td>
+						</tr>
+						<tr>
+							<td>
+								<table align="center" cellpadding="15" cellspacing="0" style="margin:0 auto;max-width:100%;" width="540">
+									<tr>
+										<td style="margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;border-bottom: 1px solid #ccc;" valign="top">
+											<p class="headers_text" style="margin-top: 0;font-family: Verdana, sans-serif; color: #ff6900;font-size: 12px; line-height: 16px;font-weight: bold;text-transform: uppercase;text-align:left;"><strong>BREAKING NEWS</strong></p>
+											$breaking_lead_in
+											$main_text_sec
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="border-bottom: 1px solid #ccc;">
+											<span style="text-align: center;color: #767676;font-size: 12px;font-style:italic;">&#8212;Advertisement&#8212;</span>
+											$billboard_ad
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<!--[if (gte mso 9)|(IE)]><br /><![endif]-->
+												<p class="ad_text" style="margin: 10px auto !important; font-family: Verdana, sans-serif; font-size: 14px; color: #000;">This news alert comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>
+										</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<table align="center" style="margin:0 auto;width:450px;max-width:450px;">
+												<tr>
+													<td style="padding: 0;text-align:center;" align="center">
+														<a href="https://secure.motherjones.com/fnp/?action=SUBSCRIPTION&list_source=7GNWSF&extra_don=1&abver=A&a_first_name={{contact.first_name}}&a_last_name={{contact.last_name}}&a_address_1={{contact.street_1}}&a_city={{contact.city}}&a_state={{contact.state_province}}&a_zip={{contact.zip_code}}&a_email={{contact.email}}&account_no={{contact.icn_account_number}}&rel_rec_no={{contact.wk_sub_rel}}"><img class="news_donate" src="http://assets.motherjones.com/newsletters/images/donate_btn_orange_240.png" alt="Donate" style="width:150px;min-width:100px;"  width="150" hspace="15" vspace="0" /></a>
+													</td>
+													<td style="padding: 0;text-align:center;" align="center">
+														<a href="http://store.motherjones.com/?utm_source=motherjones&utm_campaign=october_launch&utm_medium=newsletter&utm_content=footerbutton"><img class="news_donate" src="http://assets.motherjones.com/newsletters/images/mojo-store_btn_newsletter.png" alt="Mother Jones Store" style="width:150px;min-width:100px;margin-top: 10px;margin-bottom:10px;" width="150" hspace="15" vspace="0" /></a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" style="margin: 0 auto;text-align:center;">
+											<img src="http://assets.motherjones.com/newsletters/newsletter_test/mojo_logo_btm_bw.png" style="width:300px;max-width: 300px;margin: 10px auto;" width="300" />
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								$saferbt
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</table>
 </div>
-<table id="main_content" align="center" cellpadding="10" cellspacing="0" style="width:620px;max-width: 620px;" width="620">
-	<tr>
-		<td align="center" valign="top">
-			<a href="http://www.motherjones.com"><img alt="Mother Jones" src="http://assets.motherjones.com/newsletters/images/breaking-news-header-201704.jpg" width="600" border="0" style="width:600px;max-width:600px;margin: 0 0 10px 0;" /></a>
-		</td>
-	</tr>
-	<tr>
-		<td valign="bottom" align="center">
-			<table align="center" cellpadding="5" cellspacing="0" style="width:540px;max-width:540px;" width="540">
-				<tr>
-					<td valign="top">
-						<p style="$section_title_bn"><strong>BREAKING NEWS</strong></p>
-						$breaking_lead_in
-						$main_text_sec
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-	<tr>
-		<td valign="bottom">
-			<hr style="$separator_border_br" />
-		</td>
-	</tr>
-	<tr>
-		<td align="center" valign="bottom">
-			<table align="center" cellpadding="5" cellpadding="0" style="width:540px;max-width:540px;" width="540">
-				<tr>
-					<td valign="top">
-						<p style="$section_title_bn"><strong>MORE NEWS</strong></p>
-						$more_sec
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-	<tr>
-		<td valign="bottom">
-			<hr style="$separator_border_br" />
-		</td>
-	</tr>
-	<tr>
-		<td align="center" style="margin: 30px 10px;" valign="bottom">
-			<span style="$ad_style">&#8212;Advertisement&#8212;</span>
-			$billboard_ad
-		</td>
-	</tr>
-	<tr>
-		<td valign="bottom">
-			<hr style="$separator_border_br" />
-		</td>
-	</tr>
-	<tr>
-		<td valign="top">
-			$global_footer
-		</td>
-	</tr>
-</table>
 BREAKINGNEWS;
 
 print $breaking_news;
@@ -150,7 +162,7 @@ if($exists) {
 	breaking = '$breaking_lead_hed',
 	breaking_url = '$breaking_lead_url',
 	main_text = '$main_text',
-	subject_line = '$subject_line',
+	subject_line = '$subject_line'
 	WHERE hed_date='$headlines_date'";
 }
 else {

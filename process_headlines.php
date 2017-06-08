@@ -216,6 +216,8 @@ else {
 		case "trumpocracy":
 			$billboard_ad = "\n$trump_billboard1\n";
 			break;
+		case "breaking_news":
+			$billboard_ad = "\n$breakingnews_billboard1\n";
 	}
 }
 if ((isset($_REQUEST['billboard_url2']) && $_REQUEST['billboard_url2'] != null) || (isset($_REQUEST['billboard_img2']) && $_REQUEST['billboard_img2'] != "")) {
