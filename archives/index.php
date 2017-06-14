@@ -236,8 +236,8 @@ print $print_eco;
 print $print_fft_red;
 print $print_wt;
 print $print_politics;
-print $print_bn;
 print $print_trump;
+print $print_bn;
 print "</tr>";
 print "</table>";
 ?>

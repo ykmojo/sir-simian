@@ -363,22 +363,22 @@ $main_section = "";
 $url_style = "<a style=\"color: #ff6900;\"";
 
 if($trum_main_url !== "" || $trum_main_url !== null) {
-	$main_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\"><a href=\"$trum_main_url\" style=\"text-decoration: none;color: #000;\">$trump_main_hed</a></h3>\n";
+	$main_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000 !important;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\"><a href=\"$trum_main_url\" style=\"text-decoration: none;color: #000;\">$trump_main_hed</a></h3>\n";
 	$trump_main_source_format = "<a href=\"$trum_main_url\" style=\"color:#ff6900;text-decoration:none;\">$trump_main_source</a>";
 }
 else {
-	$main_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\">$trump_main_hed</h3>\n";
+	$main_hed = "<h3 style=\"Margin: 10px 0;font-weight: bold; color: #000 !important;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\">$trump_main_hed</h3>\n";
 	$trump_main_source_format = $trump_main_source;
 }
 
 if($trump_main_img !== "" || $trump_main_img !== null) {
-	$main_img_sec = "<tr>\n\t<td align=\"center\" style=\"line-height:0;\">\n\t<img src=\"$trump_main_img\" style=\"Margin: 0 auto;width:100%;max-width: 100%; height: auto;\" width=\"540\" alt=\"Trumpocracy\" />\n\t</td>\n\t</tr>\n";
+	$main_img_sec = "<tr>\n\t<td style=\"border-bottom:1px solid #767676;line-height:0;\">\n\t<center><a href=\"$trum_main_url\"><img src=\"$trump_main_img\" style=\"Margin: 0 auto 5px auto;width:100%;max-width: 100%; height: auto;\" width=\"540\" border=\"0\" alt=\"Trumpocracy\" /></a></center>\n\t";
 }
 else {
 	$main_img_sec = "";
 }
 
-$main_dek_p = "<p style=\"color: #767676;font-family:Georgia, serif;font-size: 16px; line-height: 21px;\">";
+$main_dek_p = "<p style=\"text-align:left;color: #767676;font-family:Georgia, serif;font-size: 16px; line-height: 21px;\">";
 $trum_main_dek = str_replace("<p>", $main_dek_p, $trum_main_dek);
 $trum_main_dek = str_replace("<a", $url_style, $trum_main_dek);
 //add source name & url
@@ -393,19 +393,19 @@ if($trump_main_source !== "" || $trump_main_source !== null) {
 		$trum_main_dek_cat = $get_substr . " ($trump_main_source_format)</p>\n";
 	}
 }
-
-$main_section = $main_img_sec . "<tr>\n\t<td style=\"border-bottom: 1px solid #767676;\">\n\t" . $main_hed . "\n\t" . $trum_main_dek_cat . "\n\t</td>\n\t</tr>\n";
+// "<tr>\n\t<td style=\"border-bottom: 1px solid #767676;\">\n\t"
+$main_section = $main_img_sec . $main_hed . "\n\t" . $trum_main_dek_cat . "\n\t</td>\n\t</tr>\n";
 //end main article section
 
 //Secondary main article section
 $main2_section = "";
-$main2_opener = "<tr>\n\t<td style=\"display:inline-block;border-bottom: 1px solid #767676;\">\n\t<!--[if (gte mso 9)|(IE)]>\n\t<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\">\n\t<tr>\n\t<td width=\"200\">\n\t<![endif]-->\n";
-$main2_closer = "<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t</tr>\n\t</table>\n\t<![endif]-->\n\t</td>\n\t</tr>\n";
+$main2_opener = "<tr>\n\t<td style=\"border-bottom: 1px solid #767676;\">\n\t";
+$main2_closer = "\n\t</td>\n\t</tr>\n";
 
 $main2_img_sec = "";
 
 if($trump_main2_img !== "") {
-	$main2_img_sec = "<table class=\"narrow\" align=\"left\" style=\"width:33%;max-width:100%;margin-bottom: 20px;margin-top:10px;vertical-align:top;\">\n\t<tr><td valign=\"top\">\n\t<img src=\"$trump_main2_img\" width=\"270\" style=\"max-width:100%;width:100%;\" />\n\t</td>\n\t</tr>\n\t</table>\n";
+	$main2_img_sec = "<a href=\"$trump_main2_url\"><img src=\"$trump_main2_img\" width=\"540\" style=\"max-width:100%;width:100%;\" border=\"0\" /></a>\n";
 }
 else {
 	$main2_img_sec = "";
@@ -415,13 +415,13 @@ $main2_text_sec = "";
 $main2_hed = "";
 
 if($trump_main2_url !== "" || $trump_main2_url !== null) {
-	$main2_hed = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px; font-weight:bold;\"><a href=\"$trump_main2_url\" style=\"color:#000;text-decoration:none;\">" . $trump_main2_hed . "</a></p>\n";
+	$main2_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000 !important;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\"><a href=\"$trump_main2_url\" style=\"color:#000;text-decoration:none;\">" . $trump_main2_hed . "</a></h3>\n";
 }
 else {
-	$main2_hed = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px; font-weight:bold;\">" . $trump_main2_hed . "</p>\n";
+	$main2_hed = "<h3 style=\"Margin-bottom: 10px;font-weight: bold; color: #000 !important;font-family:Georgia, serif;font-size: 33px; line-height: 38px;\">" . $trump_main2_hed . "</h3>\n";
 }
 
-$main2_p = "<p style=\"text-align:left;Margin: 0 0 10px 0; padding: 0; color: #000;font-family:Georgia, serif;font-size: 16px; line-height: 21px;\">";
+$main2_p = "<p style=\"text-align:left;color: #767676;font-family:Georgia, serif;font-size: 16px; line-height: 21px;\">";
 $trump_main2_dek = str_replace("<p>", $main2_p, $trump_main2_dek);
 $trump_main2_dek = str_replace("<a", $url_style, $trump_main2_dek);
 //add source name & url
@@ -438,7 +438,7 @@ if($trump_main2_source !== "" || $trump_main2_source !== null) {
 }
 
 if($trump_main2_hed !== "" || $trump_main2_dek !== "") {
-	$main2_text_sec = "<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t<td>\n\t<![endif]-->\n\t<table class=\"wide\" align=\"left\" style=\"max-width:65%;margin-bottom: 20px;margin-top: 10px;vertical-align:top;\">\n\t<tr>\n\t<td valign=\"top\">" . $main2_hed . $trump_main2_dek_cat . "</td>\n\t</tr>\n\t</table>\n\t<!--[if (gte mso 9)|(IE)]>\n\t</td>\n\t</tr>\n\t</table>\n";
+	$main2_text_sec = $main2_hed . $trump_main2_dek_cat;
 }
 else {
 	$main2_text_sec = "";
@@ -514,7 +514,7 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 			}
 		}
 		
-		$topnews2 = $get_substr . "</p>\n";
+		$topnews2 = $get_substr;
 	}
 	else {
 		$topnews2 = "";
@@ -538,7 +538,7 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 			}
 		}
 		
-		$topnews3 = $get_substr . "</p>\n";
+		$topnews3 = $get_substr;
 	}
 	else {
 		$topnews3 = "";
@@ -562,7 +562,7 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 			}
 		}
 		
-		$topnews4 = $get_substr . "</p>\n";
+		$topnews4 = $get_substr;
 	}
 	else {
 		$topnews4 = "";
@@ -586,7 +586,7 @@ if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topn
 			}
 		}
 		
-		$topnews5 = $get_substr . "</p>\n";
+		$topnews5 = $get_substr;
 	}
 	else {
 		$topnews5 = "";
@@ -663,7 +663,7 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 			}
 		}
 		
-		$wors2 = $get_substr . "</p>\n";
+		$wors2 = $get_substr;
 	}
 	else {
 		$wors2 = "";
@@ -687,7 +687,7 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 			}
 		}
 		
-		$wors3 = $get_substr . "</p>\n";
+		$wors3 = $get_substr;
 	}
 	else {
 		$wors3 = "";
@@ -711,7 +711,7 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 			}
 		}
 		
-		$wors4 = $get_substr . "</p>\n";
+		$wors4 = $get_substr;
 	}
 	else {
 		$wors4 = "";
@@ -750,7 +750,7 @@ $trump_mobile
         <table class="layout" align="center" cellpadding="0" cellspacing="0" width="620" style="Margin:0 auto;background-color: #fff;max-width:620px;">
           <tr>
             <td align="center" style="line-height:0;margin: 0;padding:0;">
-              <img src="http://assets.motherjones.com/newsletters/images/trumpocracy-updated-052317.png" width="620" style="Margin:0 auto;width:100%;max-width:100%;height:auto;line-height:0;" alt="Trumpocracy" />
+              <img src="http://assets.motherjones.com/newsletters/images/russian_connection_banner-061217.png" width="620" style="Margin:0 auto;width:100%;max-width:100%;height:auto;line-height:0;" alt="Trumpocracy" />
             </td>
           </tr>
           <tr>
@@ -758,17 +758,40 @@ $trump_mobile
               <table class="spacing" align="center" width="580" cellpadding="0" cellspacing="20" style="max-width:580px;margin:0 auto;">
                 <tr>
                   <td align="right">
-                    <p style="Margin: 0;color: #c8c8c8;text-decoration: none;text-align:right;font-size: 12px;line-height:16px;font-family:Georgia, serif;" id="date_line">$get_date</p>
+                    <p style="Margin: 0;color: #c8c8c8 !important;text-decoration: none !important;text-align:right;font-size: 12px;line-height:16px;font-family:Georgia, serif;" id="date_line">$get_date</p>
                   </td>
                 </tr>
                 $main_section
                 $main2_section
                 <tr>
                   <td style="border-bottom: 1px solid #767676;">
+                    <p class="ad_text" style="margin-top:0;color: #767676; text-align: center;font-family:Georgia, serif; font-size: 12px;font-style:italic;">&#8212;Advertisement&#8212;</p>
+                    $billboard_ad
+                    <br />
                     <!--[if (gte mso 9)|(IE)]>
                     <br />
                     <![endif]-->
-                    <table align="center" width="100%" style="width:100%;max-width:100%;Margin: 0 auto;" cellpadding="5" cellspacing="0" border="0">
+                  </td>
+                </tr>
+                $topnews_sec
+                <tr>
+                	<td style="border-bottom: 1px solid #767676;" align="center">
+						<p style="margin:0 0 15px 0;max-width: 90%;color: #000;font-family:Georgia, serif;font-weight:bold;text-align:center;font-size: 16px; line-height: 21px;">Keeping track</p>
+						<p style="margin:0 0 20px 0;max-width: 90%;color: #767676;font-family:Georgia, serif;text-align:center;font-size: 16px; line-height: 21px;">Follow every turn in the long, twisted, and bizarre history of the Trump-Russia scandal in the always updated <a href="http://www.motherjones.com/politics/2017/03/exhaustive-history-donald-trump-russia-scandal-timeline" style="color: #ff6900;"><em>Mother Jones</em> timeline</a>.</p>
+                  </td>
+                </tr>
+				<tr>
+					<td style="border-bottom: 1px solid #767676;" align="center">
+						<p style="margin:0 0 15px 0;max-width: 90%;color: #000;font-family:Georgia, serif;font-weight:bold;text-align:center;font-size: 16px; line-height: 21px;">Take a deep dive</p>
+						<p style="margin:0 0 20px 0;max-width: 90%;color: #767676;font-family:Georgia, serif;text-align:center;font-size: 16px; line-height: 21px;"><em>The Russia Connection</em> is compiled by Bill Buzenberg and Denise Clifton, who ran the election-season blog PutinTrump.org. Visit their <a href="http://putintrump.org/" style="color: #ff6900;">archive here</a>.</p>
+					</td>
+                </tr>
+                <tr>
+                  <td style="border-bottom: 1px solid #767676;" valign="top">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <br />
+                    <![endif]-->
+                    <table align="center" width="100%" style="width:100%;max-width:100%;" cellpadding="5" cellspacing="0" border="0">
                       <tr>
                         <td style="background-color: #e8e8e8;">
                           $membership_slot
@@ -781,59 +804,10 @@ $trump_mobile
                     <br />
                   </td>
                 </tr>
-                $topnews_sec
-                <tr>
-                  <td style="border-bottom: 1px solid #767676;">
-                    <!--[if (gte mso 9)|(IE)]>
-                    <table width="100%" align="center" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td width="270">
-                          <![endif]-->
-                    <table class="even_left" align="left" cellpadding="10" style="max-width:50%;border-right: 1px solid #767676;">
-                      <tr>
-                        <td align="center">
-                          <center>
-                            <p style="color: #000;font-family:Georgia, serif;font-weight:bold;text-align:center;font-size: 16px; line-height: 21px;">Keeping track</p>
-                            <p style="color: #767676;font-family:Georgia, serif;text-align:center;font-size: 16px; line-height: 21px;">Follow every turn in the long, twisted, and bizarre history of the Trump-Russia scandal in the always updated <a href="http://www.motherjones.com/politics/2017/03/exhaustive-history-donald-trump-russia-scandal-timeline" style="color: #ff6900;"><em>Mother Jones</em> timeline</a>.</p>
-                          </center>
-                        </td>
-                      </tr>
-                    </table>
-                    <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        <td width="270">
-                          <![endif]-->
-                    <table class="even_right" align="left" cellpadding="10" style="max-width:50%;">
-                      <tr>
-                        <td align="center">
-                          <center>
-                            <p style="color: #000;font-family:Georgia, serif;font-weight:bold;text-align:center;font-size: 16px; line-height: 21px;">Take a deep dive</p>
-                            <p style="color: #767676;font-family:Georgia, serif;text-align:center;font-size: 16px; line-height: 21px;"><em>Trumpocracy: The Russia Connection</em> is compiled by Bill Buzenberg and Denise Clifton, who ran the election-season blog PutinTrump.org. Visit their <a href="http://putintrump.org/" style="color: #ff6900;">archive here</a>.</p>
-                          </center>
-                        </td>
-                      </tr>
-                    </table>
-                    <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                      </tr>
-                    </table>
-                    <![endif]-->
-                  </td>
-                </tr>
-                <tr>
-                  <td style="border-bottom: 1px solid #767676;">
-                    <p class="ad_text" style="margin-top:10px;color: #767676; text-align: center;font-family:Georgia, serif; font-size: 12px;font-style:italic;">&#8212;Advertisement&#8212;</p>
-                    $billboard_ad
-                    <br />
-                    <!--[if (gte mso 9)|(IE)]>
-                    <br />
-                    <![endif]-->
-                  </td>
-                </tr>
                 $wors_sec
                 <tr>
                   <td style="border-bottom:1px solid #767676;" align="center">
-                    <p class="ad_text" style="margin-top:10px;color: #767676; text-align: center;font-family:Georgia, serif; font-style:italic;font-size:12px;">&#8212;Advertisement&#8212;</p>
+                    <p class="ad_text" style="margin-top:0;margin-bottom:10px;color: #767676; text-align: center;font-family:Georgia, serif; font-style:italic;font-size:12px;">&#8212;Advertisement&#8212;</p>
                     $small_sub_ad
                     <br />
                     <!--[if (gte mso 9)|(IE)]>
@@ -843,7 +817,7 @@ $trump_mobile
                 </tr>
                 <tr>
                   <td align="center">
-                    <p class="ad_text" style="font-family:Georgia, serif; font-size: 12px; color: #000;text-align:center;font-size: 16px; line-height: 21px;"><em>Trumpocracy: The Russia Connection</em> comes to you from <em>Mother Jones</em>, an award-winning, nonprofit investigative journalism organization.</p>
+                    $newsletter_info
                   </td>
                 </tr>
                 <tr>

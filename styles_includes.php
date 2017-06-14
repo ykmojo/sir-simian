@@ -121,9 +121,13 @@ $trump_mobile = <<<TRUMPMOBILE
     max-width: 100% !important;
     }
     .even_left {
+	margin-top: 0 !important;
     border-bottom: 1px solid #767676;
     border-right: none !important;
     }
+	.even_right {
+	margin-top: 20px !important;
+	}
     p {
     font-size: 24px !important;
     line-height: 28px !important;

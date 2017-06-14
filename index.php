@@ -6,7 +6,7 @@ $today = date("Y-m-d", time());
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sir Simian</title>
+  <title>MoJo Newsletter Curation Utility</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="head_main.css" />
@@ -60,7 +60,7 @@ $today = date("Y-m-d", time());
 </head>
 <body>
   <div id="header">
-    <h2 id="head_text">Sir Simian [A Newsletter HTML Creation Helper]</h2>
+    <h2 id="head_text"><em>MoJo</em> Newsletter Curation Utility [<strong>MNCU</strong>]</h2>
     <a href="" id="section_image" target="_blank"><img src="logo_inside.gif" border="0" id="type_img" width="450" style="display:block;text-align:center;width:100%;margin: 0 auto;" /></a>
   </div>
   <form id="headlinesForm" action="" method="post" accept-charset="utf-8">
