@@ -783,7 +783,7 @@ $trump_mobile
 				<tr>
 					<td style="border-bottom: 1px solid #767676;" align="center">
 						<p style="margin:0 0 15px 0;max-width: 90%;color: #000;font-family:Georgia, serif;font-weight:bold;text-align:center;font-size: 16px; line-height: 21px;">Take a deep dive</p>
-						<p style="margin:0 0 20px 0;max-width: 90%;color: #767676;font-family:Georgia, serif;text-align:center;font-size: 16px; line-height: 21px;"><em>The Russia Connection</em> is compiled by Bill Buzenberg and Denise Clifton, who ran the election-season blog PutinTrump.org. Visit their <a href="http://putintrump.org/" style="color: #ff6900;">archive here</a>.</p>
+						<p style="margin:0 0 20px 0;max-width: 90%;color: #767676;font-family:Georgia, serif;text-align:center;font-size: 16px; line-height: 21px;"><em>The Russian Connection</em> is compiled by Bill Buzenberg and Denise Clifton, who ran the election season blog <em>PutinTrump.org</em>. Visit their <a href="http://putintrump.org/" style="color: #ff6900;">archive here</a>.</p>
 					</td>
                 </tr>
                 <tr>
