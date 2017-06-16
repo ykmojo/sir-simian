@@ -26,10 +26,10 @@ else {
 }
 
 if(isset($_REQUEST['conundrum_lead']) && $_REQUEST['conundrum_lead'] != "") {
-		$conun_lead = strip_tags(trim($_REQUEST['conundrum_lead']), $allowed_html);
+	$conun_lead = strip_tags(trim($_REQUEST['conundrum_lead']), $allowed_html);
 }
 else {
-		$conun_lead = "";
+	$conun_lead = "";
 }
 
 if(isset($_REQUEST['envirohealth1_hed']) && $_REQUEST['envirohealth1_hed'] != "") {
@@ -340,6 +340,7 @@ $liveintent_toptags = <<<LIVETOP
 			</td>
 			<td valign="top" width="100%">
 LIVETOP;
+
 $liveintent_bottomtags = <<<LIVEBOTTOM
 </td>
 			<td align="left" valign="top" width="1">
@@ -570,7 +571,7 @@ $run_qry = "UPDATE econundrums_new
   WHERE hed_date='$headlines_date'";
 }
 else {
-$run_qry = "INSERT INTO econundrums_new(hed_date,conundrum_hed,conundrum_url,conundrum_dek,envirohealth1_hed,envirohealth1_url,envirohealth2_hed,envirohealth2_url,envirohealth3_hed,envirohealth3_url,moremojo_hed,moremojo_url,moremojo2_hed,moremojo2_url,ad_link_bill,ad_billboard,ad_name,ad_link_banner,ad_banner,ad_name2,this_week,envirohealth_title,moremojo_title,subject_line, conundrum_lead, sub_url, sub_image, sub_text, sub_code, lift_note, pixel_tracker, pixel_tracker2)
+$run_qry = "INSERT INTO econundrums_new(hed_date,conundrum_hed,conundrum_url,conundrum_dek,envirohealth1_hed,envirohealth1_url,envirohealth2_hed,envirohealth2_url,envirohealth3_hed,envirohealth3_url,moremojo_hed,moremojo_url,moremojo2_hed,moremojo2_url,ad_link_bill,ad_billboard,ad_name,ad_link_banner,ad_banner,ad_name2,this_week,envirohealth_title,moremojo_title,subject_line,conundrum_lead,sub_url,sub_image,sub_text,sub_code,lift_note,pixel_tracker,pixel_tracker2)
 VALUES('$headlines_date',
        '$conun_hed',
        '$conun_url',
@@ -595,14 +596,14 @@ VALUES('$headlines_date',
        '$envirohealth_title',
        '$moremojo_title',
        '$subject_line',
-		'$conun_lead',
-		'$sub_url',
-		'$sub_image',
-		'$sub_text',
-		'$sub_code',
-		'$lift_note',
-		'$pixel_tracker',
-		'$pixel_tracker2')";
+       '$conun_lead',
+       '$sub_url',
+       '$sub_image',
+       '$sub_text',
+       '$sub_code',
+       '$lift_note',
+       '$pixel_tracker',
+       '$pixel_tracker2')";
 }
 //flush query and close db connections
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly". mysqli_error($db_connect));

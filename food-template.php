@@ -208,8 +208,6 @@ if($sidedish_hed != "" || $sidedish_hed != null) {
 	if($sidedish_url != "" || $sidedish_url != null) {
 		$sd_url = "<a class=\"article_hed\" href=\"$sidedish_url\" style=\"$hed_styles\" name=\"$sd_anchor_name\">";
 		$sd_url_close = "</a>";
-
-		/*$sd_social_media = "<a href=\"http://www.facebook.com/sharer/sharer.php?u=$sidedish_url\">$facebook_icon</a> <a href=\"http://twitter.com/intent/tweet?url=$sidedish_url&text=$sidedish_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
 	}
 
 	$sd_full = "<tr><td style=\"$standard_td\">\n$sd_url" . $sidedish_hed . "$sd_url_close\n" . "</td>\n</tr>\n";
@@ -224,8 +222,6 @@ if($sidedish2_hed != "" || $sidedish2_hed != null) {
 	if($sidedish2_url != "" || $sidedish2_url != null) {
 		$sd2_url = "<a class=\"article_hed\" href=\"$sidedish2_url\" style=\"$hed_styles\"name=\"$sd2_anchor_name\">";
 		$sd2_url_close = "</a>";
-
-		/*$sd2_social_media = "<a href=\"http://www.facebook.com/sharer/sharer.php?u=$sidedish2_url\">$facebook_icon</a> <a href=\"http://twitter.com/intent/tweet?url=$sidedish2_url&text=$sidedish2_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
 	}
 
 	$sd2_full = "<tr><td style=\"$standard_td\">\n$sd2_url" . $sidedish2_hed . "$sd2_url_close\n" . "</td>\n</tr>\n";
@@ -240,8 +236,6 @@ if($sidedish3_hed != "" || $sidedish3_hed != null) {
 	if($sidedish3_url != "" || $sidedish3_url != null) {
 		$sd3_url = "<a class=\"article_hed\" href=\"$sidedish3_url\" style=\"$hed_styles\" name=\"$sd3_anchor_name\">";
 		$sd3_url_close = "</a>";
-
-		/*$sd3_social_media = "<a href=\"http://www.facebook.com/sharer/sharer.php?u=$sidedish3_url\">$facebook_icon</a> <a href=\"http://twitter.com/intent/tweet?url=$sidedish3_url&text=$sidedish3_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
 	}
 
 	$sd3_full = "<tr><td style=\"$standard_td\">\n$sd3_url" . $sidedish3_hed . "$sd3_url_close\n" . "</td>\n</tr>\n";
@@ -270,8 +264,6 @@ if($moremojo_hed != "" || $moremojo_hed != null) {
 	if($moremojo_url != "" || $moremojo_url != null) {
 		$mm_url = "<a class=\"article_hed\" href=\"$moremojo_url\" style=\"$hed_styles\" name=\"$mm_anchor_name\">";
 		$mm_url_close = "</a>";
-
-		/*$mm_social_media = "<a href=\"http://www.facebook.com/sharer/sharer.php?u=$moremojo_url\">$facebook_icon</a>\n <a href=\"http://twitter.com/intent/tweet?url=$moremojo_url&text=$moremojo_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>";*/
 	}
 
 	$mm_full = "<tr>\n<td style=\"$standard_td\">\n$mm_url" . $moremojo_hed . "$mm_url_close\n" . "</td>\n</tr>\n";
@@ -286,8 +278,6 @@ if($moremojo2_hed != "" || $moremojo2_hed != null) {
 	if($moremojo2_url != "" || $moremojo2_url != null) {
 		$mm2_url = "<a class=\"article_hed\" href=\"$moremojo2_url\" style=\"$hed_styles\" name=\"$mm2_anchor_name\">";
 		$mm2_url_close = "</a>";
-
-		/*$mm2_social_media = "<a href=\"http://www.facebook.com/sharer/sharer.php?u=$moremojo2_url\">$facebook_icon</a>\n <a href=\"http://twitter.com/intent/tweet?url=$moremojo2_url&text=$moremojo2_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>";*/
 	}
 
 	$mm2_full = "<tr>\n<td style=\"$standard_td\">\n$mm2_url" . $moremojo2_hed . "$mm2_url_close\n" . "</td>\n</tr>\n";
@@ -311,8 +301,6 @@ if($lift_note !== "") {
 }
 
 //text ad section
-/*$text_ad = strip_tags(stripslashes($text_ad_dek), "<br><b><strong><a><map><area><img>");
-$text_ad = "<div style=\"font-size:12px;text-align:left;color:#666666;margin-top:7px !important;margin-right:20px !important;margin-left:20px !important;\">" . $text_ad . "</div>";*/
 
 //live intent section
 $liveintent_toptags = "";
@@ -563,7 +551,7 @@ $run_qry = "UPDATE food_for_thought_new
   WHERE hed_date='$headlines_date'";
 }
 else {
-$run_qry = "INSERT INTO food_for_thought_new(hed_date,maindish_hed,maindish_url,maindish_dek,sidedish_hed,sidedish_url,sidedish2_hed,sidedish2_url,sidedish3_hed,sidedish3_url,moremojo_hed,moremojo_url,moremojo2_hed,moremojo2_url,ad_name,ad_link_bill,ad_billboard,ad_name2,ad_link_banner,ad_banner,subject_line,maindish_lead,sidedish_title,moremojo_title,sub_url, sub_image, sub_text, sub_code, lift_note)
+$run_qry = "INSERT INTO food_for_thought_new(hed_date,maindish_hed,maindish_url,maindish_dek,sidedish_hed,sidedish_url,sidedish2_hed,sidedish2_url,sidedish3_hed,sidedish3_url,moremojo_hed,moremojo_url,moremojo2_hed,moremojo2_url,ad_name,ad_link_bill,ad_billboard,ad_name2,ad_link_banner,ad_banner,subject_line,maindish_lead,sidedish_title,moremojo_title,sub_url,sub_image,sub_text,sub_code,lift_note)
 VALUES('$headlines_date',
        '$maindish_hed',
        '$maindish_url',
@@ -585,14 +573,14 @@ VALUES('$headlines_date',
        '$billboard_url2',
        '$billboard_image2',
        '$subject_line',
-			 '$maindish_lead',
-			 '$sidedish_title',
-			 '$moremojo_title',
-			 '$sub_url',
-			 '$sub_image',
-			 '$sub_text',
-			 '$sub_code',
-			 '$lift_note')";
+	   '$maindish_lead',
+	   '$sidedish_title',
+	   '$moremojo_title',
+	   '$sub_url',
+	   '$sub_image',
+	   '$sub_text',
+	   '$sub_code',
+	   '$lift_note')";
 }
 //flush query and close db connections
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly". mysqli_error($db_connect));
