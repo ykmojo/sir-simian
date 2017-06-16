@@ -66,7 +66,7 @@ $today = date("Y-m-d", time());
   <form id="headlinesForm" action="" method="post" accept-charset="utf-8">
     <div id="head_row">
     	<div id="top_section">
-    		<p style="float:left;width:300px;padding:5px;">To get started, choose a newsletter under Headline Category.<br /><br /><span style="color:#c33;font-weight:bold;">IMPORTANT: Before adding stories, click on View Headlines Archives to see if there is already a newsletter created for the date that you want. If so, use that one. If not, go ahead and create the newsletter as usual.</span></p>
+    		<p style="float:left;width:300px;padding:5px;">To get started, choose a newsletter under Headline Category.<br /><br /><span style="color:#c33;font-weight:bold;font-size: 14px;">IMPORTANT: Before working on a newsletter, click on View Headlines Archives to see if there is already a newsletter created for the date that you want. If so, use that one. If not, please contact a member of ad-ops [currently Rob Pjetri] to create a shell for the date you want.</span></p>
     		<div style="width:300px;float:left;border-left: 1px dotted #00f;padding: 5px 0 5px 15px;">
     			<p>Headlines's date (format:2012-02-29): <input type="text" id="hed_date" name="date_today" size="10" value="" /></p>
         		<p>Headlines category:

@@ -111,14 +111,14 @@ else {
 		$sub_url = trim($_REQUEST['sub_url']);
 	}
 	else {
-		$sub_url = "https://store.motherjones.com/collections/recently-added/products/motherjones-facts-mtee?utm_source=newsletter&utm_campaign=2017_facts&utm_medium=newsletter&utm_content=evergreen_facts";
+		$sub_url = "https://store.motherjones.com/collections/the-russia-connection?utm_source=NL/newsletter&utm_medium=newsletter&utm_campaign=Russia";
 	}
 	
 	if(isset($_REQUEST['sub_image']) && $_REQUEST['sub_image'] != null) {
 		$sub_image = $_REQUEST['sub_image'];
 	}
 	else {
-		$sub_image = "https://cdn.maropost.com/pro/uploads/account_585/133987/storead_600x250_012417.jpg";
+		$sub_image = "https://cdn.maropost.com/pro/uploads/account_585/161128/NL_600x200_060817.jpg";
 	}
 	
 	if(isset($_REQUEST['sub_text']) && $_REQUEST['sub_text'] != null) {
