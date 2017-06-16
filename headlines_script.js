@@ -160,7 +160,8 @@ function getArchive() {
 
   httpxml.onreadystatechange = function() {
 		if(httpxml.readyState == 4) {
-			data_text = httpxml.responseText;
+			//data_text = httpxml.responseText;
+			data_text = JSON.parse(httpxml.responseText);
 			if(data_text == "" || data_text == null){
 				//alert("No data to refresh");
 				document.getElementById("refresh_data").value = "No data to refresh";
@@ -183,11 +184,23 @@ function getArchive() {
   }
 }
 
-function delayedInsert(theArray) {
+function delayedInsert(json_obj) {
 	var temp_array;
+	var index_name;
+	
+	for(index_name in json_obj) {
+		if(document.getElelementById(index_name)) {
+			if(index_name.search(/dek/i) != -1 || index_name.search(/lead/i) != -1 || index_name.search(/lift_note/i) != -1 || index_name.search(/article/i) != -1 || index_name.search(/ioe_item/i) != -1 || index_name.search(/bite_add/i) != -1 || index_name.search(/fft_hk_leadin/i) != -1 || index_name.search(/fft_hidden_kitchen/i) != -1 || index_name.search(/fft_snack_box/i) != -1 || index_name.search(/fft_sb_attr/i) != -1 || index_name.search(/membership_slot/i) != -1 || index_name.search(/main_text/i) != -1) {
+				CKEDITOR.instances[index_name].setData(json_obj[index_name]);
+			}
+			else {
+				document.getElementById(index_name).value = json_obj[index_name];
+			}
+		}
+	}
 	  
-	if(theArray != "" || theArray.length != 0 || theArray != null) {
-		var first_array = new Array();
+	/*if(theArray != "" || theArray.length != 0 || theArray != null) {
+	  var first_array = new Array();
 	  first_array = theArray.split("^");
 
 	  for(i = 0; i < first_array.length; i++) {
@@ -212,7 +225,7 @@ function delayedInsert(theArray) {
 		  }
 		}
 	  }
-	}
+	}*/
 }
 
 /*function FCKeditor_OnComplete( editorInstance )

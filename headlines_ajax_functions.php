@@ -34,13 +34,13 @@ function retrieveArchive($arch_type, $arch_date) {
   $qry_string = sprintf("SELECT * FROM %s WHERE hed_date='%s'", $arch_type, $arch_date);
   $arch_qry = mysqli_query($db_con, $qry_string) or die("Can't run query" . mysqli_error($db_con));
   mysql_query("set names 'utf8'");
-  $data_return = "";
   $result = mysqli_fetch_assoc($arch_qry);
+  $data_return = json_encode($result);
 
-  foreach($result as $key=>$value) {
+  /*foreach($result as $key=>$value) {
     $value = stripslashes($value);
     $data_return .= $key . "~" . $value . "^";
-  }
+  }*/
 
   print $data_return;
 }

@@ -32,7 +32,6 @@ $today = date("Y-m-d", time());
              var temp_text = CKEDITOR.instances[numId].getData();
              var clean_text = cleanstring(temp_text);
              CKEDITOR.instances[numId].setData(clean_text);
-             //console.log(clean_text);
           });
       }
       else if(numId == "fft_article_1" || numId == "fft_article_2" || numId == "fft_article_3" || numId == "fft_article_4" || numId == "fft_article_5" || numId == "fft_article_6" || numId == "fft_snack_box" || numId == "fft_sb_attr" || numId == "fft_hk_leadin" || numId == "fft_bite_add" || numId == "membership_slot" || numId == "topnews1_dek" || numId == "topnews2_dek" || numId == "topnews3_dek" || numId == "topnews4_dek" || numId == "topnews5_dek" || numId == "wors1_dek" || numId == "wors2_dek" || numId == "wors3_dek" || numId == "wors4_dek") {
