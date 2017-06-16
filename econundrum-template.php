@@ -434,7 +434,7 @@ $mobile_styles
 	$lift_note_section
     <tr>
         <td style="$news_main_logo" align="center">
-            <img src="http://assets.motherjones.com/newsletters/images/econ_header_3.png" alt="Econundrums" style="width:600px;border: none !important;" width="600" height="230" border="0" />
+            <img src="http://assets.motherjones.com/newsletters/images/econ_header_3.png" alt="Econundrums" style="width:600px;border: none !important;" width="600" border="0" />
 		</td>
     </tr>
     <tr>

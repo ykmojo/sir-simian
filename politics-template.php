@@ -456,7 +456,7 @@ $mobile_styles
 <table id="table_content" style="$main_table_styles" width="640" align="center" cellpadding="5" cellspacing="0" border="0">$lift_note_section
     <tr>
         <td style="$news_main_logo" align="center">
-            <img src="http://assets.motherjones.com/newsletters/images/politicalmojo_header_3.png" alt="Political MoJo" style="width:600px;border:none !important;" border="0" />
+            <img src="http://assets.motherjones.com/newsletters/images/politicalmojo_header_3.png" alt="Political MoJo" style="width:600px;border:none !important;" width="600" border="0" />
 		</td>
     </tr>
     <tr>
