@@ -197,10 +197,6 @@ function delayedInsert(json_obj) {
 	}
 }
 
-/*function FCKeditor_OnComplete( editorInstance )
-{
-	delayedInsert(data_text);
-}*/
 
 function restoreValues(the_section) {
   var httpxml = new getHTTP();
