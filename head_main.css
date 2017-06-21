@@ -3,21 +3,19 @@ body {margin:5px 5px;
 p {font-size:12px;
   text-align:left;
   clear:both;}
-input {margin:2px 0px 2px 5px;
-  float:right;
+input {margin-left:10px;
   color:#000000;
   background-color:#ffffff;}
 input:disabled {background-color:#999;}
-h4 {margin:10px 0 3px 0;
-	clear: both;}
+h4 {margin:5px 0;}
 fieldset {margin:0 auto;
 	border: none;}
 textarea {margin-bottom: 10px;
 	padding-bottom:10px;}
-#main_container {margin-left: 100px;
-  width:1080px;}
+#main_container {margin-left: 80px;
+  width:1000px;}
 #header {margin:5px auto;
-  width:450px;
+  width:430px;
   display:table;
   border: 1px #000 solid;
   /*border-bottom:1px #000 solid;*/
@@ -59,7 +57,7 @@ textarea {margin-bottom: 10px;
 	display:table;}	
 .category {margin:0 0 0 20px;
   padding:5px 5px;
-  width:400px;
+  width:380px;
   float:right;}
 .category p {margin:10px 0;
   padding:0 0;
@@ -75,13 +73,13 @@ textarea {margin-bottom: 10px;
 #ad_section {margin:5px 5px;
   width:1080px;
   border-top:1px #000000 solid;}
-#ad_slots {width:460px;
+#ad_slots {width:430px;
 	float:left;
 	padding: 10px 15px;
 	margin: 0;
 	border: 1px dotted #000;
 	display: table;}
- #membership_slots{width:460px;
+ #membership_slots{width:430px;
 	float:right;
 	padding: 10px 15px;
 	margin: 0;
@@ -94,23 +92,26 @@ textarea {margin-bottom: 10px;
 #items_left, #items_right {margin:10px 0 0 0;
   /*text-align:right;*/
   clear:both;}
-.sections {margin:20px 2px 5px 2px;
-  width:485px;
-  padding:10px 5px;
-  border:2px groove #000 !important;}
- .sections legend {font-size: 18px;}
+.sections {margin:10px 10px;
+  width:425px;
+  padding:5px 10px;
+  border:1px groove #000 !important;}
+ .sections legend {font-size: 18px;
+ 	font-weight: bold;}
 .sub_sections {margin:5px auto;
-	width:465px;
-	padding: 10px 5px;
-	border: 3px ridge #f99;}
-.sub_sections legend {font-weight:bold;
+	width:415px;
+	padding: 5px 5px;
+	border: 2px ridge #f99;}
+.sections legend input {width: 300px;
+	font-size: 16px;}
+.sub_sections legend {
 	font-size: 14px;}
-.columns {margin:0 5px;
-  width:500px;
+.columns {margin:0 12px;
+  width:450px;
   float:left;}
 .dek_sect {width:75px;
   text-align:left;}
-.ad_label {width:500px;
+.ad_label {width:400px;
   float:left;
   text-align:right;}
 /* warning message classes */

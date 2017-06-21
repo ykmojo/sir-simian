@@ -172,7 +172,7 @@ $fft_redesign = <<<FFTRED
   <div class="columns">
     <div id="items_left">
 			<fieldset class="sections">
-					<legend class="section_titles">MAIN SECTION</legend>
+					<legend>MAIN SECTION</legend>
 					<p>Main hed: <input type="text" id="fft_main_hed" name="fft_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></p>
 					<p>Main url: <input type="text" id="fft_main_hed_url" name="fft_main_hed_url" size="50" maxlength="512" onblur="this.value=fixURL(this.value)" /></p>
 					<legend>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50" onfocus="checkHedDate()" />
@@ -187,8 +187,7 @@ $fft_redesign = <<<FFTRED
 					</fieldset>
 					
 					<fieldset class="sub_sections">
-						<legend class="section_titles">Article 1:</legend>
-						
+						<legend>Article 1:</legend>
 						<textarea id="fft_article_1" name="fft_article_1" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 						<fieldset class="sources" style="float:left;width:50%;clear:both;">
 							<legend>Source name</legend>
@@ -204,7 +203,7 @@ $fft_redesign = <<<FFTRED
 					</fieldset>
 					
 					<fieldset class="sub_sections">
-						<legend class="section_titles">Article 2:</legend>
+						<legend>Article 2:</legend>
 						<textarea id="fft_article_2" name="fft_article_2" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 						<fieldset class="sources" style="float:left;width:50%;clear:both;">
 							<legend>Source name</legend>
@@ -220,7 +219,7 @@ $fft_redesign = <<<FFTRED
 					</fieldset>
 					
 					<fieldset class="sub_sections">
-						<legend class="section_titles">Article 3:</legend>
+						<legend>Article 3:</legend>
 						<textarea id="fft_article_3" name="fft_article_3" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 						<fieldset class="sources" style="float:left;width:50%;clear:both;">
 							<legend>Source name</legend>
@@ -236,7 +235,7 @@ $fft_redesign = <<<FFTRED
 					</fieldset>
 					
 					<fieldset class="sub_sections">
-						<legend class="section_titles">Article 4:</legend>
+						<legend>Article 4:</legend>
 						<textarea id="fft_article_4" name="fft_article_4" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 						<fieldset class="sources" style="float:left;width:50%;clear:both;">
 							<legend>Source name</legend>
@@ -252,7 +251,7 @@ $fft_redesign = <<<FFTRED
 					</fieldset>
 					
 					<fieldset class="sub_sections">
-						<legend class="section_titles">Article 5:</legend>
+						<legend>Article 5:</legend>
 						<textarea id="fft_article_5" name="fft_article_5" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 						<fieldset class="sources" style="float:left;width:50%;clear:both;">
 							<legend>Source name</legend>
@@ -268,7 +267,7 @@ $fft_redesign = <<<FFTRED
 					</fieldset>
 					
 					<fieldset class="sub_sections">
-						<legend class="section_titles">Article 6:</legend>
+						<legend>Article 6:</legend>
 						<textarea id="fft_article_6" name="fft_article_6" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
 						<fieldset class="sources" style="float:left;width:50%;clear:both;">
 							<legend>Source name</legend>
@@ -285,7 +284,7 @@ $fft_redesign = <<<FFTRED
 			</fieldset>
 			
 			<fieldset class="sections">
-				<legend><input type="text" class="section_titles" id="snack_box" name="snack_box" value="One Great Tidbit" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+				<legend><input type="text" id="snack_box" name="snack_box" value="One Great Tidbit" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
 				<p>Body text:</p>
 				<textarea id="fft_snack_box" name="fft_snack_box"></textarea>
 				<p>Image source: <input type="text" id="fft_sb_image" name="fft_sb_image" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
@@ -298,7 +297,7 @@ $fft_redesign = <<<FFTRED
 	<div class="columns">
 		<div id="items_right">
 			<fieldset class="sections">
-				<legend><input type="text" class="section_titles" id="in_our_ears" name="in_our_ears" value="This Week in Podcasts" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+				<legend><input type="text" id="in_our_ears" name="in_our_ears" value="This Week in Podcasts" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
 				<fieldset class="sub_sections">
 					<legend>First Item: </legend>
 					<textarea id="fft_ioe_item1" name="fft_ioe_item1" onfocus="checkHedDate()"></textarea>
@@ -354,7 +353,7 @@ $fft_redesign = <<<FFTRED
 			</fieldset>
 			
 			<fieldset class="sections">
-				<legend><input type="text" class="section_titles" id="hidden_kitchen" name="hidden_kitchen" value="Exclusive to Newsletter Subscribers" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+				<legend><input type="text" id="hidden_kitchen" name="hidden_kitchen" value="Exclusive to Newsletter Subscribers" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
 				<fieldset class="sub_sections">
 					<p>Lead in:</p>
 					<textarea id="fft_hk_leadin" name="fft_hk_leadin" onfocus="checkHedDate()"></textarea>

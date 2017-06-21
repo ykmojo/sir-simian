@@ -19,7 +19,7 @@ $today = date("Y-m-d", time());
       var editor_height = 0;
       if(numId == "conundrum_dek" || numId == "maindish_dek" || numId == "twmustread_dek" || numId == "topstory_dek" || numId == "fft_hidden_kitchen" || numId == "fft_ioe_item1" || numId == "fft_ioe_item2" || numId == "fft_ioe_item3" || numId == "lift_note" || numId == "main_text" || numId == "trum_main_dek" || numId == "trump_main2_dek") {
           CKEDITOR.replace(numId, {
-              width: 470,
+              width: 410,
               height: 200
             });
           CKEDITOR.config.scayt_autoStartup = true;
@@ -36,7 +36,7 @@ $today = date("Y-m-d", time());
       }
       else if(numId == "fft_article_1" || numId == "fft_article_2" || numId == "fft_article_3" || numId == "fft_article_4" || numId == "fft_article_5" || numId == "fft_article_6" || numId == "fft_snack_box" || numId == "fft_sb_attr" || numId == "fft_hk_leadin" || numId == "fft_bite_add" || numId == "membership_slot" || numId == "topnews1_dek" || numId == "topnews2_dek" || numId == "topnews3_dek" || numId == "topnews4_dek" || numId == "topnews5_dek" || numId == "wors1_dek" || numId == "wors2_dek" || numId == "wors3_dek" || numId == "wors4_dek") {
           CKEDITOR.replace(numId, {
-              width: 470,
+              width: 410,
               height: 100
             });
           CKEDITOR.config.scayt_autoStartup = true;
@@ -86,7 +86,7 @@ $today = date("Y-m-d", time());
         		</p>
         		<br />
         </div>
-        <div style="width:450px;margin:5px auto;border-top:1px dotted #00f;display:table;">
+        <div style="width:430px;margin:5px auto;border-top:1px dotted #00f;display:table;">
         	<input type="button" value="View Headlines Archives" onclick="location.href='archives/'" style="margin:5px 20px 5px 10px;padding:5px 5px;float:left;color:#ffffff;background-color:#000000;" />
         	<input type="button" value="Newsletter Stats" onclick="window.open('news-stats.html', 'Newsletter Stats', 'toolbar=no,width=1200,scrollbars=yes');" style="float:left;margin: 5px 20px 5px 10px;padding: 5px;color:#fff;background-color:#000;" />
         	<input type="button" value="Refresh data" onclick="javascript:getArchive();" style="margin:5px 0 5px 10px;padding:5px 5px;float:left;background-color:#c21;color:#fff;font-weight:bold;" id="refresh_data" />
@@ -102,8 +102,8 @@ $today = date("Y-m-d", time());
   </div>
     <hr style="width:800px;clear:both;" />
     <div id="footer_row" class="block_hidden">
-      <input type="button" value="Preview" style="background-color:#960;color:#fff;font-size:16px;" onclick="checkForm('preview');" />
-      <button style="width:100px;background-color:#393;color:#fff;font-size:16px;" onclick="checkForm('not');">Submit<br>Headlines</button>
+      <input type="button" value="Preview" style="background-color:#960;color:#fff;font-size:12px;" onclick="checkForm('preview');" />
+      <button style="width:75px;background-color:#393;color:#fff;font-size:12px;" onclick="checkForm('not');">Submit<br>Headlines</button>
       <!--  <input type="button" value="Submit Headlines" style="width:100px;background-color:#393;color:#fff;font-size:16px;" onclick="checkForm('not');" />-->
     </div>
   <br style="clear:both;" />
