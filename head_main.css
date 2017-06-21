@@ -14,7 +14,7 @@ fieldset {margin:0 auto;
 	border: none;}
 textarea {margin-bottom: 10px;
 	padding-bottom:10px;}
-#main_container {margin:0 auto;
+#main_container {margin-left: 100px;
   width:1080px;}
 #header {margin:5px auto;
   width:450px;
@@ -29,7 +29,10 @@ textarea {margin-bottom: 10px;
   width:810px;
   clear:both;}
 #footer_row {margin:10px auto;
-  width:768px;}
+  width:100px;
+  position:fixed;
+  left:0;
+  top:240px;}
 #hed_type {margin:0 0;
   padding:0 0;}
 #footer_row p, #footer_row input {float:none;
@@ -66,6 +69,7 @@ textarea {margin-bottom: 10px;
   font-size:14px;}
 .section_titles {font-size:18px;
 	clear:both;
+	margin-bottom: 10px;
 }
 /*for ads*/
 #ad_section {margin:5px 5px;
@@ -90,17 +94,17 @@ textarea {margin-bottom: 10px;
 #items_left, #items_right {margin:10px 0 0 0;
   /*text-align:right;*/
   clear:both;}
-.sections {margin:2px 2px;
+.sections {margin:20px 2px 5px 2px;
   width:485px;
-  padding:5px 5px;
+  padding:10px 5px;
   border:2px groove #000 !important;}
+ .sections legend {font-size: 18px;}
 .sub_sections {margin:5px auto;
 	width:465px;
-	padding: 5px;
+	padding: 10px 5px;
 	border: 3px ridge #f99;}
 .sub_sections legend {font-weight:bold;
-	font-size: 14px;
-	line-height: 18px;}
+	font-size: 14px;}
 .columns {margin:0 5px;
   width:500px;
   float:left;}

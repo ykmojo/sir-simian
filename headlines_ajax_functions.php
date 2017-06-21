@@ -171,60 +171,199 @@ $fft_redesign = <<<FFTRED
 <div class="head_types">
   <div class="columns">
     <div id="items_left">
-	  <h3>Main Section</h3>
-	  <div class="sections">
-		<p>Main hed: <input type="text" id="fft_main_hed" name="fft_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></p>
-		<p>Main url: <input type="text" id="fft_main_hed_url" name="fft_main_hed_url" size="50" maxlength="512" onblur="this.value=fixURL(this.value)" /></p>
-		<p>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50" onfocus="checkHedDate()" />
-		<p>Article 1:</p>
-		<textarea id="fft_article_1" name="fft_article_1" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
-		<p>Article 2:</p>
-		<textarea id="fft_article_2" name="fft_article_2" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
-		<p>Article 3:</p>
-		<textarea id="fft_article_3" name="fft_article_3" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
-		<p>Article 4:</p>
-		<textarea id="fft_article_4" name="fft_article_4" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
-		<p>Article 5:</p>
-		<textarea id="fft_article_5" name="fft_article_5" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
-		<p>Article 6:</p>
-		<textarea id="fft_article_6" name="fft_article_6" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
-	  </div>
-	  <h4><input type="text" class="section_titles" id="snack_box" name="snack_box" value="One Great Tidbit" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></h4>
-	  <div class="sections">
-		<p>Body text:</p>
-		<textarea id="fft_snack_box" name="fft_snack_box"></textarea>
-		<p>Image source: <input type="text" id="fft_sb_image" name="fft_sb_image" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
-		<p>Attribution/Caption:</p>
-		<textarea id="fft_sb_attr" name="fft_sb_attr" onfocus="checkHedDate()"></textarea>
-	  </div>
-	</div>
-  </div>
-  <div class="columns">
-	<div id="items_right">
-	  <h4><input type="text" class="section_titles" id="in_our_ears" name="in_our_ears" value="This Week in Podcasts" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></h4>
-	  <div class="sections">
-		<p>First Item: </p>
-		<textarea id="fft_ioe_item1" name="fft_ioe_item1" onfocus="checkHedDate()"></textarea>
-		<p>If this item is not a Bite plug, please leave blank.</p>
-		<div class="sections">
-		<p>Bite episode link: <input type="text" id="fft_bite_link" name="fft_bite_link" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
-		<p>Bite episode description:</p>
-		<textarea id="fft_bite_add" name="fft_bite_add" onfocus="checkHedDate()"></textarea>
+			<fieldset class="sections">
+					<legend class="section_titles">MAIN SECTION</legend>
+					<p>Main hed: <input type="text" id="fft_main_hed" name="fft_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></p>
+					<p>Main url: <input type="text" id="fft_main_hed_url" name="fft_main_hed_url" size="50" maxlength="512" onblur="this.value=fixURL(this.value)" /></p>
+					<legend>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50" onfocus="checkHedDate()" />
+					
+					<fieldset class="sources" style="float:left;width:50%;clear:both;">
+							<legend>Source name</legend>
+							<input type="text" id="fft_main_source" name="fft_main_source" style="width:95%;" onblur="checkHedDate()">
+					</fieldset>
+					<fieldset class="sources" style="float:left;width:25%;">
+							<legend>Italicize source?</legend>
+							<input type="checkbox" id="fft_main_ital" name="fft_main_ital" style="float:left;">
+					</fieldset>
+					
+					<fieldset class="sub_sections">
+						<legend class="section_titles">Article 1:</legend>
+						
+						<textarea id="fft_article_1" name="fft_article_1" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+						<fieldset class="sources" style="float:left;width:50%;clear:both;">
+							<legend>Source name</legend>
+							<input type="text" id="fft_article_1_source" name="fft_article_1_source" onfocus="checkHedDate()" style="float:left;">
+						</fieldset>
+						<fieldset class="sources" style="float:left;width:25%;">
+							<legend>Italicise source?</legend> <input type="checkbox" id="fft_article_1_ital" name="fft_article_1_ital" style="float:left;">
+						</fieldset>
+						<fieldset class="sources">
+							<legend>Url</legend>
+							<input type="text" id="fft_article_1_url" name="fft_article_1_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+						</fieldset>
+					</fieldset>
+					
+					<fieldset class="sub_sections">
+						<legend class="section_titles">Article 2:</legend>
+						<textarea id="fft_article_2" name="fft_article_2" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+						<fieldset class="sources" style="float:left;width:50%;clear:both;">
+							<legend>Source name</legend>
+							<input type="text" id="fft_article_2_source" name="fft_article_2_source" onfocus="checkHedDate()" style="float:left;">
+						</fieldset>
+						<fieldset class="sources" style="float:left;width:25%;">
+							<legend>Italicise source?</legend> <input type="checkbox" id="fft_article_2_ital" name="fft_article_2_ital" style="float:left;">
+						</fieldset>
+						<fieldset class="sources">
+							<legend>Url</legend>
+							<input type="text" id="fft_article_2_url" name="fft_article_2_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+						</fieldset>
+					</fieldset>
+					
+					<fieldset class="sub_sections">
+						<legend class="section_titles">Article 3:</legend>
+						<textarea id="fft_article_3" name="fft_article_3" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+						<fieldset class="sources" style="float:left;width:50%;clear:both;">
+							<legend>Source name</legend>
+							<input type="text" id="fft_article_3_source" name="fft_article_3_source" onfocus="checkHedDate()" style="float:left;">
+						</fieldset>
+						<fieldset class="sources" style="float:left;width:25%;">
+							<legend>Italicise source?</legend> <input type="checkbox" id="fft_article_3_ital" name="fft_article_3_ital" style="float:left;">
+						</fieldset>
+						<fieldset class="sources">
+							<legend>Url</legend>
+							<input type="text" id="fft_article_3_url" name="fft_article_3_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+						</fieldset>
+					</fieldset>
+					
+					<fieldset class="sub_sections">
+						<legend class="section_titles">Article 4:</legend>
+						<textarea id="fft_article_4" name="fft_article_4" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+						<fieldset class="sources" style="float:left;width:50%;clear:both;">
+							<legend>Source name</legend>
+							<input type="text" id="fft_article_4_source" name="fft_article_4_source" onfocus="checkHedDate()" style="float:left;">
+						</fieldset>
+						<fieldset class="sources" style="float:left;width:25%;">
+							<legend>Italicise source?</legend> <input type="checkbox" id="fft_article_4_ital" name="fft_article_4_ital" style="float:left;">
+						</fieldset>
+						<fieldset class="sources">
+							<legend>Url</legend>
+							<input type="text" id="fft_article_4_url" name="fft_article_4_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+						</fieldset>
+					</fieldset>
+					
+					<fieldset class="sub_sections">
+						<legend class="section_titles">Article 5:</legend>
+						<textarea id="fft_article_5" name="fft_article_5" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+						<fieldset class="sources" style="float:left;width:50%;clear:both;">
+							<legend>Source name</legend>
+							<input type="text" id="fft_article_5_source" name="fft_article_5_source" onfocus="checkHedDate()" style="float:left;">
+						</fieldset>
+						<fieldset class="sources" style="float:left;width:25%;">
+							<legend>Italicise source?</legend> <input type="checkbox" id="fft_article_5_ital" name="fft_article_5_ital" style="float:left;">
+						</fieldset>
+						<fieldset class="sources">
+							<legend>Url</legend>
+							<input type="text" id="fft_article_5_url" name="fft_article_5_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+						</fieldset>
+					</fieldset>
+					
+					<fieldset class="sub_sections">
+						<legend class="section_titles">Article 6:</legend>
+						<textarea id="fft_article_6" name="fft_article_6" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+						<fieldset class="sources" style="float:left;width:50%;clear:both;">
+							<legend>Source name</legend>
+							<input type="text" id="fft_article_6_source" name="fft_article_6_source" onfocus="checkHedDate()" style="float:left;">
+						</fieldset>
+						<fieldset class="sources" style="float:left;width:25%;">
+							<legend>Italicise source?</legend> <input type="checkbox" id="fft_article_6_ital" name="fft_article_6_ital" style="float:left;">
+						</fieldset>
+						<fieldset class="sources">
+							<legend>Url</legend>
+							<input type="text" id="fft_article_6_url" name="fft_article_6_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+						</fieldset>
+					</fieldset>
+			</fieldset>
+			
+			<fieldset class="sections">
+				<legend><input type="text" class="section_titles" id="snack_box" name="snack_box" value="One Great Tidbit" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+				<p>Body text:</p>
+				<textarea id="fft_snack_box" name="fft_snack_box"></textarea>
+				<p>Image source: <input type="text" id="fft_sb_image" name="fft_sb_image" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
+				<p>Attribution/Caption:</p>
+				<textarea id="fft_sb_attr" name="fft_sb_attr" onfocus="checkHedDate()"></textarea>
+			</fieldset>
 		</div>
-		<p>Second Item:</p>
-		<textarea id="fft_ioe_item2" name="fft_ioe_item2" onfocus="checkHedDate()"></textarea>
-		<p>Third Item:</p>
-		<textarea id="fft_ioe_item3" name="fft_ioe_item3" onfocus="checkHedDate()"></textarea>
-	  </div>
-	  <h4><input type="text" class="section_titles" id="hidden_kitchen" name="hidden_kitchen" value="Exclusive to Newsletter Subscribers" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></h4>
-	  <div class="sections">
-		<p>Lead in:</p>
-		<textarea id="fft_hk_leadin" name="fft_hk_leadin" onfocus="checkHedDate()"></textarea>
-		<p>Body text:</p>
-		<textarea id="fft_hidden_kitchen" name="fft_hidden_kitchen" onfocus="checkHedDate()"></textarea>
-	  </div>
 	</div>
-  </di>
+	
+	<div class="columns">
+		<div id="items_right">
+			<fieldset class="sections">
+				<legend><input type="text" class="section_titles" id="in_our_ears" name="in_our_ears" value="This Week in Podcasts" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+				<fieldset class="sub_sections">
+					<legend>First Item: </legend>
+					<textarea id="fft_ioe_item1" name="fft_ioe_item1" onfocus="checkHedDate()"></textarea>
+					<p>(<strong>Only use these fields if this is not a Bite plug and you need to include sources</strong>)</p>
+					<fieldset class="sources" style="float:left;width:50%;clear:both;">
+						<legend>Source name</legend>
+						<input type="text" id="fft_ioe_item1_source" name="fft_ioe_item1_source" onfocus="checkHedDate()" style="float:left;">
+					</fieldset>
+					<fieldset class="sources" style="float:left;width:25%;">
+						<legend>Italicise source?</legend> <input type="checkbox" id="fft_ioe_item1_ital" name="fft_ioe_item1_ital" style="float:left;">
+					</fieldset>
+					<fieldset class="sources">
+						<legend>Url</legend>
+						<input type="text" id="fft_ioe_item1_url" name="fft_ioe_item1_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+					</fieldset>
+					<p><strong>(If this item is not a Bite plug, please leave blank)</strong>.</p>
+					<p>Bite episode link: <input type="text" id="fft_bite_link" name="fft_bite_link" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
+					<p>Bite episode description:</p>
+					<textarea id="fft_bite_add" name="fft_bite_add" onfocus="checkHedDate()"></textarea>
+				</fieldset>
+				
+				<fieldset class="sub_sections">
+					<legend>Second Item:</legend>
+					<textarea id="fft_ioe_item2" name="fft_ioe_item2" onfocus="checkHedDate()"></textarea>
+					<fieldset class="sources" style="float:left;width:50%;clear:both;">
+						<legend>Source name</legend>
+						<input type="text" id="fft_ioe_item2_source" name="fft_ioe_item2_source" onfocus="checkHedDate()" style="float:left;">
+					</fieldset>
+					<fieldset class="sources" style="float:left;width:25%;">
+						<legend>Italicise source?</legend> <input type="checkbox" id="fft_ioe_item2_ital" name="fft_ioe_item2_ital" style="float:left;">
+					</fieldset>
+					<fieldset class="sources">
+						<legend>Url</legend>
+						<input type="text" id="fft_ioe_item2_url" name="fft_ioe_item2_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+					</fieldset>
+				</fieldset>
+				
+				<fieldset class="sub_sections">
+					<legend>Third Item:</legend>
+					<textarea id="fft_ioe_item3" name="fft_ioe_item3" onfocus="checkHedDate()"></textarea>
+					<fieldset class="sources" style="float:left;width:50%;clear:both;">
+						<legend>Source name</legend>
+						<input type="text" id="fft_ioe_item3_source" name="fft_ioe_item3_source" onfocus="checkHedDate()" style="float:left;">
+					</fieldset>
+					<fieldset class="sources" style="float:left;width:25%;">
+						<legend>Italicise source?</legend> <input type="checkbox" id="fft_ioe_item3_ital" name="fft_ioe_item3_ital" style="float:left;">
+					</fieldset>
+					<fieldset class="sources">
+						<legend>Url</legend>
+						<input type="text" id="fft_ioe_item3_url" name="fft_ioe_item3_url" onblur="this.value=fixURL(this.value)" style="float:left;" size="50">
+					</fieldset>
+				</fieldset>
+			</fieldset>
+			
+			<fieldset class="sections">
+				<legend><input type="text" class="section_titles" id="hidden_kitchen" name="hidden_kitchen" value="Exclusive to Newsletter Subscribers" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+				<fieldset class="sub_sections">
+					<p>Lead in:</p>
+					<textarea id="fft_hk_leadin" name="fft_hk_leadin" onfocus="checkHedDate()"></textarea>
+					<p>Body text:</p>
+					<textarea id="fft_hidden_kitchen" name="fft_hidden_kitchen" onfocus="checkHedDate()"></textarea>
+				</fieldset>
+			</fieldset>
+		</div>
+  </div>
 </div>
 FFTRED;
 

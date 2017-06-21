@@ -103,7 +103,8 @@ $today = date("Y-m-d", time());
     <hr style="width:800px;clear:both;" />
     <div id="footer_row" class="block_hidden">
       <input type="button" value="Preview" style="background-color:#960;color:#fff;font-size:16px;" onclick="checkForm('preview');" />
-      <input type="button" value="Submit Headlines" style="background-color:#393;color:#fff;font-size:16px;" onclick="checkForm('not');" />
+      <button style="width:100px;background-color:#393;color:#fff;font-size:16px;" onclick="checkForm('not');">Submit<br>Headlines</button>
+      <!--  <input type="button" value="Submit Headlines" style="width:100px;background-color:#393;color:#fff;font-size:16px;" onclick="checkForm('not');" />-->
     </div>
   <br style="clear:both;" />
   <div id="ad_section" class="block_hidden">
