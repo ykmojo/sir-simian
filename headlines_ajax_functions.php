@@ -175,7 +175,7 @@ $fft_redesign = <<<FFTRED
 					<legend>MAIN SECTION</legend>
 					<p>Main hed: <input type="text" id="fft_main_hed" name="fft_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></p>
 					<p>Main url: <input type="text" id="fft_main_hed_url" name="fft_main_hed_url" size="50" maxlength="512" onblur="this.value=fixURL(this.value)" /></p>
-					<legend>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50" onfocus="checkHedDate()" />
+					<p>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50" onfocus="checkHedDate()" /></p>
 					
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 							<legend>Source name</legend>
@@ -477,7 +477,7 @@ $trumpocracy = <<<TRUMP
 	<div class="columns">
 		<div id="items_left">
 			<fieldset class="sections">
-				<legend class="section_titles">MAIN ARTICLE</legend>
+				<legend>MAIN ARTICLE</legend>
 				<p>Headline: <input type="text" id="trump_main_hed" name="trump_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
 				<p>Url: <input type="text" id="trum_main_url" name="trum_main_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
 				<p>Image url: <input type="text" id="trump_main_img" name="trump_main_img" size="50" onblur="this.value=fixURL(this.value)" /></p>
@@ -494,7 +494,7 @@ $trumpocracy = <<<TRUMP
 			</fieldset>
 
 			<fieldset class="sections">
-				<legend><input type="text" class="section_titles" id="topnews_title" name="topnews_title" value="TOP NEWS" onfocus="checkHedDate()" /></legend>
+				<legend><input type="text" id="topnews_title" name="topnews_title" value="TOP NEWS" onfocus="checkHedDate()" /></legend>
 				<fieldset class="sub_sections">
 					<legend>Headline 1:</legend>
 					<textarea id="topnews1_dek" name="topnews1_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
@@ -579,9 +579,8 @@ $trumpocracy = <<<TRUMP
 	</div>
 	<div class="columns">
 		<div id="items_right">
-			
 			<fieldset class="sections">
-				<legend class="section_titles">SECOND MAIN ARTICLE</legend>
+				<legend>SECOND MAIN ARTICLE</legend>
 				<p>Headline: <input type="text" id="trump_main2_hed" name="trump_main2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
 				<p>Url: <input type="text" id="trump_main2_url" name="trump_main2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
 				<p>Image: <input type="text" id="trump_main2_img" name="trump_main2_img" size="50" onblur="this.value=fixURL(this.value)" /></p>
@@ -598,7 +597,7 @@ $trumpocracy = <<<TRUMP
 			</fieldset>
 			
 			<fieldset class="sections">
-				<legend><input type="text" class="section_titles" id="wors_title" name="wors_title" value="What Others are Saying" onfocus="checkHedDate()" /></legend>
+				<legend><input type="text" id="wors_title" name="wors_title" value="What Others are Saying" onfocus="checkHedDate()" /></legend>
 				<fieldset class="sub_sections">
 					<legend>Headline 1:</legend>
 					<textarea id="wors1_dek" name="wors1_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
