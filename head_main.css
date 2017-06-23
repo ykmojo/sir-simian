@@ -12,7 +12,7 @@ fieldset {margin:0 auto;
 	border: none;}
 textarea {margin-bottom: 10px;
 	padding-bottom:10px;}
-#main_container {margin-left: 80px;
+#main_container {margin-left: 85px;
   width:1000px;}
 #header {margin:5px auto;
   width:430px;
@@ -29,7 +29,10 @@ textarea {margin-bottom: 10px;
   width:80px;
   position:fixed;
   left:5px;
-  top:240px;}
+  top:240px;
+  padding: 5px 3px;
+  border: 1px groove #ff0;
+  background-color: #fc6;}
 #hed_type {margin:0 0;
   padding:0 0;}
 #footer_row p, #footer_row button {float:none;
@@ -71,7 +74,8 @@ textarea {margin-bottom: 10px;
   width:1000px;}
 #ad_slots {width:430px;
 	float:left;
-	padding: 10px 5px;
+	padding: 5px 5px;
+	margin-top: 0;
 	margin-left: 90px;
 	border: 1px solid #000;
 	display: table;}
@@ -97,7 +101,7 @@ textarea {margin-bottom: 10px;
 .sub_sections {margin:5px auto;
 	width:415px;
 	padding: 5px 5px;
-	border: 2px ridge #f99;}
+	border: 2px ridge #099;}
 .sections legend input {width: 300px;
 	font-size: 16px;}
 .sub_sections legend {
