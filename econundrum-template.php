@@ -202,13 +202,13 @@ else {
 $envirohealth_section = "";
 
 $eh_title = "<tr>\n<td style=\"$section_title\">\n<hr style=\"$separator_border\" />\n<br />\n$envirohealth_title\n</td>\n</tr>\n";
-if($envh1_hed != "" || $envh1_hed != null) {
+if(isset($envh1_hed) && $envh1_hed !== "") {
 	$eh1_url = "";
 	$eh1_anchor_name = "2 - " . htmlentities( $envh1_hed, ENT_COMPAT, "UTF-8");
 	$eh1_url_close = "</a>";
 	$eh1_social_media = "";
 	
-	if($envh1_url != "" || $envh1_url != null) {
+	if(isset($envh1_url) && $envh1_url !== "") {
 		$eh1_url = "<a class=\"article_hed\" href=\"$envh1_url\" style=\"$hed_styles\" name=\"$eh1_anchor_name\">";
 	}
 	
@@ -218,13 +218,13 @@ else {
 	$eh1_full = "";
 }
 
-if($envh2_hed != "" || $envh2_hed != null) {
+if(isset($envh2_hed) && $envh2_hed !== "") {
 	$eh2_url = "";
 	$eh2_anchor_name = "3 - " . htmlentities( $envh2_hed, ENT_COMPAT, "UTF-8");
 	$eh2_url_close = "</a>";
 	$eh2_social_media = "";
 	
-	if($envh2_url != "" || $envh2_url != null) {
+	if(isset($envh2_url) && $envh2_url !== "") {
 		$eh2_url = "<a class=\"article_hed\" href=\"$envh2_url\" style=\"$hed_styles\" name=\"$eh2_anchor_name\">";
 	}
 	
@@ -234,13 +234,13 @@ else {
 	$eh2_full = "";
 }
 
-if($envh3_hed != "" || $envh3_hed != null) {
+if(isset($envh3_hed) && $envh3_hed !== "") {
 	$eh3_url = "";
 	$eh3_anchor_name = "4 - " . htmlentities( $envh3_hed, ENT_COMPAT, "UTF-8");
 	$eh3_url_close = "</a>";
 	$eh3_social_media = "";
 
-	if($envh3_url != "" || $envh3_url != null) {
+	if(isset($envh3_url) && $envh3_url !== "") {
 		$eh3_url = "<a class=\"article_hed\" href=\"$envh3_url\" style=\"$hed_styles\" name=\"$eh3_anchor_name\">";
 	}
 
@@ -266,26 +266,26 @@ $mm_title = "<tr>\n<td style=\"$section_title\">\n<hr style=\"$separator_border\
 $mm_full = "";
 $mm2_full = "";
 
-if($moremojo_hed != "" || $moremojo_hed != null) {
+if(isset($moremojo_hed) && $moremojo_hed !== "") {
 	$mm_url = "";
 	$mm_anchor_name = "5 - " . htmlentities( $moremojo_hed, ENT_COMPAT, "UTF-8");
 	$mm_url_close = "</a>";
 	$mm_social_media = "";
 
-	if($moremojo_url != "" || $moremojo_url != null) {
+	if(isset($moremojo_url) && $moremojo_url !== "") {
 		$mm_url = "<a class=\"article_hed\" href=\"$moremojo_url\" style=\"$hed_styles\" name=\"$mm_anchor_name\">";
 	}
 
 	$mm_full = "<tr>\n<td style=\"$standard_td\">\n$mm_url". "$moremojo_hed\n" . $mm_url_close . "$mm_social_media\n</td>\n</tr>\n";
 }
 
-if($moremojo2_hed != "" || $moremojo2_hed != null) {
+if(isset($moremojo2_hed) && $moremojo2_hed !== "") {
 	$mm2_url = "";
 	$mm2_anchor_name = "6 - " . htmlentities( $moremojo2_hed, ENT_COMPAT, "UTF-8");
 	$mm2_url_close = "</a>";
 	$mm2_social_media = "";
 
-	if($moremojo2_url != "" || $moremojo2_url != null) {
+	if(isset($moremojo2_url) && $moremojo2_url !== "") {
 		$mm2_url = "<a class=\"article_hed\" href=\"$moremojo2_url\" style=\"$hed_styles\" name=\"$mm2_anchor_name\">";
 	}
 
@@ -303,7 +303,7 @@ else {
 
 //lift note section
 $lift_note_section = "";
-if($lift_note !== "") {
+if(isset($lift_note) && $lift_note !== "") {
 	$search_this = "<p>";
 	$replace_code = '<p style="font-family: Verdana, Helvetica, Arial, sans-serif !important;font-size: 16px !important;line-height:20px !important;color: #767676 !important;margin: 10px 20px;">';
 	$lift_note = str_ireplace($search_this, $replace_code, $lift_note);

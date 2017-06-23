@@ -157,6 +157,211 @@ else {
 	$fft_hidden_kitchen = "";
 }
 
+//sources section
+if(isset($_REQUEST["fft_main_source"]) && $_REQUEST["fft_main_source"] != "") {
+	$fft_main_source = trim($_REQUEST["fft_main_source"]);
+}
+else {
+	$fft_main_source = "";
+}
+
+if(isset($_REQUEST["fft_main_ital"])) {
+	$fft_main_ital = true;
+}
+else {
+	$fft_main_ital = false;
+}
+
+if(isset($_REQUEST["fft_a1_source"]) && $_REQUEST["fft_a1_source"] != "") {
+	$fft_a1_source = trim($_REQUEST["fft_a1_source"]);
+}
+else {
+	$fft_a1_source = "";
+}
+
+if(isset($_REQUEST["fft_a1_ital"])) {
+	$fft_a1_ital = true;
+}
+else {
+	$fft_a1_ital = false;
+}
+
+if(isset($_REQUEST["fft_a1_url"]) && $_REQUEST["fft_a1_url"] != "") {
+	$fft_a1_url = trim($_REQUEST["fft_a1_url"]);
+}
+else {
+	$fft_a1_url = "";
+}
+
+if(isset($_REQUEST["fft_a2_source"]) && $_REQUEST["fft_a2_source"] != "") {
+	$fft_a2_source = trim($_REQUEST["fft_a2_source"]);
+}
+else {
+	$fft_a2_source = "";
+}
+
+if(isset($_REQUEST["fft_a2_ital"])) {
+	$fft_a2_ital = true;
+}
+else {
+	$fft_a2_ital = false;
+}
+
+if(isset($_REQUEST["fft_a2_url"]) && $_REQUEST["fft_a2_url"] != "") {
+	$fft_a2_url = trim($_REQUEST["fft_a2_url"]);
+}
+else {
+	$fft_a2_url = "";
+}
+
+if(isset($_REQUEST["fft_a3_source"]) && $_REQUEST["fft_a3_source"] != "") {
+	$fft_a3_source = trim($_REQUEST["fft_a3_source"]);
+}
+else {
+	$fft_a3_source = "";
+}
+
+if(isset($_REQUEST["fft_a3_ital"])) {
+	$fft_a3_ital = true;
+}
+else {
+	$fft_a3_ital = false;
+}
+
+if(isset($_REQUEST["fft_a3_url"]) && $_REQUEST["fft_a3_url"] != "") {
+	$fft_a3_url = trim($_REQUEST["fft_a3_url"]);
+}
+else {
+	$fft_a3_url = "";
+}
+
+if(isset($_REQUEST["fft_a4_source"]) && $_REQUEST["fft_a4_source"] != "") {
+	$fft_a4_source = trim($_REQUEST["fft_a4_source"]);
+}
+else {
+	$fft_a4_source = "";
+}
+
+if(isset($_REQUEST["fft_a4_ital"])) {
+	$fft_a4_ital = true;
+}
+else {
+	$fft_a4_ital = false;
+}
+
+if(isset($_REQUEST["fft_a4_url"]) && $_REQUEST["fft_a4_url"] != "") {
+	$fft_a4_url = trim($_REQUEST["fft_a4_url"]);
+}
+else {
+	$fft_a4_url = "";
+}
+
+if(isset($_REQUEST["fft_a5_source"]) && $_REQUEST["fft_a5_source"] != "") {
+	$fft_a5_source = trim($_REQUEST["fft_a5_source"]);
+}
+else {
+	$fft_a5_source = "";
+}
+
+if(isset($_REQUEST["fft_a5_ital"])) {
+	$fft_a5_ital = true;
+}
+else {
+	$fft_a5_ital = false;
+}
+
+if(isset($_REQUEST["fft_a5_url"]) && $_REQUEST["fft_a5_url"] != "") {
+	$fft_a5_url = trim($_REQUEST["fft_a5_url"]);
+}
+else {
+	$fft_a5_url = "";
+}
+
+if(isset($_REQUEST["fft_a6_source"]) && $_REQUEST["fft_a6_source"] != "") {
+	$fft_a6_source = trim($_REQUEST["fft_a6_source"]);
+}
+else {
+	$fft_a6_source = "";
+}
+
+if(isset($_REQUEST["fft_a6_ital"])) {
+	$fft_a6_ital = true;
+}
+else {
+	$fft_a6_ital = false;
+}
+
+if(isset($_REQUEST["fft_a6_url"]) && $_REQUEST["fft_a6_url"] != "") {
+	$fft_a6_url = trim($_REQUEST["fft_a6_url"]);
+}
+else {
+	$fft_a6_url = "";
+}
+
+if(isset($_REQUEST["fft_ioe1_source"]) && $_REQUEST["fft_ioe1_source"] != "") {
+	$fft_ioe1_source = trim($_REQUEST["fft_ioe1_source"]);
+}
+else {
+	$fft_ioe1_source = "";
+}
+
+if(isset($_REQUEST["fft_ioe1_ital"])) {
+	$fft_ioe1_ital = true;
+}
+else {
+	$fft_ioe1_ital = false;
+}
+
+if(isset($_REQUEST["fft_ioe1_url"]) && $_REQUEST["fft_ioe1_url"] != "") {
+	$fft_ioe1_url = trim($_REQUEST["fft_ioe1_url"]);
+}
+else {
+	$fft_ioe1_url = "";
+}
+
+if(isset($_REQUEST["fft_ioe2_source"]) && $_REQUEST["fft_ioe2_source"] != "") {
+	$fft_ioe2_source = trim($_REQUEST["fft_ioe2_source"]);
+}
+else {
+	$fft_ioe2_source = "";
+}
+
+if(isset($_REQUEST["fft_ioe2_ital"])) {
+	$fft_ioe2_ital = true;
+}
+else {
+	$fft_ioe2_ital = false;
+}
+
+if(isset($_REQUEST["fft_ioe2_url"]) && $_REQUEST["fft_ioe2_url"] != "") {
+	$fft_ioe2_url = trim($_REQUEST["fft_ioe2_url"]);
+}
+else {
+	$fft_ioe2_url = "";
+}
+
+if(isset($_REQUEST["fft_ioe3_source"]) && $_REQUEST["fft_ioe3_source"] != "") {
+	$fft_ioe3_source = trim($_REQUEST["fft_ioe3_source"]);
+}
+else {
+	$fft_ioe3_source = "";
+}
+
+if(isset($_REQUEST["fft_ioe3_ital"])) {
+	$fft_ioe3_ital = true;
+}
+else {
+	$fft_ioe3_ital = false;
+}
+
+if(isset($_REQUEST["fft_ioe3_url"]) && $_REQUEST["fft_ioe3_url"] != "") {
+	$fft_ioe3_url = trim($_REQUEST["fft_ioe3_url"]);
+}
+else {
+	$fft_ioe3_url = "";
+}
+//end sources section
+
 if(isset($_REQUEST['lift_note']) && $_REQUEST['lift_note'] != "") {
 	$lift_note = trim($_REQUEST['lift_note']);
 }
@@ -177,78 +382,159 @@ $main_section_p = "<p class=\"mobile-format\" style=\"margin: 0 0 20px 0 !import
 $lead_in_bold = "<span style=\"font-family: Verdana, sans-serif;font-weight: bold; color: #000 !important;\">";
 $url_style = "<a style=\"color: #ff6900;\"";
 
-if($fft_main_hed_url != "" || $fft_main_hed_url != null) {
+if(isset($fft_main_hed_url) && $fft_main_hed_url !== "") {
 	$main_title = "<h3 style=\"margin: 0 0 10px 0; padding: 0; font-family: 'Arial Black', sans-serif; font-weight: bold; color: #000;font-size: 38px;line-height:42px;clear:both;\"><a href=\"$fft_main_hed_url\" style=\"text-decoration: none;color: #000;\">$fft_main_hed</a></h3>";
 }
 else {
 	$main_title = "<h3 style=\"margin: 0 0 10px 0; padding: 0; font-family: 'Arial Black', sans-serif; font-weight: bold; color: #000;font-size: 38px;line-height:42px;clear:both;\">$fft_main_hed</h3>";
 }
 
-if($fft_article_1 != "" || $fft_article_1 != null) {
+$fft_article_1_content = "";
+$fft_article_2_content = "";
+$fft_article_3_content = "";
+$fft_article_4_content = "";
+$fft_article_5_content = "";
+$fft_article_6_content = "";
+
+if(isset($fft_article_1) && $fft_article_1 !== "") {
 	$fft_article_1 = str_replace("<p>", $main_section_p, $fft_article_1);
 	$fft_article_1 = str_replace("<strong>", $lead_in_bold, $fft_article_1);
 	$fft_article_1 = str_replace("</strong>", "</span>", $fft_article_1);
 	$fft_article_1 = str_replace("<a", $url_style, $fft_article_1);
-}
-else {
-	$fft_article_1 = "";
+	
+	//add sources
+	$get_last_p = strripos($fft_article_1, "</p>");
+	$get_substr = substr($fft_article_1, 0, $get_last_p);
+	
+	if(isset($fft_a1_source) && $fft_a1_source !== "") {
+		if($fft_a1_ital) {
+			$fft_article_1_content = $get_substr . " (<em><a href=\"$fft_main_hed_url\" style=\"color:#ff6900;\">" . $fft_a1_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_article_1_content = $get_substr . " (<a href=\"$fft_main_hed_url\" style=\"color:#ff6900;\">" . $fft_a1_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_article_1_content = $fft_article_1;
+	}
 }
 
-if($fft_article_2 != "" || $fft_article_2 != null) {
+if(isset($fft_article_2) && $fft_article_2 !== "") {
 	$fft_article_2 = str_replace("<p>", $main_section_p, $fft_article_2);
 	$fft_article_2 = str_replace("<strong>", $lead_in_bold, $fft_article_2);
 	$fft_article_2 = str_replace("</strong>", "</span>", $fft_article_2);
 	$fft_article_2 = str_replace("<a", $url_style, $fft_article_2);
-}
-else {
-	$fft_article_2 = "";
+	
+	$get_last_p = strripos($fft_article_2, "</p>");
+	$get_substr = substr($fft_article_2, 0, $get_last_p);
+	
+	if(isset($fft_a2_source) && $fft_a2_source !== "") {
+		if($fft_a2_ital) {
+			$fft_article_2_content = $get_substr . " (<em><a href=\"$fft_a2_url\" style=\"color:#ff6900;\">" . $fft_a2_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_article_2_content = $get_substr . " (<a href=\"$fft_a2_url\" style=\"color:#ff6900;\">" . $fft_a2_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_article_2_content = $fft_article_2;
+	}
 }
 
-if($fft_article_3 != "" || $fft_article_3 != null) {
+if(isset($fft_article_3) && $fft_article_3 !== "") {
 	$fft_article_3 = str_replace("<p>", $main_section_p, $fft_article_3);
 	$fft_article_3 = str_replace("<strong>", $lead_in_bold, $fft_article_3);
 	$fft_article_3 = str_replace("</strong>", "</span>", $fft_article_3);
 	$fft_article_3 = str_replace("<a", $url_style, $fft_article_3);
-}
-else {
-	$fft_article_3 = "";
+	
+	$get_last_p = strripos($fft_article_3, "</p>");
+	$get_substr = substr($fft_article_3, 0, $get_last_p);
+	
+	if(isset($fft_a3_source) && $fft_a3_source !== "") {
+		if($fft_a3_ital) {
+			$fft_article_3_content = $get_substr . " (<em><a href=\"$fft_a3_url\" style=\"color:#ff6900;\">" . $fft_a3_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_article_3_content = $get_substr . " (<a href=\"$fft_a3_url\" style=\"color:#ff6900;\">" . $fft_a3_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_article_3_content = $fft_article_3;
+	}
 }
 
-if($fft_article_4 != "" || $fft_article_4 != null) {
+if(isset($fft_article_4) && $fft_article_4 !== "") {
 	$fft_article_4 = str_replace("<p>", $main_section_p, $fft_article_4);
 	$fft_article_4 = str_replace("<strong>", $lead_in_bold, $fft_article_4);
 	$fft_article_4 = str_replace("</strong>", "</span>", $fft_article_4);
 	$fft_article_4 = str_replace("<a", $url_style, $fft_article_4);
-}
-else {
-	$fft_article_4 = "";
+	
+	$get_last_p = strripos($fft_article_4, "</p>");
+	$get_substr = substr($fft_article_4, 0, $get_last_p);
+	
+	if(isset($fft_a4_source) && $fft_a4_source !== "") {
+		if($fft_a4_ital) {
+			$fft_article_4_content = $get_substr . " (<em><a href=\"$fft_a4_url\" style=\"color:#ff6900;\">" . $fft_a4_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_article_4_content = $get_substr . " (<a href=\"$fft_a4_url\" style=\"color:#ff6900;\">" . $fft_a4_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_article_4_content = $fft_article_4;
+	}
+	
 }
 
-if($fft_article_5 != "" || $fft_article_5 != null) {
+if(isset($fft_article_5) && $fft_article_5 !== "") {
 	$fft_article_5 = str_replace("<p>", $main_section_p, $fft_article_5);
 	$fft_article_5 = str_replace("<strong>", $lead_in_bold, $fft_article_5);
 	$fft_article_5 = str_replace("</strong>", "</span>", $fft_article_5);
 	$fft_article_5 = str_replace("<a", $url_style, $fft_article_5);
-}
-else {
-	$fft_article_5 = "";
+	
+	$get_last_p = strripos($fft_article_5, "</p>");
+	$get_substr = substr($fft_article_5, 0, $get_last_p);
+	
+	if(isset($fft_a5_source) && $fft_a5_source!== "") {
+		if($fft_a5_ital) {
+			$fft_article_5_content = $get_substr . " (<em><a href=\"$fft_a5_url\" style=\"color:#ff6900;\">" . $fft_a5_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_article_5_content = $get_substr . " (<a href=\"$fft_a5_url\" style=\"color:#ff6900;\">" . $fft_a5_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_article_5_content = $fft_article_5;
+	}
 }
 
-if($fft_article_6 != "" || $fft_article_6 != null) {
+if(isset($fft_article_6) && $fft_article_6 !== "") {
 	$fft_article_6 = str_replace("<p>", $main_section_p, $fft_article_6);
 	$fft_article_6 = str_replace("<strong>", $lead_in_bold, $fft_article_6);
 	$fft_article_6 = str_replace("</strong>", "</span>", $fft_article_6);
 	$fft_article_6 = str_replace("<a", $url_style, $fft_article_6);
-}
-else {
-	$fft_article_6 = "";
+	
+	$get_last_p = strripos($fft_article_6, "</p>");
+	$get_substr = substr($fft_article_6, 0, $get_last_p);
+	
+	if(isset($fft_a6_source) && $fft_a6_source !== "") {
+		if($fft_a6_ital) {
+			$fft_article_6_content = $get_substr . " (<em><a href=\"$fft_a6_url\" style=\"color:#ff6900;\">" . $fft_a6_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_article_6_content = $get_substr . " (<a href=\"$fft_a6_url\" style=\"color:#ff6900;\">" . $fft_a6_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_article_6_content = $fft_article_6;
+	}
 }
 
-$main_section = $fft_article_1 . $fft_article_2 . $fft_article_3 . $fft_article_4 . $fft_article_5 . $fft_article_6;
+$main_section = $fft_article_1_content . $fft_article_2_content . $fft_article_3_content . $fft_article_4_content . $fft_article_5_content . $fft_article_6_content;
 
 $ogt_section = "";
 
-if($snack_box != "" || $snack_box != null) {
+if(isset($snack_box) && $snack_box !== "") {
 	$sb_p = "<table align=\"left\" cellpadding=\"2\" style=\"margin:10px 0;\"><tr><td><p class=\"headers_text\" style=\"font-family: 'Arial Black', sans-serif; color: #000;font-size:16px;font-weight: bold;text-transform: uppercase;background-color: #e5e5e5;padding: 2px 12px;\">";
 	$ogt_section .= $sb_p . $snack_box . "</p></td></tr></table>";
 }
@@ -258,7 +544,7 @@ else {
 
 $ogt_section .= "<table width=\"500\" align=\"center\" style=\"max-width: 500px !important;margin:0 auto !important;\" cellspacing=\"0\" cellpadding=\"0\">\n<tr>\n<td>";
 
-if($fft_snack_box != "" || $fft_snack_box != null) {
+if(isset($fft_snack_box) && $fft_snack_box !== "") {
 	$snack_box_p = "<p class=\"mobile-format\" style=\"margin: 0 0 20px 0; padding: 0; font-family: Verdana, sans-serif; color: #767676;font-size: 18px;\">";
 	$fft_snack_box = str_replace("<p>", $snack_box_p, $fft_snack_box);
 	$fft_snack_box = str_replace("<strong>", $lead_in_bold, $fft_snack_box);
@@ -269,7 +555,7 @@ else {
 	$fft_snack_box = "";
 }
 
-if($fft_sb_image != "" || $fft_sb_image != null) {
+if(isset($fft_sb_image) && $fft_sb_image !== "") {
 	$image_code = "<img src=\"$fft_sb_image\" alt=\"\" style=\"max-width: 500px; height: auto;margin-bottom: 20px;\" width=\"500\" /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
 	$ogt_section .= $image_code;
 }
@@ -277,7 +563,7 @@ else {
 	$image_code = "";
 }
 
-if($fft_sb_attr != "" || $fft_sb_attr != null ) {
+if(isset($fft_sb_attr) && $fft_sb_attr !== "") {
 	$fft_sb_attr = str_replace("<p>", $main_section_p, $fft_sb_attr);
 	$fft_sb_attr = str_replace("<a", $url_style, $fft_sb_attr);
 	$ogt_section .= $fft_sb_attr . "\n<!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
@@ -298,7 +584,7 @@ $ioe_section = "";
 $ioe_sec_p = "<p class=\"mobile-format\" style=\"margin: 0 0 20px 0 !important; padding: 0; font-family: Verdana, sans-serif; color: #767676; font-size: 18px;\">";
 $ioe_lead_bold = "<span style=\"font-family: Verdana, sans-serif;font-weight: bold; color: #000;\">";
 
-if($in_our_ears != "" || $in_our_ears != null) {
+if(isset($in_our_ears) && $in_our_ears !== "") {
 	$ioe_p = "<!--[if (gte mso 9)|(IE)]>\n<br />\n<table width=\"540\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\" style=\"width: 540px;max-width: 540px;background-color: #fff;margin: 5px auto;padding: 0;\">\n<tr>\n<td align=\"left\">\n<![endif]--><table align=\"left\" cellpadding=\"2\" style=\"margin:10px 0;\"><tr><td><p class=\"headers_text\" style=\"font-family: 'Arial Black', sans-serif; color: #000;font-size:18px;font-weight: bold;text-transform: uppercase;background-color: #e5e5e5;padding: 2px 12px;\">";
 	$ioe_podcast_head = $ioe_p . $in_our_ears . "</p>\n</td>\n</tr>\n</table>\n<!--[if (gte mso 9)|(IE)]>\n<br />\n</td>\n</tr></table><![endif]-->";
 	$ioe_section = $ioe_podcast_head;
@@ -307,13 +593,32 @@ else {
 	$ioe_podcast_head = "";
 }
 
-if($fft_ioe_item1 != "" || $fft_ioe_item1 != null) {
+$fft_ioe_item1_content = "";
+$fft_ioe_item2_content = "";
+$fft_ioe_item3_content = "";
+
+if(isset($fft_ioe_item1) && $fft_ioe_item1 !== "") {
 	$fft_ioe_item1 = str_replace("<p>", $ioe_sec_p, $fft_ioe_item1);
 	$fft_ioe_item1 = str_replace("<strong>", $ioe_lead_bold, $fft_ioe_item1);
 	$fft_ioe_item1 = str_replace("</strong>", "</span>", $fft_ioe_item1);
 	$fft_ioe_item1 = str_replace("<a", "<a style=\"color: #ff6900;\"", $fft_ioe_item1);
 	
-	if($fft_bite_add != "" || $fft_bite_add != null) {
+	$get_last_p = strripos($fft_ioe_item1, "</p>");
+	$get_substr = substr($fft_ioe_item1, 0, $get_last_p);
+	
+	if(isset($fft_ioe1_source) && $fft_ioe1_source !== "") {
+		if($fft_ioe1_ital) {
+			$fft_ioe_item1_content = $get_substr . " (<em><a href=\"$fft_ioe1_url\" style=\"color:#ff6900;\">" . $fft_ioe1_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_ioe_item1_content = $get_substr . " (<a href=\"$fft_ioe1_url\" style=\"color:#ff6900;\">" . $fft_ioe1_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_ioe_item1_content = $fft_ioe_item1;
+	}
+	
+	if(isset($fft_bite_add) && $fft_bite_add !== "") {
 		$fft_bite_add = str_replace("<a", "<a style=\"color: #ff6900;text-decoration: none;\"", $fft_bite_add);
 		$fft_bite_add = str_replace("<p>", "", $fft_bite_add);
 		$fft_bite_add = str_replace("</p>", "", $fft_bite_add);
@@ -337,28 +642,52 @@ else {
 	$fft_ioe_item1 = "";
 }
 
-if($fft_ioe_item2 != "" || $fft_ioe_item2 != null) {
+if(isset($fft_ioe_item2) && $fft_ioe_item2 !== "") {
 	$fft_ioe_item2 = str_replace("<p>", $ioe_sec_p, $fft_ioe_item2);
 	$fft_ioe_item2 = str_replace("<strong>", $ioe_lead_bold, $fft_ioe_item2);
 	$fft_ioe_item2 = str_replace("</strong>", "</span>", $fft_ioe_item2);
 	$fft_ioe_item2 = str_replace("<a", $url_style, $fft_ioe_item2);
-}
-else {
-	$fft_ioe_item2 = "";
+	
+	$get_last_p = strripos($fft_ioe_item2, "</p>");
+	$get_substr = substr($fft_ioe_item2, 0, $get_last_p);
+	
+	if(isset($fft_ioe2_source) && $fft_ioe2_source !== "") {
+		if($fft_ioe2_ital) {
+			$fft_ioe_item2_content = $get_substr . " (<em><a href=\"$fft_ioe2_url\" style=\"color:#ff6900;\">" . $fft_ioe2_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_ioe_item2_content = $get_substr . " (<a href=\"$fft_ioe2_url\" style=\"color:#ff6900;\">" . $fft_ioe2_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_ioe_item2_content = $fft_ioe_item2;
+	}
 }
 
-if($fft_ioe_item3 != "" || $fft_ioe_item3 != null) {
+if(isset($fft_ioe_item3) && $fft_ioe_item3 !== "") {
 	$fft_ioe_item3 = str_replace("<p>", $ioe_sec_p, $fft_ioe_item3);
 	$fft_ioe_item3 = str_replace("<strong>", $ioe_lead_bold, $fft_ioe_item3);
 	$fft_ioe_item3 = str_replace("</strong>", "</span>", $fft_ioe_item3);
 	$fft_ioe_item3 = str_replace("<a", $url_style, $fft_ioe_item3);
-}
-else {
-	$fft_ioe_item3 = "";
+	
+	$get_last_p = strripos($fft_ioe_item3, "</p>");
+	$get_substr = substr($fft_ioe_item3, 0, $get_last_p);
+	
+	if(isset($fft_ioe3_source) && $fft_ioe3_source !== "") {
+		if($fft_ioe3_ital) {
+			$fft_ioe_item3_content = $get_substr . " (<em><a href=\"$fft_ioe3_url\" style=\"color:#ff6900;\">" . $fft_ioe3_source . "</a></em>)" . "</p>";
+		}
+		else {
+			$fft_ioe_item3_content = $get_substr . " (<a href=\"$fft_ioe3_url\" style=\"color:#ff6900;\">" . $fft_ioe3_source . "</a>)" . "</p>";
+		}
+	}
+	else {
+		$fft_ioe_item3_content = $fft_ioe_item3;
+	}
 }
 
-if($fft_ioe_item1 != "" || $fft_ioe_item2 != "" || $fft_ioe_item3 != "") {
-	$ioe_section .= "<table width=\"500\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\" style=\"max-width: 500px !important;margin: 0 auto !important;padding: 0 !important;\">\n<tr>\n<td>" . $fft_ioe_item1 . $bite_special . $fft_ioe_item2 . $fft_ioe_item3 . "</td>\n</tr>\n</table>";
+if($fft_ioe_item1_content != "" || $fft_ioe_item2_content != "" || $fft_ioe_item3_content != "") {
+	$ioe_section .= "<table width=\"500\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\" style=\"max-width: 500px !important;margin: 0 auto !important;padding: 0 !important;\">\n<tr>\n<td>" . $fft_ioe_item1_content . $bite_special . $fft_ioe_item2_content . $fft_ioe_item3_content . "</td>\n</tr>\n</table>";
 	$ioe_section = "<tr>\n<td>\n" . $ioe_section . "</td>\n</tr>\n";
 }
 else {
@@ -368,14 +697,14 @@ else {
 
 $hidden_kitchen_sec = "";
 
-if($hidden_kitchen != "" || $hidden_kitchen != null) {
+if(isset($hidden_kitchen) && $hidden_kitchen !== "") {
 	$hidden_kitchen_sec = "<!--[if (gte mso 9)|(IE)]><br /><table width=\"540\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\" style=\"width: 540px;max-width: 540px;background-color: #fff;margin: 5px auto;padding: 0;\"><tr><td align=\"left\"><![endif]--><table align=\"left\" cellpadding=\"2\" style=\"margin:10px 0;\"><tr><td><p class=\"headers_text\" style=\"font-family: 'Arial Black', sans-serif; color: #000;font-size:18px;font-weight: bold;text-transform: uppercase;background-color: #e5e5e5;padding: 2px 12px;\">$hidden_kitchen</p></td></tr></table>\n<!--[if (gte mso 9)|(IE)]><br /></td></tr></table><![endif]-->";
 }
 else {
 	$hidden_kitchen_sec = "<!--[if (gte mso 9)|(IE)]><br /><table width=\"540\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" align=\"center\" style=\"width: 540px;max-width: 540px;background-color: #fff;margin: 5px auto;padding: 0;\"><tr><td align=\"left\"><![endif]--><table align=\"left\" cellpadding=\"2\" style=\"background-color: #e5e5e5;margin:10px 0;\"><tr><td><p class=\"headers_text\" style=\"font-family: 'Arial Black', sans-serif; color: #000;font-size:18px;font-weight: bold;text-transform: uppercase;\">Exclusive for Newsletter Subscribers</p></td></tr></table>\n<!--[if (gte mso 9)|(IE)]><br /></td></tr></table><![endif]-->";
 }
 
-if($fft_hk_leadin != "" || $fft_hk_leadin != null) {
+if(isset($fft_hk_leadin) && $fft_hk_leadin !== "") {
 	$fft_hk_leadin = str_replace("<p>", "<p class=\"hk_leadin\" style=\"margin: 10px 0 20px 0; padding: 0; font-family: 'Arial Black', sans-serif; font-weight: bold; color: #000; font-size: 30px;line-height:34px;\">", $fft_hk_leadin);
 	$hidden_kitchen_sec .= "<table width=\"500\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\" style=\"margin:0 auto !important; padding: 0 !important;\">\n<tr>\n<td>\n" . $fft_hk_leadin . "\n<!--[if (gte mso 9)|(IE)]><br /><![endif]--></td>\n</tr>\n";
 }
@@ -383,7 +712,7 @@ else {
 	$fft_hk_leadin = "";
 }
 
-if($fft_hidden_kitchen != "" || $fft_hidden_kitchen != null) {
+if(isset($fft_hidden_kitchen) && $fft_hidden_kitchen !== "") {
 	$fft_hidden_kitchen = str_replace("<p>", "<p class=\"mobile-format\" style=\"margin: 0 0 10px 0 !important; padding: 0; font-family: Verdana, sans-serif; color: #767676; font-size: 18px;\">", $fft_hidden_kitchen);
 	$fft_hidden_kitchen = str_replace("<a", "<a style=\"color: #ff6900;text-decoration: none;\"", $fft_hidden_kitchen);
 	$hidden_kitchen_sec .= "<tr>\n<td>$fft_hidden_kitchen</td>\n</tr>\n</table>\n";
@@ -398,7 +727,7 @@ if($fft_hk_leadin == "" && $fft_hidden_kitchen == "") {
 
 //lift note section
 $lift_note_section = "";
-if($lift_note !== "") {
+if(isset($lift_note) && $lift_note !== "") {
 	$search_this = "<p>";
 	$replace_code = '<p style="font-family: Verdana, Helvetica, Arial, sans-serif;font-size: 16px;color: #767676;margin: 10px 20px;">';
 	$lift_note = str_ireplace($search_this, $replace_code, $lift_note);
@@ -759,6 +1088,25 @@ $ad_name = strip_tags(addslashes($advertiser_name), "<a><br /><br><b><i><em><str
 $pixel_tracker = addslashes($pixel_tracker);
 $pixel_tracker2 = addslashes($pixel_tracker2);
 
+$fft_a1_source = strip_tags(addslashes($fft_a1_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_a1_url = addslashes($fft_a1_url);
+$fft_a2_source = strip_tags(addslashes($fft_a2_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_a2_url = addslashes($fft_a2_url);
+$fft_a3_source = strip_tags(addslashes($fft_a3_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_a3_url = addslashes($fft_a3_url);
+$fft_a4_source = strip_tags(addslashes($fft_a4_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_a4_url = addslashes($fft_a4_url);
+$fft_a5_source = strip_tags(addslashes($fft_a5_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_a5_url = addslashes($fft_a5_url);
+$fft_a6_source = strip_tags(addslashes($fft_a6_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_a6_url = addslashes($fft_a6_url);
+$fft_ioe1_source = strip_tags(addslashes($fft_ioe1_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_ioe1_url = addslashes($fft_ioe1_url);
+$fft_ioe2_source = strip_tags(addslashes($fft_ioe2_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_ioe2_url = addslashes($fft_ioe2_url);
+$fft_ioe3_source = strip_tags(addslashes($fft_ioe3_source), "<a><br /><br><b><i><em><strong><span><ol><ul><li><blockquote><img><table><tr><td>");
+$fft_ioe3_url = addslashes($fft_ioe3_url);
+
 //check to see if data exists in db
 $check_existing = "SELECT id, hed_date FROM food_for_thought_redesign WHERE hed_date='$headlines_date'";
 $existing_qry = mysqli_query($db_connect, $check_existing) or die("Can't run query now");
@@ -809,11 +1157,38 @@ if($exists) {
 	membership_slot = '$membership_slot',
 	lift_note = '$lift_note',
 	pixel_tracker = '$pixel_tracker',
-	pixel_tracker2 = '$pixel_tracker2'
+	pixel_tracker2 = '$pixel_tracker2',
+	fft_a1_source = '$fft_a1_source',
+	fft_a1_ital = '$fft_a1_ital',
+	fft_a1_url = '$fft_a1_url',
+	fft_a2_source = '$fft_a2_source',
+	fft_a2_ital = '$fft_a2_ital',
+	fft_a2_url = '$fft_a2_url',
+	fft_a3_source = '$fft_a3_source',
+	fft_a3_ital = '$fft_a3_ital',
+	fft_a3_url = '$fft_a3_url',
+	fft_a4_source = '$fft_a4_source',
+	fft_a4_ital = '$fft_a4_ital',
+	fft_a4_url = '$fft_a4_url',
+	fft_a5_source = '$fft_a5_source',
+	fft_a5_ital = '$fft_a5_ital',
+	fft_a5_url = '$fft_a5_url',
+	fft_a6_source = '$fft_a6_source',
+	fft_a6_ital = '$fft_a6_ital',
+	fft_a6_url = '$fft_a6_url',
+	fft_ioe1_source = '$fft_ioe1_source',
+	fft_ioe1_ital = '$fft_ioe1_ital',
+	fft_ioe1_url = '$fft_ioe1_url',
+	fft_ioe2_source = '$fft_ioe2_source',
+	fft_ioe2_ital = '$fft_ioe2_ital',
+	fft_ioe2_url = '$fft_ioe2_url',
+	fft_ioe3_source = '$fft_ioe3_source',
+	fft_ioe3_ital = '$fft_ioe3_ital',
+	fft_ioe3_url = '$fft_ioe3_url'
 	WHERE hed_date='$headlines_date'";
 }
 else {
-	$run_qry = "INSERT INTO food_for_thought_redesign(hed_date,fft_main_hed,fft_main_hed_url,fft_main_img,fft_article_1,fft_article_2,fft_article_3,fft_article_4,fft_article_5,fft_article_6,snack_box,fft_snack_box,fft_sb_image,fft_sb_attr,in_our_ears,fft_ioe_item1,fft_bite_add,fft_bite_link,fft_ioe_item2,fft_ioe_item3,hidden_kitchen,fft_hk_leadin,fft_hidden_kitchen,subject_line,ad_name,ad_billboard,ad_link_bill,ad_name2,ad_link_banner,ad_banner,sub_url,sub_image,sub_text,sub_code,membership_slot,lift_note,pixel_tracker,pixel_tracker2)
+	$run_qry = "INSERT INTO food_for_thought_redesign(hed_date,fft_main_hed,fft_main_hed_url,fft_main_img,fft_article_1,fft_article_2,fft_article_3,fft_article_4,fft_article_5,fft_article_6,snack_box,fft_snack_box,fft_sb_image,fft_sb_attr,in_our_ears,fft_ioe_item1,fft_bite_add,fft_bite_link,fft_ioe_item2,fft_ioe_item3,hidden_kitchen,fft_hk_leadin,fft_hidden_kitchen,subject_line,ad_name,ad_billboard,ad_link_bill,ad_name2,ad_link_banner,ad_banner,sub_url,sub_image,sub_text,sub_code,membership_slot,lift_note,pixel_tracker,pixel_tracker2,fft_a1_source,fft_a1_ital,fft_a1_url,fft_a2_source,fft_a2_ital,fft_a2_url,fft_a3_source,fft_a3_ital,fft_a3_url,fft_a4_source,fft_a4_ital,fft_a4_url,fft_a5_source,fft_a5_ital,fft_a5_url,fft_a6_source,fft_a6_ital,fft_a6_url,fft_ioe1_source,fft_ioe1_ital,fft_ioe1_url,fft_ioe2_source,fft_ioe2_ital,fft_ioe2_url,fft_ioe3_source,fft_ioe3_ital,fft_ioe3_url)
 	VALUES('$headlines_date',
 	'$fft_main_hed',
 	'$fft_main_hed_url',
@@ -851,7 +1226,34 @@ else {
 	'$membership_slot',
 	'$lift_note',
 	'$pixel_tracker',
-	'$pixel_tracker2')";
+	'$pixel_tracker2',
+	'$fft_a1_source',
+	'$fft_a1_ital',
+	'$fft_a1_url',
+	'$fft_a2_source',
+	'$fft_a2_ital',
+	'$fft_a2_url',
+	'$fft_a3_source',
+	'$fft_a3_ital',
+	'$fft_a3_url',
+	'$fft_a4_source',
+	'$fft_a4_ital',
+	'$fft_a4_url',
+	'$fft_a5_source',
+	'$fft_a5_ital',
+	'$fft_a5_url',
+	'$fft_a6_source',
+	'$fft_a6_ital',
+	'$fft_a6_url',
+	'$fft_ioe1_source',
+	'$fft_ioe1_ital',
+	'$fft_ioe1_url',
+	'$fft_ioe2_source',
+	'$fft_ioe2_ital',
+	'$fft_ioe2_url',
+	'$fft_ioe3_source',
+	'$fft_ioe3_ital',
+	'$fft_ioe3_url')";
 }
 //flush query and close db connections
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly". mysqli_error($db_connect));

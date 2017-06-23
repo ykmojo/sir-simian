@@ -191,17 +191,19 @@ function delayedInsert(json_obj) {
 				CKEDITOR.instances[index_name].setData(json_obj[index_name]);
 			}
 			else {
-				document.getElementById(index_name).value = json_obj[index_name];
+				if(index_name.search(/ital/i) != -1) {
+					  if(json_obj[index_name] == 1) {
+					    document.getElementById(index_name).checked = true;
+					  }
+					  else {
+						document.getElementById(index_name).checked = false;
+					  }
+				}
+				else {
+					json_obj[index_name] = json_obj[index_name].replace(new RegExp("\\\\", "g"), "");
+					document.getElementById(index_name).value = json_obj[index_name];
+				}
 			}
-			
-			if(index_name.search(/ital/i) != -1) {
-			  if(json_obj[index_name] == 1) {
-			    document.getElementById(index_name).checked = true;
-			  }
-			  else {
-				document.getElementById(index_name).checked = false;
-			  }
-		    }
 		}
 	}
 }

@@ -208,13 +208,13 @@ $mfm2_full = "";
 $mfm3_full = "";
 $mfm_title = "<tr>\n<td style=\"$section_title\">\n<hr style=\"$separator_border\" />\n<br />\n$morefrommix_title\n</td>\n</tr>";
 
-if($morefrommix1_hed != "" || $morefrommix1_hed != null) {
+if(isset($morefrommix1_hed) && $morefrommix1_hed !== "") {
 	$mfm1_url = "";
 	$mfm1_anchor_name = "2 - " . htmlentities( $morefrommix1_hed, ENT_COMPAT, "UTF-8");
 	$mfm1_url_close = "";
 	$mfm1_social_media = "";
 	
-	if($morefrommix1_url != "" || $morefrommix1_url != null) {
+	if(isset($morefrommix1_url) && $morefrommix1_url !== "") {
 		$mfm1_url = "<a class=\"article_hed\" href=\"$morefrommix1_url\" style=\"$hed_styles\" name=\"$mfm1_anchor_name\">";
 		$mfm1_url_close = "</a>";
 		
@@ -227,13 +227,13 @@ else {
 	$mfm1_full = "";
 }
 
-if($morefrommix2_hed != "" || $morefrommix2_hed != null) {
+if(isset($morefrommix2_hed) && $morefrommix2_hed !== "") {
 	$mfm2_url = "";
 	$mfm2_anchor_name = "3 - " . htmlentities( $morefrommix2_hed, ENT_COMPAT, "UTF-8");
 	$mfm2_url_close = "";
 	$mfm2_social_media = "";
 	
-	if($morefrommix2_url != "" || $morefrommix2_url != null) {
+	if(isset($morefrommix2_url) && $morefrommix2_url !== "") {
 		$mfm2_url = "<a class=\"article_hed\" href=\"$morefrommix2_url\" style=\"$hed_styles\" name=\"$mfm2_anchor_name\">";
 		$mfm2_url_close = "</a>";
 		
@@ -246,13 +246,13 @@ else {
 	$mfm2_full = "";
 }
 
-if($morefrommix3_hed != "" || $morefrommix3_hed != null) {
+if(isset($morefrommix3_hed) && $morefrommix3_hed !== "") {
 	$mfm3_url = "";
 	$mfm3_anchor_name = "4 - " . htmlentities( $morefrommix3_hed, ENT_COMPAT, "UTF-8");
 	$mfm3_url_close = "";
 	$mfm3_social_media = "";
 	
-	if($morefrommix3_url != "" || $morefrommix3_url != null) {
+	if(isset($morefrommix3_url) && $morefrommix3_url !== "") {
 		$mfm3_url = "<a class=\"article_hed\" href=\"$morefrommix3_url\" style=\"$hed_styles\" name=\"$mfm3_anchor_name\">";
 		$mfm3_url_close = "</a>";
 		
@@ -278,13 +278,13 @@ $fromarchive_section = "";
 $fa_full = "";
 $fa_title = "<tr>\n<td style=\"$section_title\">\n<hr style=\"$separator_border\" />\n<br />\n$fromarchive_title\n</td>\n</tr>";
 
-if($fromarchive1_hed != "" || $fromarchive1_hed != null) {
+if(isset($fromarchive1_hed) && $fromarchive1_hed !== "") {
 	$fa1_url = "";
 	$fa1_anchor_name = "5 - " . htmlentities( $fromarchive1_hed, ENT_COMPAT, "UTF-8");
 	$fa1_url_close = "";
 	$fa1_social_media = "";
 	
-	if($fromarchive1_url != "" || $fromarchive1_url != null) {
+	if(isset($fromarchive1_url) && $fromarchive1_url !== "") {
 		$fa1_url = "<a class=\"article_hed\" href=\"$fromarchive1_url\" style=\"$hed_styles\" name=\"$fa1_anchor_name\">";
 		$fa1_url_close = "</a>";
 		
@@ -297,13 +297,13 @@ else {
 	$fa1_full = "";
 }
 
-if($fromarchive2_hed != "" || $fromarchive2_hed != null) {
+if(isset($fromarchive2_hed) && $fromarchive2_hed !== "") {
 	$fa2_url = "";
 	$fa2_anchor_name = "6 - " . htmlentities( $fromarchive2_hed, ENT_COMPAT, "UTF-8");
 	$fa2_url_close = "";
 	$fa2_social_media = "";
 	
-	if($fromarchive2_url != "" || $fromarchive2_url != null) {
+	if(isset($fromarchive2_url) && $fromarchive2_url !== "") {
 		$fa2_url = "<a class=\"article_hed\" href=\"$fromarchive2_url\" style=\"$hed_styles\" name=\"$fa2_anchor_name\">";
 		$fa2_url_close = "</a>";
 		
@@ -326,7 +326,7 @@ else {
 
 //lift note section
 $lift_note_section = "";
-if($lift_note !== "") {
+if(isset($lift_note) && $lift_note !== "") {
 	$search_this = "<p>";
 	$replace_code = '<p style="font-family: Verdana, Helvetica, Arial, sans-serif !important;font-size: 16px !important;line-height:20px !important;color: #767676 !important;margin: 10px 20px;">';
 	$lift_note = str_ireplace($search_this, $replace_code, $lift_note);

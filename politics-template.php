@@ -218,13 +218,13 @@ $ion2_full = "";
 
 $ion_title = "<tr>\n<td style=\"$section_title\">\n<hr style=\"$separator_border\" />\n<br />\n$inothernews_title\n</td>\n</tr>";
 
-if($inothernews_hed != "" || $inothernews_hed != null) {
+if(isset($inothernews_hed) && $inothernews_hed !== "") {
 	$ion1_url = "";
 	$ion1_anchor_name = "2 - " . htmlentities( $inothernews_hed, ENT_COMPAT, "UTF-8");
 	$ion1_url_close = "";
 	$ion1_social_media = "";
 	
-	if($inothernews_url != "" || $inothernews_url != null) {
+	if(isset($inothernews_url) && $inothernews_url !== "") {
 		$ion1_url = "<a class=\"article_hed\" href=\"$inothernews_url\" style=\"$hed_styles\" name=\"$ion1_anchor_name\">";
 		$ion1_url_close = "</a>";
 		/*$ion1_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$inothernews_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$inothernews_url&text=$inothernews_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
@@ -236,13 +236,13 @@ else {
 	$ion1_full = "";
 }
 
-if($inothernews2_hed != "" || $inothernews2_hed != null) {
+if(isset($inothernews2_hed) && $inothernews2_hed !== "") {
 	$ion2_url = "";
 	$ion2_anchor_name = "3 - " . htmlentities( $inothernews2_hed, ENT_COMPAT, "UTF-8");
 	$ion2_url_close = "";
 	$ion2_social_media = "";
 
-	if($inothernews2_url != "" || $inothernews2_url != null) {
+	if(isset($inothernews2_url) && $inothernews2_url !== "") {
 		$ion2_url = "<a class=\"article_hed\" href=\"$inothernews2_url\" style=\"$hed_styles\" name=\"$ion2_anchor_name\">";
 		$ion2_url_close = "</a>";
 		/*$ion2_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$inothernews2_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$inothernews2_url&text=$inothernews2_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
@@ -254,13 +254,13 @@ else {
 	$ion2_full = "";
 }
 
-if($inothernews3_hed != "" || $inothernews3_hed != null) {
+if(isset($inothernews3_hed) && $inothernews3_hed !== "") {
 	$ion3_url = "";
 	$ion3_anchor_name = "4 - " . htmlentities( $inothernews3_hed, ENT_COMPAT, "UTF-8");
 	$ion3_url_close = "";
 	$ion3_social_media = "";
 
-	if($inothernews3_url != "" || $inothernews3_url != null) {
+	if(isset($inothernews3_url) && $inothernews3_url !== "") {
 		$ion3_url = "<a class=\"article_hed\" href=\"$inothernews3_url\" style=\"$hed_styles\" name=\"$ion3_anchor_name\">";
 		$ion3_url_close = "</a>";
 		/*$ion3_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$inothernews3_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$inothernews3_url&text=$inothernews3_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
@@ -285,13 +285,13 @@ $mr1_full = "";
 $mr2_full = "";
 $mr_title = "<tr>\n<td style=\"$section_title\">\n<hr style=\"$separator_border\" />\n<br />\n$mostread_title\n</td>\n</tr>";
 
-if($mostread1_hed != "" || $mostread1_hed != null) {
+if(isset($mostread1_hed) && $mostread1_hed !== "") {
 	$mr1_url = "";
 	$mr1_anchor_name = "5 - " . htmlentities( $mostread1_hed, ENT_COMPAT, "UTF-8");
 	$mr1_url_close = "";
 	$mr1_social_media = "";
 	
-	if($mostread1_url != "" || $mostread1_url != null) {
+	if(isset($mostread1_url) && $mostread1_url !== "") {
 		$mr1_url = "<a class=\"article_hed\" href=\"$mostread1_url\" style=\"$hed_styles\" name=\"$mr1_anchor_name\">";
 		$mr1_url_close = "";
 		/*$mr1_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$mostread1_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$mostread1_url&text=$mostread1_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
@@ -300,13 +300,13 @@ if($mostread1_hed != "" || $mostread1_hed != null) {
 	$mr1_full = "<tr>\n<td style=\"$standard_td\">\n$mr1_url". $mostread1_hed. "$mr1_url_close\n" . "$mr1_social_media</td>\n</tr>\n";
 }
 
-if($mostread2_hed != "" || $mostread2_hed != null) {
+if(isset($mostread2_hed) && $mostread2_hed !== "") {
 	$mr2_url = "";
 	$mr2_anchor_name = "6 - " . htmlentities( $mostread2_hed, ENT_COMPAT, "UTF-8");
 	$mr2_url_close = "";
 	$mr2_social_media = "";
 
-	if($mostread2_url != "" || $mostread2_url != null) {
+	if(isset($mostread2_url) && $mostread2_url !== "") {
 		$mr2_url = "<a class=\"article_hed\" href=\"$mostread2_url\" style=\"$hed_styles\" name=\"$mr2_anchor_name\">";
 		$mr2_url_close = "";
 		/*$mr2_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$mostread2_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$mostread2_url&text=$mostread2_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
@@ -325,7 +325,7 @@ else {
 
 //lift note section
 $lift_note_section = "";
-if($lift_note !== "") {
+if(isset($lift_note) && $lift_note !== "") {
 	$search_this = "<p>";
 	$replace_code = '<p style="font-family: Verdana, Helvetica, Arial, sans-serif !important;font-size: 16px !important;line-height:20px !important;color: #767676 !important;margin: 10px 20px;">';
 	$lift_note = str_ireplace($search_this, $replace_code, $lift_note);

@@ -353,6 +353,13 @@ else {
 	$wors4_url = "";
 }
 
+if(isset($_REQUEST['lift_note']) && $_REQUEST['lift_note'] != "") {
+	$lift_note = trim($_REQUEST['lift_note']);
+}
+else {
+	$lift_note = "";
+}
+
 //Trumpocracy template section
 //date formatting
 $temp_date = strtotime($headlines_date);
@@ -723,7 +730,18 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 else {
 	$wors_sec = "";
 }
-//end What Others Are Sayingsection
+//end What Others Are Saying section
+
+//lift note section
+$lift_note_section = "";
+if($lift_note !== "") {
+	$search_this = "<p>";
+	$replace_code = '<p style="font-family: Verdana, Helvetica, Arial, sans-serif;font-size: 16px;color: #767676;margin: 10px 20px;">';
+	$lift_note = str_ireplace($search_this, $replace_code, $lift_note);
+	$lift_note = str_ireplace("<strong>", "<strong style=\"color: #000;\">", $lift_note);
+	$lift_note = str_ireplace("<a", "<a style=\"color: #ff6900;\"", $lift_note);
+	$lift_note_section = "<tr><td>" . $lift_note . "</td></tr>";
+}
 
 //LiveIntent section
 //safe RBT
@@ -748,6 +766,7 @@ $trump_mobile
             <td>
         <![endif]-->
         <table class="layout" align="center" cellpadding="0" cellspacing="0" width="620" style="Margin:0 auto;background-color: #fff;max-width:620px;">
+$lift_note_section
           <tr>
             <td align="center" style="line-height:0;margin: 0;padding:0;">
               <img src="http://assets.motherjones.com/newsletters/images/russian_connection_banner-061217.png" width="620" style="Margin:0 auto;width:100%;max-width:100%;height:auto;line-height:0;" alt="Trumpocracy" />
