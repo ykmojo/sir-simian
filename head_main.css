@@ -92,7 +92,7 @@ textarea {margin-bottom: 10px;
   width:425px;
   padding:5px 10px;
   border:1px groove #000 !important;}
- .sections legend {font-size: 18px;
+.sections legend {font-size: 18px;
  	font-weight: bold;}
 .sub_sections {margin:5px auto;
 	width:415px;
@@ -107,7 +107,7 @@ textarea {margin-bottom: 10px;
   float:left;}
 .dek_sect {width:75px;
   text-align:left;}
-.ad_label {width:400px;
+.ad_label {width:380px;
   float:left;
   text-align:right;}
 /* warning message classes */
@@ -125,6 +125,7 @@ textarea {margin-bottom: 10px;
 	background-color: #090;
 	color: #fff;
 }
+/*sources section*/
 .sources {margin-top:2px;
 	float:left;}
 .sources legend {font-size: 14px;

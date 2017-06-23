@@ -126,11 +126,11 @@ $econundrum = <<<ECONUNDRUM
 	  <fieldset class="sections">
 		<legend>MAIN ARTICLE</legend>
 			<fieldset class="sub_sections">
-			  <legend><input id="this_week" name="this_week" type="text" value="This Week's Econundrum" onfocus="checkHedDate()" /></legend>
-			  <p>Headline: <input type="text" id="conundrum_hed" name="conundrum_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-			  <p>Url: <input type='text' id='conundrum_url' name='conundrum_url' size='50' onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+			  <legend><input id="this_week" name="this_week" type="text" value="This Week's Econundrum"" /></legend>
+			  <p>Headline: <input type="text" id="conundrum_hed" name="conundrum_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+			  <p>Url: <input type='text' id='conundrum_url' name='conundrum_url' size='50' onblur="this.value=fixURL(this.value)"" /></p>
 			  <p class='dek_sect'>Dek:</p>
-			  <textarea rows='15' cols='45' id='conundrum_dek' name='conundrum_dek' onfocus="checkHedDate()"></textarea>
+			  <textarea rows='15' cols='45' id='conundrum_dek' name='conundrum_dek'"></textarea>
 			</fieldset>
 	  </fieldset>
     </div>
@@ -139,36 +139,36 @@ $econundrum = <<<ECONUNDRUM
 		<div id="items_right">
 			<fieldset class="sections">
 				<legend>SECTION 2</legend>
-				<h4><input type="text" class="section_titles" id="envirohealth_title" name="envirohealth_title" value="More Environment &amp; Health Coverage" onfocus="checkHedDate()" /></h4>
+				<h4><input type="text" class="section_titles" id="envirohealth_title" name="envirohealth_title" value="More Environment &amp; Health Coverage"" /></h4>
 				<fieldset class="sub_sections">
 					<legend>Headline 1</legend>
-					<p>Hed: <input type="text" id="envirohealth1_hed" name="envirohealth1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-					<p>Url: <input type='text' id='envirohealth1_url' name='envirohealth1_url' size='50' onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+					<p>Hed: <input type="text" id="envirohealth1_hed" name="envirohealth1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+					<p>Url: <input type='text' id='envirohealth1_url' name='envirohealth1_url' size='50' onblur="this.value=fixURL(this.value)"" /></p>
 				</fieldset>
 				<fieldset class="sub_sections">
 					<legend>Headline 2</legend>
-					<p>Hed: <input type="text" id="envirohealth2_hed" name="envirohealth2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-					<p>Url: <input type='text' id='envirohealth2_url' name='envirohealth2_url' size='50' onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+					<p>Hed: <input type="text" id="envirohealth2_hed" name="envirohealth2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+					<p>Url: <input type='text' id='envirohealth2_url' name='envirohealth2_url' size='50' onblur="this.value=fixURL(this.value)"" /></p>
 				</fieldset>
 				<fieldset class="sub_sections">
 					<legend>Headline 3</legend>
-					<p>Hed: <input type="text" id="envirohealth3_hed" name="envirohealth3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-					<p>Url: <input type='text' id='envirohealth3_url' name='envirohealth3_url' size='50' onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+					<p>Hed: <input type="text" id="envirohealth3_hed" name="envirohealth3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+					<p>Url: <input type='text' id='envirohealth3_url' name='envirohealth3_url' size='50' onblur="this.value=fixURL(this.value)"" /></p>
 				</fieldset>
 			</fieldset>
 
 			<fieldset class="sections">
 				<legend>BOTTOM SECTION</legend>
-				<h4><input type="text" class="section_titles" id="moremojo_title" name="moremojo_title" value="More from MoJo" onfocus="checkHedDate()" /></h4>
+				<h4><input type="text" class="section_titles" id="moremojo_title" name="moremojo_title" value="More from MoJo"" /></h4>
 				<fieldset class="sub_sections">
 					<legend>Headline 1</legend>
-					<p>Hed: <input type="text" id="moremojo_hed" name="moremojo_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-					<p>Url: <input type="text" id="moremojo_url" name="moremojo_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+					<p>Hed: <input type="text" id="moremojo_hed" name="moremojo_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+					<p>Url: <input type="text" id="moremojo_url" name="moremojo_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 				</fieldset>
 				<fieldset class="sub_sections">
 					<legend>Headline 2</legend>
-					<p>Hed: <input type="text" id="moremojo2_hed" name="moremojo2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-					<p>Url: <input type="text" id="moremojo2_url" name="moremojo2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+					<p>Hed: <input type="text" id="moremojo2_hed" name="moremojo2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+					<p>Url: <input type="text" id="moremojo2_url" name="moremojo2_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 				</fieldset>
 			</fieldset>
 	</div>
@@ -186,16 +186,16 @@ $fft_redesign = <<<FFTRED
     <div id="items_left">
         <fieldset class="sections">
             <legend>MAIN SECTION</legend>
-            <p>Main hed: <input type="text" id="fft_main_hed" name="fft_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></p>
+            <p>Main hed: <input type="text" id="fft_main_hed" name="fft_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)"" /></p>
             <p>Main url: <input type="text" id="fft_main_hed_url" name="fft_main_hed_url" size="50" maxlength="512" onblur="this.value=fixURL(this.value)" /></p>
-            <p>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50" onfocus="checkHedDate()" /></p>
+            <p>Main image (url to image): <input type="text" id="fft_main_img" name="fft_main_img" size="50"" /></p>
             
             <fieldset class="sub_sections">
                 <legend>Article 1:</legend>
-                <textarea id="fft_article_1" name="fft_article_1" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_article_1" name="fft_article_1" rows="4" cols="45""></textarea>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_a1_source" name="fft_a1_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_a1_source" name="fft_a1_source"" style="float:left;">
                 </fieldset>
                 <fieldset class="sources" style="float:left;width:25%;">
                     <legend>Italicise source?</legend> <input type="checkbox" id="fft_a1_ital" name="fft_a1_ital" style="float:left;">
@@ -208,10 +208,10 @@ $fft_redesign = <<<FFTRED
             
             <fieldset class="sub_sections">
                 <legend>Article 2:</legend>
-                <textarea id="fft_article_2" name="fft_article_2" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_article_2" name="fft_article_2" rows="4" cols="45""></textarea>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_a2_source" name="fft_a2_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_a2_source" name="fft_a2_source"" style="float:left;">
                 </fieldset>
                 
                 <fieldset class="sources" style="float:left;width:25%;">
@@ -225,10 +225,10 @@ $fft_redesign = <<<FFTRED
 					
             <fieldset class="sub_sections">
                 <legend>Article 3:</legend>
-                <textarea id="fft_article_3" name="fft_article_3" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_article_3" name="fft_article_3" rows="4" cols="45""></textarea>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_a3_source" name="fft_a3_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_a3_source" name="fft_a3_source"" style="float:left;">
                 </fieldset>
                 <fieldset class="sources" style="float:left;width:25%;">
                     <legend>Italicise source?</legend> <input type="checkbox" id="fft_a3_ital" name="fft_a3_ital" style="float:left;">
@@ -241,10 +241,10 @@ $fft_redesign = <<<FFTRED
 					
             <fieldset class="sub_sections">
                 <legend>Article 4:</legend>
-                <textarea id="fft_article_4" name="fft_article_4" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_article_4" name="fft_article_4" rows="4" cols="45""></textarea>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_a4_source" name="fft_a4_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_a4_source" name="fft_a4_source"" style="float:left;">
                 </fieldset>
                 <fieldset class="sources" style="float:left;width:25%;">
                     <legend>Italicise source?</legend> <input type="checkbox" id="fft_a4_ital" name="fft_a4_ital" style="float:left;">
@@ -257,10 +257,10 @@ $fft_redesign = <<<FFTRED
             
             <fieldset class="sub_sections">
                 <legend>Article 5:</legend>
-                <textarea id="fft_article_5" name="fft_article_5" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_article_5" name="fft_article_5" rows="4" cols="45""></textarea>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_a5_source" name="fft_a5_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_a5_source" name="fft_a5_source"" style="float:left;">
                 </fieldset>
                 <fieldset class="sources" style="float:left;width:25%;">
                     <legend>Italicise source?</legend> <input type="checkbox" id="fft_a5_ital" name="fft_a5_ital" style="float:left;">
@@ -273,10 +273,10 @@ $fft_redesign = <<<FFTRED
 					
             <fieldset class="sub_sections">
                 <legend>Article 6:</legend>
-                <textarea id="fft_article_6" name="fft_article_6" rows="4" cols="45" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_article_6" name="fft_article_6" rows="4" cols="45""></textarea>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_a6_source" name="fft_a6_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_a6_source" name="fft_a6_source"" style="float:left;">
                 </fieldset>
                 <fieldset class="sources" style="float:left;width:25%;">
                     <legend>Italicise source?</legend> <input type="checkbox" id="fft_a6_ital" name="fft_a6_ital" style="float:left;">
@@ -289,12 +289,12 @@ $fft_redesign = <<<FFTRED
         </fieldset>
 			
         <fieldset class="sections">
-            <legend><input type="text" id="snack_box" name="snack_box" value="One Great Tidbit" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+            <legend><input type="text" id="snack_box" name="snack_box" value="One Great Tidbit" onblur="this.value=cleanstring(this.value)"" /></legend>
             <p>Body text:</p>
             <textarea id="fft_snack_box" name="fft_snack_box"></textarea>
-            <p>Image source: <input type="text" id="fft_sb_image" name="fft_sb_image" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
+            <p>Image source: <input type="text" id="fft_sb_image" name="fft_sb_image" size="50" maxlength="512"" /></p>
             <p>Attribution/Caption:</p>
-            <textarea id="fft_sb_attr" name="fft_sb_attr" onfocus="checkHedDate()"></textarea>
+            <textarea id="fft_sb_attr" name="fft_sb_attr""></textarea>
         </fieldset>
     </div>
   </div>
@@ -302,14 +302,14 @@ $fft_redesign = <<<FFTRED
   <div class="columns">
     <div id="items_right">
         <fieldset class="sections">
-            <legend><input type="text" id="in_our_ears" name="in_our_ears" value="This Week in Podcasts" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+            <legend><input type="text" id="in_our_ears" name="in_our_ears" value="This Week in Podcasts" onblur="this.value=cleanstring(this.value)"" /></legend>
             <fieldset class="sub_sections">
                 <legend>First Item: </legend>
-                <textarea id="fft_ioe_item1" name="fft_ioe_item1" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_ioe_item1" name="fft_ioe_item1""></textarea>
                 <p>(<strong>Only use these fields if this is not a Bite plug and you need to include sources</strong>)</p>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_ioe1_source" name="fft_ioe1_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_ioe1_source" name="fft_ioe1_source"" style="float:left;">
                 </fieldset>
                 <fieldset class="sources" style="float:left;width:25%;">
                     <legend>Italicise source?</legend> <input type="checkbox" id="fft_ioe1_ital" name="fft_ioe1_ital" style="float:left;">
@@ -320,17 +320,17 @@ $fft_redesign = <<<FFTRED
                 </fieldset>
                 
                 <p><strong>(If this item is not a Bite plug, please leave blank)</strong>.</p>
-                <p>Bite episode link: <input type="text" id="fft_bite_link" name="fft_bite_link" size="50" maxlength="512" onfocus="checkHedDate()" /></p>
+                <p>Bite episode link: <input type="text" id="fft_bite_link" name="fft_bite_link" size="50" maxlength="512"" /></p>
                 <p>Bite episode description:</p>
-                <textarea id="fft_bite_add" name="fft_bite_add" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_bite_add" name="fft_bite_add""></textarea>
             </fieldset>
 				
 			<fieldset class="sub_sections">
                 <legend>Second Item:</legend>
-                <textarea id="fft_ioe_item2" name="fft_ioe_item2" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_ioe_item2" name="fft_ioe_item2""></textarea>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_ioe2_source" name="fft_ioe2_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_ioe2_source" name="fft_ioe2_source"" style="float:left;">
                 </fieldset>
                 <fieldset class="sources" style="float:left;width:25%;">
                     <legend>Italicise source?</legend> <input type="checkbox" id="fft_ioe2_ital" name="fft_ioe2_ital" style="float:left;">
@@ -343,10 +343,10 @@ $fft_redesign = <<<FFTRED
             
             <fieldset class="sub_sections">
                 <legend>Third Item:</legend>
-                <textarea id="fft_ioe_item3" name="fft_ioe_item3" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_ioe_item3" name="fft_ioe_item3""></textarea>
                 <fieldset class="sources" style="float:left;width:50%;clear:both;">
                     <legend>Source name</legend>
-                    <input type="text" id="fft_ioe3_source" name="fft_ioe3_source" onfocus="checkHedDate()" style="float:left;">
+                    <input type="text" id="fft_ioe3_source" name="fft_ioe3_source"" style="float:left;">
                 </fieldset>
                 <fieldset class="sources" style="float:left;width:25%;">
                     <legend>Italicise source?</legend> <input type="checkbox" id="fft_ioe3_ital" name="fft_ioe3_ital" style="float:left;">
@@ -359,12 +359,12 @@ $fft_redesign = <<<FFTRED
         </fieldset>
 			
 		<fieldset class="sections">
-            <legend><input type="text" id="hidden_kitchen" name="hidden_kitchen" value="Exclusive to Newsletter Subscribers" onblur="this.value=cleanstring(this.value)" onfocus="checkHedDate()" /></legend>
+            <legend><input type="text" id="hidden_kitchen" name="hidden_kitchen" value="Exclusive to Newsletter Subscribers" onblur="this.value=cleanstring(this.value)"" /></legend>
             <fieldset class="sub_sections">
                 <p>Lead in:</p>
-                <textarea id="fft_hk_leadin" name="fft_hk_leadin" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_hk_leadin" name="fft_hk_leadin""></textarea>
                 <p>Body text:</p>
-                <textarea id="fft_hidden_kitchen" name="fft_hidden_kitchen" onfocus="checkHedDate()"></textarea>
+                <textarea id="fft_hidden_kitchen" name="fft_hidden_kitchen""></textarea>
             </fieldset>
         </fieldset>
     </div>
@@ -384,11 +384,11 @@ $inthemix = <<<INTHEMIX
 		<fieldset class="sections">
 			<legend>MAIN ARTICLE</legend>
 			<fieldset class="sub_sections">
-				<legend><input type="text" id="twmustread_title" name="twmustread_title" value="Must-Read" onfocus="checkHedDate()" /></legend>
-				<p>Headline: <input type="text" id="twmustread_hed" name="twmustread_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="twmustread_url" name="twmustread_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<legend><input type="text" id="twmustread_title" name="twmustread_title" value="Must-Read"" /></legend>
+				<p>Headline: <input type="text" id="twmustread_hed" name="twmustread_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="twmustread_url" name="twmustread_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 				<p class="dek_sect">Body Text:</p>
-				<textarea rows="8" cols="45" id="twmustread_dek" name="twmustread_dek" onfocus="checkHedDate()"></textarea>
+				<textarea rows="8" cols="45" id="twmustread_dek" name="twmustread_dek""></textarea>
 			</fieldset>
 		</fieldset>
     </div>
@@ -397,36 +397,36 @@ $inthemix = <<<INTHEMIX
 	<div id="items_right">
 		<fieldset class="sections">
 			<legend>SECTION 2</legend>
-			<h4><input type="text" class="section_titles" id="morefrommix_title" name="morefrommix_title" value="More News" onfocus="checkHedDate()" /></h4>
+			<h4><input type="text" class="section_titles" id="morefrommix_title" name="morefrommix_title" value="More News"" /></h4>
 			<fieldset class="sub_sections">
 				<legend>Headline 1</legend>
-				<p>Hed: <input type="text" id="morefrommix1_hed" name="morefrommix1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="morefrommix1_url" name="morefrommix1_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="morefrommix1_hed" name="morefrommix1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="morefrommix1_url" name="morefrommix1_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 			<fieldset class="sub_sections">
 				<legend>Headline 2</legend>
-				<p>Hed: <input type="text" id="morefrommix2_hed" name="morefrommix2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="morefrommix2_url" name="morefrommix2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="morefrommix2_hed" name="morefrommix2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="morefrommix2_url" name="morefrommix2_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 			<fieldset class="sub_sections">
 				<legend>Headline 3</legend>
-				<p>Hed: <input type="text" id="morefrommix3_hed" name="morefrommix3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="morefrommix3_url" name="morefrommix3_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="morefrommix3_hed" name="morefrommix3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="morefrommix3_url" name="morefrommix3_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 		</fieldset>
 			
 		<fieldset class="sections">
 			<legend>BOTTOM SECTION</legend>
-			<h4><input type="text" class="section_titles" id="fromarchive_title" name="fromarchive_title" value="Don't Miss" onfocus="checkHedDate()" /></h4>
+			<h4><input type="text" class="section_titles" id="fromarchive_title" name="fromarchive_title" value="Don't Miss"" /></h4>
 			<fieldset class="sub_sections">
 				<legend>Headline 1</legend>
-				<p>Hed: <input type="text" id="fromarchive1_hed" name="fromarchive1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="fromarchive1_url" name="fromarchive1_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="fromarchive1_hed" name="fromarchive1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="fromarchive1_url" name="fromarchive1_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 			<fieldset class="sub_sections">
 				<legend>Headline 2</legend>
-				<p>Hed: <input type="text" id="fromarchive2_hed" name="fromarchive2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="fromarchive2_url" name="fromarchive2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="fromarchive2_hed" name="fromarchive2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="fromarchive2_url" name="fromarchive2_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</legend>
 		</fieldset>
 	</div>
@@ -445,11 +445,11 @@ $political = <<<POLITICAL
 	  <fieldset class="sections">
 		<legend>MAIN ARTICLE</legend>
 		<fieldset class="sub_sections">
-			<legend><input id="topstory_title" name="topstory_title" type="text" value="This Week's Top Story" onfocus="checkHedDate()" /></legend>
-			<p>Headline: <input type="text" id="topstory_hed" name="topstory_hed" size="50" value="" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-			<p>Url: <input type="text" id="topstory_url" name="topstory_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+			<legend><input id="topstory_title" name="topstory_title" type="text" value="This Week's Top Story"" /></legend>
+			<p>Headline: <input type="text" id="topstory_hed" name="topstory_hed" size="50" value="" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+			<p>Url: <input type="text" id="topstory_url" name="topstory_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			<p class="dek_sect">Body Text</p>
-			<textarea rows="5" cols="45" id="topstory_dek" name="topstory_dek" onfocus="checkHedDate()"></textarea>
+			<textarea rows="5" cols="45" id="topstory_dek" name="topstory_dek""></textarea>
 		</fieldset>
 	  </fieldset>
     </div>
@@ -458,36 +458,36 @@ $political = <<<POLITICAL
 	<div id="items_right">
 		<fieldset class="sections">
 			<legend>SECTION 2</legend>
-			<h4><input class="section_titles" id="inothernews_title" name="inothernews_title" type="text" value="In Other News" onfocus="checkHedDate()" /></h4>
+			<h4><input class="section_titles" id="inothernews_title" name="inothernews_title" type="text" value="In Other News"" /></h4>
 			<fieldset class="sub_sections">
 				<legend>Headline 1</legend>
-				<p>Hed: <input type="text" id="inothernews_hed" name="inothernews_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="inothernews_url" name="inothernews_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="inothernews_hed" name="inothernews_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="inothernews_url" name="inothernews_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 			<fieldset class="sub_sections">
 				<legend>Headline 2</legend>
-				<p>Hed: <input type="text" id="inothernews2_hed" name="inothernews2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="inothernews2_url" name="inothernews2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="inothernews2_hed" name="inothernews2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="inothernews2_url" name="inothernews2_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 			<fieldset class="sub_sections">
 				<legend>Headline 3</legend>
-				<p>Hed: <input type="text" id="inothernews3_hed" name="inothernews3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="inothernews3_url" name="inothernews3_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="inothernews3_hed" name="inothernews3_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="inothernews3_url" name="inothernews3_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 		</fieldset>
 
 		<fieldset class="sections">
 			<legend>BOTTOM SECTION</legend>
-			<h4><input class="section_titles" id="mostread_title" name="mostread_title" type="text" value="Most Read" onfocus="checkHedDate()" /></h4>
+			<h4><input class="section_titles" id="mostread_title" name="mostread_title" type="text" value="Most Read"" /></h4>
 			<fieldset class="sub_sections">
 				<legend>Headline 1</legend>
-				<p>Hed: <input type="text" id="mostread1_hed" name="mostread1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="mostread1_url" name="mostread1_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="mostread1_hed" name="mostread1_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="mostread1_url" name="mostread1_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 			<fieldset class="sub_sections">
 				<legend>Headline 2</legend>
-				<p>Hed: <input type="text" id="mostread2_hed" name="mostread2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="mostread2_url" name="mostread2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Hed: <input type="text" id="mostread2_hed" name="mostread2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="mostread2_url" name="mostread2_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 			</fieldset>
 		</fieldset>
 	</div>
@@ -505,11 +505,11 @@ $trumpocracy = <<<TRUMP
 		<div id="items_left">
 			<fieldset class="sections">
 				<legend>MAIN ARTICLE</legend>
-				<p>Headline: <input type="text" id="trump_main_hed" name="trump_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
+				<p>Headline: <input type="text" id="trump_main_hed" name="trump_main_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
 				<p>Url: <input type="text" id="trum_main_url" name="trum_main_url" size="50" onblur="this.value=fixURL(this.value)" /></p>
 				<p>Image url: <input type="text" id="trump_main_img" name="trump_main_img" size="50" onblur="this.value=fixURL(this.value)" /></p>
 				<p class="dek_sect">Dek:</p>
-				<textarea rows="15" cols="45" id="trum_main_dek" name="trum_main_dek" onfocus="checkHedDate()"></textarea>
+				<textarea rows="15" cols="45" id="trum_main_dek" name="trum_main_dek""></textarea>
 				<fieldset class="sources" style="float:left;width:50%;clear:both;">
 					<legend>Source name</legend>
 					<input type="text" id="trump_main_source" name="trump_main_source" style="width:95%;" onblur="checkHedDate()">
@@ -521,13 +521,13 @@ $trumpocracy = <<<TRUMP
 			</fieldset>
 
 			<fieldset class="sections">
-				<legend><input type="text" id="topnews_title" name="topnews_title" value="TOP NEWS" onfocus="checkHedDate()" /></legend>
+				<legend><input type="text" id="topnews_title" name="topnews_title" value="TOP NEWS"" /></legend>
 				<fieldset class="sub_sections">
 					<legend>Headline 1:</legend>
-					<textarea id="topnews1_dek" name="topnews1_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="topnews1_dek" name="topnews1_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="topnews1_source" name="topnews1_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="topnews1_source" name="topnews1_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="topnews1_ital" name="topnews1_ital" style="float:left;">
@@ -540,10 +540,10 @@ $trumpocracy = <<<TRUMP
 
 				<fieldset class="sub_sections">
 					<legend>Headline 2:</legend>
-					<textarea id="topnews2_dek" name="topnews2_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="topnews2_dek" name="topnews2_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="topnews2_source" name="topnews2_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="topnews2_source" name="topnews2_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="topnews2_ital" name="topnews2_ital" style="float:left;">
@@ -556,10 +556,10 @@ $trumpocracy = <<<TRUMP
 
 				<fieldset class="sub_sections">
 					<legend>Headline 3:</legend>
-					<textarea id="topnews3_dek" name="topnews3_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="topnews3_dek" name="topnews3_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="topnews3_source" name="topnews3_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="topnews3_source" name="topnews3_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="topnews3_ital" name="topnews3_ital" style="float:left;">
@@ -572,10 +572,10 @@ $trumpocracy = <<<TRUMP
 
 				<fieldset class="sub_sections">
 					<legend>Headline 4:</legend>
-					<textarea id="topnews4_dek" name="topnews4_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="topnews4_dek" name="topnews4_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="topnews4_source" name="topnews4_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="topnews4_source" name="topnews4_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="topnews4_ital" name="topnews4_ital" style="float:left;">
@@ -588,10 +588,10 @@ $trumpocracy = <<<TRUMP
 
 				<fieldset class="sub_sections">
 					<legend>Headline 5:</legend>
-					<textarea id="topnews5_dek" name="topnews5_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="topnews5_dek" name="topnews5_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="topnews5_source" name="topnews5_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="topnews5_source" name="topnews5_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="topnews5_ital" name="topnews5_ital" style="float:left;">
@@ -608,11 +608,11 @@ $trumpocracy = <<<TRUMP
 		<div id="items_right">
 			<fieldset class="sections">
 				<legend>SECOND MAIN ARTICLE</legend>
-				<p>Headline: <input type="text" id="trump_main2_hed" name="trump_main2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true" onfocus="checkHedDate()" /></p>
-				<p>Url: <input type="text" id="trump_main2_url" name="trump_main2_url" size="50" onblur="this.value=fixURL(this.value)" onfocus="checkHedDate()" /></p>
+				<p>Headline: <input type="text" id="trump_main2_hed" name="trump_main2_hed" size="50" maxlength="255" onblur="this.value=cleanstring(this.value)" spellcheck="true"" /></p>
+				<p>Url: <input type="text" id="trump_main2_url" name="trump_main2_url" size="50" onblur="this.value=fixURL(this.value)"" /></p>
 				<p>Image: <input type="text" id="trump_main2_img" name="trump_main2_img" size="50" onblur="this.value=fixURL(this.value)" /></p>
 				<p class="dek_sect">Dek:</p>
-				<textarea rows="15" cols="45" id="trump_main2_dek" name="trump_main2_dek" onfocus="checkHedDate()"></textarea>
+				<textarea rows="15" cols="45" id="trump_main2_dek" name="trump_main2_dek""></textarea>
 				<fieldset class="sources" style="float:left;width:50%;clear:both;">
 					<legend>Source name</legend>
 					<input type="text" id="trump_main2_source" name="trump_main2_source" style="width:95%;" onblur="checkHedDate()">
@@ -624,13 +624,13 @@ $trumpocracy = <<<TRUMP
 			</fieldset>
 			
 			<fieldset class="sections">
-				<legend><input type="text" id="wors_title" name="wors_title" value="What Others are Saying" onfocus="checkHedDate()" /></legend>
+				<legend><input type="text" id="wors_title" name="wors_title" value="What Others are Saying"" /></legend>
 				<fieldset class="sub_sections">
 					<legend>Headline 1:</legend>
-					<textarea id="wors1_dek" name="wors1_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="wors1_dek" name="wors1_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="wors1_source" name="wors1_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="wors1_source" name="wors1_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="wors1_ital" name="wors1_ital" style="float:left;">
@@ -643,10 +643,10 @@ $trumpocracy = <<<TRUMP
 
 				<fieldset class="sub_sections">
 					<legend>Headline 2:</legend>
-					<textarea id="wors2_dek" name="wors2_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="wors2_dek" name="wors2_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="wors2_source" name="wors2_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="wors2_source" name="wors2_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="wors2_ital" name="wors2_ital" style="float:left;">
@@ -659,10 +659,10 @@ $trumpocracy = <<<TRUMP
 
 				<fieldset class="sub_sections">
 					<legend>Headline 3:</legend>
-					<textarea id="wors3_dek" name="wors3_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="wors3_dek" name="wors3_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="wors3_source" name="wors3_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="wors3_source" name="wors3_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="wors3_ital" name="wors3_ital" style="float:left;">
@@ -675,10 +675,10 @@ $trumpocracy = <<<TRUMP
 
 				<fieldset class="sub_sections">
 					<legend>Headline 4:</legend>
-					<textarea id="wors4_dek" name="wors4_dek" rows="15" cols="45" onfocus="checkHedDate()"></textarea>
+					<textarea id="wors4_dek" name="wors4_dek" rows="15" cols="45""></textarea>
 					<fieldset class="sources" style="float:left;width:50%;clear:both;">
 						<legend>Source name</legend>
-						<input type="text" id="wors4_source" name="wors4_source" onfocus="checkHedDate()" style="float:left;">
+						<input type="text" id="wors4_source" name="wors4_source"" style="float:left;">
 					</fieldset>
 					<fieldset class="sources" style="float:left;width:25%;">
 						<legend>Italicise source?</legend> <input type="checkbox" id="wors4_ital" name="wors4_ital" style="float:left;">

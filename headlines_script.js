@@ -6,16 +6,6 @@
   --3/15/2017: added refresh data functionality by modifying the getArchive() function.
 */
 
-//function to check if a headlines archive is chosen
-function checkHedDate() {
-	var hed_date = document.getElementById("archives").value;
-	var hed_type = document.getElementById("hed_type").value;
-	
-	if(hed_date == "none" && hed_type !== "breaking_news") {
-		alert("Please choose a Headlines Archive from the drop down menu before proceeding. Thanks.");
-	}
-}
-
 //function to print out the section drop down select
 function getTypeImg(type_img) {
   var theImg = "";                                            //var to hold image path for headlines type
@@ -29,8 +19,10 @@ function getTypeImg(type_img) {
   var today_date = document.getElementById("hed_date");
   var complete_date;
   
+  document.getElementById("subject_line").value = "";
   $("#wysiwig_msg").removeClass("loading_done");
   $("#wysiwig_msg").addClass("loading_warning");
+  document.getElementById("archives").disabled = true;
   wysiwig.innerHTML = "Please wait until the WYSIWIG loads completely.  Thank you.";
   
   //switch statement to get appropriate image for headlines type
@@ -82,7 +74,7 @@ function getTypeImg(type_img) {
       break;
   }
 
-  if(theImg != "false") {  
+  if(theImg !== "false") {  
 	//if theImg string does not equal false
     //show all hidden sections
     img_holder.className = "block_show";
@@ -102,6 +94,7 @@ function getTypeImg(type_img) {
     	$("#wysiwig_msg").removeClass("loading_warning");
     	$("#wysiwig_msg").addClass("loading_done");
   	    document.getElementById("wysiwig_msg").innerHTML = "WYSIWYG ready!";
+  	    document.getElementById("archives").disabled = false;
   	} );
     $(".message_check").css("display", "block");
     return true;
@@ -200,7 +193,6 @@ function delayedInsert(json_obj) {
 					  }
 				}
 				else {
-					json_obj[index_name] = json_obj[index_name].replace(new RegExp("\\\\", "g"), "");
 					document.getElementById(index_name).value = json_obj[index_name];
 				}
 			}

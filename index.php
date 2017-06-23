@@ -102,22 +102,19 @@ $today = date("Y-m-d", time());
   </div>
     <hr style="100%;clear:both;" />
     <div id="footer_row" class="block_hidden">
-      <button style="widdth:75px;background-color:#369;color:#fff;font-size:13px;" onclick="checkForm('preview');">Preview</button>
-      <!--<input type="button" value="Preview" style="background-color:#960;color:#fff;font-size:12px;" onclick="checkForm('preview');" />-->
-      <button style="width:75px;background-color:#393;color:#fff;font-size:12px;" onclick="checkForm('not');">Submit<br>Headlines</button>
-      <!--  <input type="button" value="Submit Headlines" style="width:100px;background-color:#393;color:#fff;font-size:16px;" onclick="checkForm('not');" />-->
+      <button style="widdth:75px;background-color:#369;color:#fff;font-size:14px;" onclick="checkForm('preview');">Preview</button>
+      <button style="width:75px;background-color:#393;color:#fff;font-size:14px;" onclick="checkForm('not');">Submit</button>
     </div>
-  <br style="clear:both;" />
-  <div id="ad_section" class="block_hidden">
-  	<fieldset id="ad_slots">
+  <div id="ad_section" class="block_hidden" style="clear:both;">
+  	<fieldset id="ad_slots" class="sections">
   	<legend>PAID ADS</legend>
-    	<p class="ad_label">Advertiser: &nbsp;<input id="ad_name" name="advertiser_name" type="text" value="" size="40" /></p>
-    	<p class="ad_label">Billboard Url: &nbsp;<input id="ad_link_bill" name="billboard_url" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
-    	<p class="ad_label">Billboard Image: &nbsp;<input id="ad_billboard" name="billboard_img" type="text" value="" size="40" /></p>
+    	<p><label for="ad_name">Advertiser:</label> <input id="ad_name" name="advertiser_name" type="text" value="" size="40"></p>
+    	<p><label for="ad_link_bill">Billboard Url:</label> <input id="ad_link_bill" name="billboard_url" type="text" value="" size="40" onblur="this.value=fixURL(this.value)"></p>
+    	<p><label for="ad_billboard">Billboard Image:</label> <input id="ad_billboard" name="billboard_img" type="text" value="" size="40" onblur="this.value=fixURL(this.value)"></p>
     	<br />
-    	<p class="ad_label">Advertiser 2: &nbsp;<input id="ad_name2" name="advertiser_name2" type="text" value="" size="40" /></p>
-    	<p class="ad_label">Billboard Url 2: &nbsp;<input id="ad_link_banner" name="billboard_url2" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
-    	<p class="ad_label">Billboard Image 2: &nbsp;<input id="ad_banner" name="billboard_img2" type="text" value="" size="40" /></p>
+    	<p><label for="ad_name2">Advertiser 2:</label> <input id="ad_name2" name="advertiser_name2" type="text" value="" size="40"></p>
+    	<p><label for="ad_link_banner">Billboard Url 2:</label> <input id="ad_link_banner" name="billboard_url2" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
+    	<p><label for="ad_banner">Billboard Image 2:</label> <input id="ad_banner" name="billboard_img2" type="text" value="" size="40" onblur="this.value=fixURL(this.value)"></p>
     	<fieldset class="sub_sections">
     	<legend style="background:#000;color:#fff;text-align:center;font-size: 12px;padding: 2px 2px;">PIXEL TRACKING CODE (TOP AD):</legend>
     	<textarea id="pixel_tracker" name="pixel_tracker" type="text" value="" cols="55" rows="4""></textarea>
@@ -131,16 +128,16 @@ $today = date("Y-m-d", time());
     	<textarea rows="5" cols="50" id="lift_note" name="lift_note"></textarea>
     	</fieldset>
     </fieldset>
-    <fieldset id="membership_slots">
+    <fieldset id="membership_slots" class="sections">
     	<legend>MEMBERSHIP SLOT OVERRIDES</legend>
-    	<p class="ad_label">Sub url: &nbsp;<input id="sub_url" name="sub_url" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
-    	<p class="ad_label">Sub image: &nbsp;<input type="text" value="" id="sub_image" name="sub_image" size="40" /></p>
-    	<p class="ad_label">Sub alt text: &nbsp;<input type="text" value="" id="sub_text" name="sub_text" size="40" /></p>
-    	<p class="ad_label">Membership text section for redesigned newsletter:<br />
-    	<textarea id="membership_slot" name="membership_slot" rows="5" cols="45"></textarea></p>
-    	<p class="ad_label">Code field for old newsletter format (for complex HTML ad: This field overrides the Sub url & Sub image fields):<br />
-    	<textarea rows="5" cols="45" id="sub_code" name="sub_code"></textarea></p>
-  </fieldset>
+    	<p><label for="sub_url">Sub url:</label> <input id="sub_url" name="sub_url" type="text" value="" size="40" onblur="this.value=fixURL(this.value)" /></p>
+    	<p><label for="sub_image">Sub image:</label> <input type="text" value="" id="sub_image" name="sub_image" size="40"></p>
+    	<p><label for="sub_text">Sub alt text:</label> <input type="text" value="" id="sub_text" name="sub_text" size="40"></p>
+    	<p><label for="membership_slot">Membership text section for redesigned newsletter:</label></p>
+    	<textarea id="membership_slot" name="membership_slot" rows="5" cols="45"></textarea>
+    	<p>Code field for old newsletter format (for complex HTML ad: This field overrides the Sub url & Sub image fields):</p>
+    	<textarea rows="5" cols="45" id="sub_code" name="sub_code"></textarea>
+  	</fieldset>
   </div>
   </form>
 </body>
