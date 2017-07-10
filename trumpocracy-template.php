@@ -783,21 +783,13 @@ $lift_note_section
                 $main_section
                 $main2_section
                 <tr>
-                  <td style="border-bottom: 1px solid #767676;" valign="top">
+                  <td style="border-bottom: 1px solid #767676;">
+                    <p class="ad_text" style="margin-top:0;color: #767676; text-align: center;font-family:Georgia, serif; font-size: 12px;font-style:italic;">&#8212;Advertisement&#8212;</p>
+                    $billboard_ad
+                    <br />
                     <!--[if (gte mso 9)|(IE)]>
                     <br />
                     <![endif]-->
-                    <table align="center" width="100%" style="width:100%;max-width:100%;" cellpadding="5" cellspacing="0" border="0">
-                      <tr>
-                        <td style="background-color: #e8e8e8;">
-                          $membership_slot
-                        </td>
-                      </tr>
-                    </table>
-                    <!--[if (gte mso 9)|(IE)]>
-                    <br /><br />
-                    <![endif]-->
-                    <br />
                   </td>
                 </tr>
                 $topnews_sec
@@ -814,13 +806,21 @@ $lift_note_section
 					</td>
                 </tr>
                 <tr>
-                  <td style="border-bottom: 1px solid #767676;">
-                    <p class="ad_text" style="margin-top:0;color: #767676; text-align: center;font-family:Georgia, serif; font-size: 12px;font-style:italic;">&#8212;Advertisement&#8212;</p>
-                    $billboard_ad
-                    <br />
+                  <td style="border-bottom: 1px solid #767676;" valign="top">
                     <!--[if (gte mso 9)|(IE)]>
                     <br />
                     <![endif]-->
+                    <table align="center" width="100%" style="width:100%;max-width:100%;" cellpadding="5" cellspacing="0" border="0">
+                      <tr>
+                        <td style="background-color: #e8e8e8;">
+                          $membership_slot
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    <br /><br />
+                    <![endif]-->
+                    <br />
                   </td>
                 </tr>
                 $wors_sec
