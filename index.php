@@ -76,7 +76,7 @@ $today = date("Y-m-d", time());
         			<option value="food_for_thought_redesign">Food for Thought Redesign</option>
         			<option value="in_the_mix_new">In The Mix</option>
         			<option value="political_mojo_new">Political Mojo</option>
-        			<option value="trumpocracy">Trumpocracy</option>
+        			<option value="trumpocracy">The Russian Connection</option>
       			</select>
       			</p>
         		<p>Headlines archives:

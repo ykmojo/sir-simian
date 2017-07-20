@@ -392,7 +392,7 @@ $trum_main_dek = str_replace("<a", $url_style, $trum_main_dek);
 $get_last_p = strripos($trum_main_dek, "</p>");
 $get_substr = substr($trum_main_dek, 0, $get_last_p);
 if($trump_main_source !== "" || $trump_main_source !== null) {
-
+	
 	if($trump_main_ital) {
 		$trum_main_dek_cat = $get_substr . " (<em>$trump_main_source_format</em>)</p>\n";
 	}
@@ -478,7 +478,7 @@ else {
 
 //Prepare the Top News section stories
 if($topnews1_dek !== "" || $topnews2_dek !== "" || $topnews3_dek !== "" || $topnews4_dek !== "" || $topnews5_dek !== "") {
-
+	
 	if($topnews1_dek !== "") {
 		$get_last_p = "";
 		$get_substr = "";
@@ -745,6 +745,8 @@ if($lift_note !== "") {
 
 //LiveIntent section
 //safe RBT
+$safe_rbt = "";
+
 if($liveintent_billboard || $liveintent_banner || $liveintent_billboard2) {
 	$safe_rbt = <<<SAFERBT
 <table cellpadding="0" cellspacing="0" border="0" width="40" height="6"><tbody><tr><td><img src="http://li.motherjones.com/imp?s=124867900&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867901&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867902&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867903&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867904&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867905&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867906&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867907&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867908&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867909&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867910&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867911&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867912&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867913&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867914&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867915&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867916&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867917&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867918&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124867919&sz=2x1&li=trumpocracy&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td></tr></tbody></table>
