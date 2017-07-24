@@ -138,7 +138,7 @@ for($i = 0; $i < $count_eco; $i++) {
 }
 $print_eco .= "</td>";
 
-$print_trump = "<td id='food' width='170' valign='top'><h3 style='border-bottom:1px #fff dashed;text-align:center;font-size:18px;'>Trumpocracy</h3>";
+$print_trump = "<td id='food' width='170' valign='top'><h3 style='border-bottom:1px #fff dashed;text-align:center;font-size:18px;'>The Russian Connection</h3>";
 for($i = 0; $i < $count_trump; $i++) {
   if($i == 0) {
     $new = "<span>Current: </span>";
