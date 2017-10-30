@@ -49,6 +49,15 @@ $read_more = "<p style=\"margin:0 2px 10px 2px; font-family:Verdana, Arial, Helv
 
 $main_text_sec = $main_text . $read_more;
 
+//lift note section
+$lift_note_section = "";
+if(isset($lift_note) && $lift_note !== "") {
+	$search_this = "<p>";
+	$replace_code = '<p style="font-family: Verdana, Helvetica, Arial, sans-serif !important;font-size: 16px !important;line-height:20px !important;color: #767676 !important;margin: 10px 20px;">';
+	$lift_note = str_ireplace($search_this, $replace_code, $lift_note);
+	$lift_note_section = "<tr><td class=\"standard_td\" style=\"padding: 10px 20px !important;\">" . $lift_note . "<hr style=\"border:1px solid #e8e8e8;background-color: #f2eeed;width:100%;\" /></td></tr>";
+}
+
 //saferbt
 $saferbt = <<<SAFERBT
 <table cellpadding="0" cellspacing="0" border="0" width="40" height="6"><tbody><tr><td><img src="http://li.motherjones.com/imp?s=124877300&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877301&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877302&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877303&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877304&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877305&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877306&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877307&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877308&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877309&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877310&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877311&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877312&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877313&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877314&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877315&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877316&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877317&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877318&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td><td><img src="http://li.motherjones.com/imp?s=124877319&sz=2x1&li=breaking-news&e={{contact.email}}&p={{campaign.id}}$timestamp" width="2" height="6" border="0" /></td></tr></tbody></table>
@@ -78,6 +87,7 @@ $breaking_news = <<<BREAKINGNEWS
 			<td>
 				<table align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;padding:0;max-width: 100%;background-color:#fff;border-collapse: collapse;" border="0" width="600">
 					<tbody>
+					$lift_note_section
 						<tr>
 							<td><a href="http://www.motherjones.com"><img alt="Mother Jones" src="http://assets.motherjones.com/newsletters/images/breaking-news-header.png" width="600" border="0" style="max-width:600px;width:100%;" /></a></td>
 						</tr>
@@ -146,6 +156,7 @@ $db_connect = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbdb) or die("Can't
 $breaking_lead_hed = strip_tags(addslashes($breaking_lead_hed), $allowed_html);
 $breaking_lead_url = addslashes($breaking_lead_url);
 $main_text = strip_tags(addslashes($main_text), $allowed_html);
+$lift_note = addslashes($lift_note);
 
 $check_existing = "SELECT id, hed_date FROM breaking_news WHERE hed_date='$headlines_date'";
 $existing_qry = mysqli_query($db_connect, $check_existing) or die("Can't run query now");
@@ -162,16 +173,18 @@ if($exists) {
 	breaking = '$breaking_lead_hed',
 	breaking_url = '$breaking_lead_url',
 	main_text = '$main_text',
-	subject_line = '$subject_line'
+	subject_line = '$subject_line',
+	lift_note = '$lift_note'
 	WHERE hed_date='$headlines_date'";
 }
 else {
-	$run_qry = "INSERT INTO breaking_news(hed_date,subject_line, breaking, breaking_url, main_text)
+	$run_qry = "INSERT INTO breaking_news(hed_date,subject_line, breaking, breaking_url, main_text, lift_note)
 	VALUES('$headlines_date',
 	'$subject_line',
 	'$breaking_lead_hed',
 	'$breaking_lead_url',
-	'$main_text')";
+	'$main_text'
+	'$lift_note')";
 }
 //flush query and close db connections
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly". mysqli_error($db_connect));

@@ -690,7 +690,7 @@ if($wors1_dek !== "" || $wors2_dek !== "" || $wors3_dek !== "" || $wors4_dek !==
 				$get_substr = $get_substr . " &#8212; <em><a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a></em></p>\n";
 			}
 			else {
-				$get_substr = $get_substr . " &#8212; <a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a>)</p>\n";
+				$get_substr = $get_substr . " &#8212; <a href=\"$wors3_url\" style=\"text-decoration:none;color: #ff6900;\">" . $wors3_source . "</a></p>\n";
 			}
 		}
 		
