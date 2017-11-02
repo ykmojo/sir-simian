@@ -94,7 +94,7 @@ $main_text_a = "<a style=\"color:#ff6900;text-decoration:none;\" ";
 $main_text = str_replace("<p>", $main_text_p, $main_text);
 $main_text = str_replace("<a", $main_text_a, $main_text);
 //read more
-$read_more = "<p style=\"margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;\"><a href=\"$breaking_lead_url\" style=\"color: #ff6900;\">Read More</a></p>";
+$read_more = "<p style=\"margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;\"><a href=\"$breaking_lead_url\" style=\"color: #ff6900;\">Read More</a></p><br />";
 
 $main_text_sec = $main_text . $read_more;
 
@@ -116,27 +116,27 @@ if($more_news_1 !== "" || $more_news_2 !== "" || $more_news_3 !== "") {
 		$insert_bottom_margin2 = "";
 		if($more_news_2 === "" && $more_news_3 === "") {
 			$insert_bottom_margin = "border-bottom:1px solid #ccc;";
-			$insert_bottom_margin2 = "<br /><br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
+			$insert_bottom_margin2 = "<br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
 		}
 		$mn_1_url = "<a class=\"article_hed\" href=\"$more_news_1_url\" style=\"$hed_styles\">";
-		$more_news_1_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n$mn_1_url" . $more_news_1 . "</a>\n$insert_bottom_margin2</td>\n</tr>\n";
+		$more_news_1_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n<p>$mn_1_url" . $more_news_1 . "</a></p>\n$insert_bottom_margin2</td>\n</tr>\n";
 	}
 	
 	if($more_news_2 !== "") {
 		$insert_bottom_margin = "";
 		if($more_news_3 === "") {
 			$insert_bottom_margin = "border-bottom:1px solid #ccc;";
-			$insert_bottom_margin2 = "<br /><br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
+			$insert_bottom_margin2 = "<br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
 		}
 		$mn_2_url = "<a class=\"article_hed\" href=\"$more_news_2_url\" style=\"$hed_styles\">";
-		$more_news_2_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n$mn_2_url" . $more_news_2 . "</a>\n$insert_bottom_margin2</td>\n</tr>\n";
+		$more_news_2_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n<p>$mn_2_url" . $more_news_2 . "</a></p>\n$insert_bottom_margin2</td>\n</tr>\n";
 	}
 	
 	if($more_news_3 !== "") {
 		$insert_bottom_margin = "border-bottom:1px solid #ccc;";
-		$insert_bottom_margin2 = "<br /><br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
+		$insert_bottom_margin2 = "<br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
 		$mn_3_url = "<a class=\"article_hed\" href=\"$more_news_3_url\" style=\"$hed_styles\">";
-		$more_news_3_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n$mn_3_url" . $more_news_3 . "</a>\n$insert_bottom_margin2</td>\n</tr>\n";
+		$more_news_3_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n<p>$mn_3_url" . $more_news_3 . "</a></p>\n$insert_bottom_margin2</td>\n</tr>\n";
 	}
 	
 	$more_news_sec = $more_news_title_sec . $more_news_1_s . $more_news_2_s . $more_news_3_s;
