@@ -310,10 +310,6 @@ if(isset($lift_note) && $lift_note !== "") {
 	$lift_note_section = "<tr><td class=\"standard_td\" style=\"padding: 10px 20px !important;\">" . $lift_note . "<hr style=\"border:1px solid #e8e8e8;background-color: #f2eeed;width:100%;\" /></td></tr>";
 }
 
-//text ad section
-/*$text_ad = strip_tags(stripslashes($text_ad_dek), "<br><b><strong><a><map><area><img>");
-$text_ad = "<div style=\"font-size:12px;text-align:left;color:#666666;margin-top:7px !important;margin-right:20px !important;margin-left:20px !important;\">" . $text_ad . "</div>";*/
-
 //live intent section
 $liveintent_toptags = "";
 $liveintent_bottomtags = "";

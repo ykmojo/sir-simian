@@ -227,7 +227,6 @@ if(isset($inothernews_hed) && $inothernews_hed !== "") {
 	if(isset($inothernews_url) && $inothernews_url !== "") {
 		$ion1_url = "<a class=\"article_hed\" href=\"$inothernews_url\" style=\"$hed_styles\" name=\"$ion1_anchor_name\">";
 		$ion1_url_close = "</a>";
-		/*$ion1_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$inothernews_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$inothernews_url&text=$inothernews_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
 	}
 	
 	$ion1_full = "<tr>\n<td style=\"$standard_td\">\n$ion1_url". $inothernews_hed. "$ion1_url_close\n" . "$ion1_social_media</td>\n</tr>\n";
@@ -245,7 +244,6 @@ if(isset($inothernews2_hed) && $inothernews2_hed !== "") {
 	if(isset($inothernews2_url) && $inothernews2_url !== "") {
 		$ion2_url = "<a class=\"article_hed\" href=\"$inothernews2_url\" style=\"$hed_styles\" name=\"$ion2_anchor_name\">";
 		$ion2_url_close = "</a>";
-		/*$ion2_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$inothernews2_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$inothernews2_url&text=$inothernews2_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
 	}
 
 	$ion2_full = "<tr>\n<td style=\"$standard_td\">\n$ion2_url". $inothernews2_hed. "$ion2_url_close\n" . "$ion2_social_media</td>\n</tr>\n";
@@ -263,7 +261,6 @@ if(isset($inothernews3_hed) && $inothernews3_hed !== "") {
 	if(isset($inothernews3_url) && $inothernews3_url !== "") {
 		$ion3_url = "<a class=\"article_hed\" href=\"$inothernews3_url\" style=\"$hed_styles\" name=\"$ion3_anchor_name\">";
 		$ion3_url_close = "</a>";
-		/*$ion3_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$inothernews3_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$inothernews3_url&text=$inothernews3_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
 	}
 
 	$ion3_full = "<tr>\n<td style=\"$standard_td\">\n$ion3_url". $inothernews3_hed. "$ion3_url_close\n" . "$ion3_social_media</td>\n</tr>\n";
@@ -294,7 +291,6 @@ if(isset($mostread1_hed) && $mostread1_hed !== "") {
 	if(isset($mostread1_url) && $mostread1_url !== "") {
 		$mr1_url = "<a class=\"article_hed\" href=\"$mostread1_url\" style=\"$hed_styles\" name=\"$mr1_anchor_name\">";
 		$mr1_url_close = "";
-		/*$mr1_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$mostread1_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$mostread1_url&text=$mostread1_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
 	}
 	
 	$mr1_full = "<tr>\n<td style=\"$standard_td\">\n$mr1_url". $mostread1_hed. "$mr1_url_close\n" . "$mr1_social_media</td>\n</tr>\n";
@@ -309,7 +305,6 @@ if(isset($mostread2_hed) && $mostread2_hed !== "") {
 	if(isset($mostread2_url) && $mostread2_url !== "") {
 		$mr2_url = "<a class=\"article_hed\" href=\"$mostread2_url\" style=\"$hed_styles\" name=\"$mr2_anchor_name\">";
 		$mr2_url_close = "";
-		/*$mr2_social_media = "<br />\n<a href=\"http://www.facebook.com/sharer/sharer.php?u=$mostread2_url\">$facebook_icon</a>\n<a href=\"http://twitter.com/intent/tweet?url=$mostread2_url&text=$mostread2_hed&via=MotherJones\" target=\"_blank\">$twitter_icon</a>\n";*/
 	}
 
 	$mr2_full = "<tr>\n<td style=\"$standard_td\">\n$mr2_url". $mostread2_hed. "$mr2_url_close\n" . "$mr2_social_media</td>\n</tr>\n";
@@ -331,10 +326,6 @@ if(isset($lift_note) && $lift_note !== "") {
 	$lift_note = str_ireplace($search_this, $replace_code, $lift_note);
 	$lift_note_section = "<tr><td class=\"standard_td\" style=\"padding: 10px 20px !important;\">" . $lift_note . "<hr style=\"border:1px solid #e8e8e8;background-color: #f2eeed;width:100%;\" /></td></tr>";
 }
-
-//text ad section
-/*$text_ad = strip_tags(stripslashes($text_ad_dek), "<br><b><strong><a><map><area><img>");
-$text_ad = "<div style=\"font-size:12px;text-align:left;color:#666666;margin-top:7px !important;margin-right:20px !important;margin-left:20px !important;\">" . $text_ad . "</div>";*/
 
 //live intent section
 $liveintent_toptags = "";

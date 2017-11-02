@@ -1,28 +1,77 @@
 <?php
 $allowed_html = "<a><br><b><i><em><strong><span><ol><ul><li><blockquote><sup><sub><img><table><td><tr><p>";
 
-if(isset($_REQUEST['breaking']) && $_REQUEST['breaking'] != "") {
+if(isset($_REQUEST['breaking']) && $_REQUEST['breaking'] !== "") {
 	$breaking_lead_hed = trim($_REQUEST['breaking']);
 }
 else {
 	$breaking_lead_hed = "";
 }
 
-if(isset($_REQUEST['breaking_url']) && $_REQUEST['breaking_url'] != "") {
+if(isset($_REQUEST['breaking_url']) && $_REQUEST['breaking_url'] !== "") {
 	$breaking_lead_url = trim($_REQUEST['breaking_url']);
 }
 else {
 	$breaking_lead_url = "";
 }
 
-if(isset($_REQUEST['main_text']) && $_REQUEST['main_text'] != "") {
+if(isset($_REQUEST['main_text']) && $_REQUEST['main_text'] !== "") {
 	$main_text = trim($_REQUEST['main_text']);
 }
 else {
 	$main_text = "";
 }
 
-if(isset($_REQUEST['lift_note']) && $_REQUEST['lift_note'] != "") {
+if(isset($_REQUEST['more_news_title']) && $_REQUEST['more_news_title'] !== "MORE NEWS") {
+	$more_news_title= trim($_REQUEST['more_news_title']);
+}
+else {
+	$more_news_title = "MORE NEWS";
+}
+
+if(isset($_REQUEST['more_news_1']) && $_REQUEST['more_news_1'] !== "") {
+	$more_news_1 = trim($_REQUEST['more_news_1']);
+}
+else {
+	$more_news_1 = "";
+}
+
+if(isset($_REQUEST['more_news_1_url']) && $_REQUEST['more_news_1_url'] !== "") {
+	$more_news_1_url = trim($_REQUEST['more_news_1_url']);
+}
+else {
+	$more_news_1_url = "";
+}
+
+if(isset($_REQUEST['more_news_2']) && $_REQUEST['more_news_2'] !== "") {
+	$more_news_2 = trim($_REQUEST['more_news_2']);
+}
+else {
+	$more_news_2 = "";
+}
+
+if(isset($_REQUEST['more_news_2_url']) && $_REQUEST['more_news_2_url'] !== "") {
+	$more_news_2_url = trim($_REQUEST['more_news_2_url']);
+}
+else {
+	$more_news_2_url = "";
+}
+
+if(isset($_REQUEST['more_news_3']) && $_REQUEST['more_news_3'] !== "") {
+	$more_news_3 = trim($_REQUEST['more_news_3']);
+}
+else {
+	$more_news_3 = "";
+}
+
+if(isset($_REQUEST['more_news_3_url']) && $_REQUEST['more_news_3_url'] !== "") {
+	$more_news_3_url = trim($_REQUEST['more_news_3_url']);
+}
+else {
+	$more_news_3_url = "";
+}
+
+if(isset($_REQUEST['lift_note']) && $_REQUEST['lift_note'] !== "") {
 	$lift_note = trim($_REQUEST['lift_note']);
 }
 else {
@@ -48,6 +97,53 @@ $main_text = str_replace("<a", $main_text_a, $main_text);
 $read_more = "<p style=\"margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;line-height:18px;\"><a href=\"$breaking_lead_url\" style=\"color: #ff6900;\">Read More</a></p>";
 
 $main_text_sec = $main_text . $read_more;
+
+//More News section
+
+$more_news_sec = "";
+
+if($more_news_1 !== "" || $more_news_2 !== "" || $more_news_3 !== "") {
+	$more_news_1_s = "";
+	$mn_1_url = "";
+	$more_news_2_s = "";
+	$mn_2_url = "";
+	$more_news_3_s = "";
+	$mn_3_url = "";
+	$more_news_title_sec = "<tr>\n<td style=\"$section_title\">\n<br />\n<p class=\"headers_text\" style=\"margin-top: 0;font-family: Verdana, sans-serif; color: #ff6900;font-size: 12px; line-height: 16px;font-weight: bold;text-transform: uppercase;text-align:left;\"><strong>$more_news_title</strong></p>\n</td>\n</tr>\n";
+	
+	if($more_news_1 !== "") {
+		$insert_bottom_margin = "";
+		$insert_bottom_margin2 = "";
+		if($more_news_2 === "" && $more_news_3 === "") {
+			$insert_bottom_margin = "border-bottom:1px solid #ccc;";
+			$insert_bottom_margin2 = "<br /><br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
+		}
+		$mn_1_url = "<a class=\"article_hed\" href=\"$more_news_1_url\" style=\"$hed_styles\">";
+		$more_news_1_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n$mn_1_url" . $more_news_1 . "</a>\n$insert_bottom_margin2</td>\n</tr>\n";
+	}
+	
+	if($more_news_2 !== "") {
+		$insert_bottom_margin = "";
+		if($more_news_3 === "") {
+			$insert_bottom_margin = "border-bottom:1px solid #ccc;";
+			$insert_bottom_margin2 = "<br /><br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
+		}
+		$mn_2_url = "<a class=\"article_hed\" href=\"$more_news_2_url\" style=\"$hed_styles\">";
+		$more_news_2_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n$mn_2_url" . $more_news_2 . "</a>\n$insert_bottom_margin2</td>\n</tr>\n";
+	}
+	
+	if($more_news_3 !== "") {
+		$insert_bottom_margin = "border-bottom:1px solid #ccc;";
+		$insert_bottom_margin2 = "<br /><br /><!--[if (gte mso 9)|(IE)]><br /><![endif]-->";
+		$mn_3_url = "<a class=\"article_hed\" href=\"$more_news_3_url\" style=\"$hed_styles\">";
+		$more_news_3_s = "<tr>\n<td style=\"$breaking_nws_td$insert_bottom_margin\">\n$mn_3_url" . $more_news_3 . "</a>\n$insert_bottom_margin2</td>\n</tr>\n";
+	}
+	
+	$more_news_sec = $more_news_title_sec . $more_news_1_s . $more_news_2_s . $more_news_3_s;
+}
+else {
+	$more_news_sec = "";
+}
 
 //lift note section
 $lift_note_section = "";
@@ -96,17 +192,18 @@ $breaking_news = <<<BREAKINGNEWS
 								<table align="center" cellpadding="15" cellspacing="0" style="margin:0 auto;max-width:100%;" width="540">
 									<tr>
 										<td style="margin:0 2px 10px 2px; font-family:Verdana, Arial, Helvetica, sans-serif;border-bottom: 1px solid #ccc;" valign="top">
-											<p class="headers_text" style="margin-top: 0;font-family: Verdana, sans-serif; color: #ff6900;font-size: 12px; line-height: 16px;font-weight: bold;text-transform: uppercase;text-align:left;"><strong>BREAKING NEWS</strong></p>
+											<p class="headers_text" style="margin-top: 10px;font-family: Verdana, sans-serif; color: #ff6900;font-size: 12px; line-height: 16px;font-weight: bold;text-transform: uppercase;text-align:left;"><strong>BREAKING NEWS</strong></p>
 											$breaking_lead_in
 											$main_text_sec
 										</td>
 									</tr>
 									<tr>
-										<td align="center" style="border-bottom: 1px solid #ccc;">
+										<td align="center" style="border-bottom:1px solid #ccc;">
 											<span style="text-align: center;color: #767676;font-size: 12px;font-style:italic;">&#8212;Advertisement&#8212;</span>
 											$billboard_ad
 										</td>
 									</tr>
+										$more_news_sec
 									<tr>
 										<td align="center">
 											<!--[if (gte mso 9)|(IE)]><br /><![endif]-->
@@ -156,6 +253,12 @@ $db_connect = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbdb) or die("Can't
 $breaking_lead_hed = strip_tags(addslashes($breaking_lead_hed), $allowed_html);
 $breaking_lead_url = addslashes($breaking_lead_url);
 $main_text = strip_tags(addslashes($main_text), $allowed_html);
+$more_news_1 = strip_tags(addslashes($more_news_1), $allowed_html);
+$more_news_1_url = strip_tags(addslashes($more_news_1_url), $allowed_html);
+$more_news_2 = strip_tags(addslashes($more_news_2), $allowed_html);
+$more_news_2_url = strip_tags(addslashes($more_news_2_url), $allowed_html);
+$more_news_3 = strip_tags(addslashes($more_news_3), $allowed_html);
+$more_news_3_url = strip_tags(addslashes($more_news_3_url), $allowed_html);
 $lift_note = addslashes($lift_note);
 
 $check_existing = "SELECT id, hed_date FROM breaking_news WHERE hed_date='$headlines_date'";
@@ -174,16 +277,28 @@ if($exists) {
 	breaking_url = '$breaking_lead_url',
 	main_text = '$main_text',
 	subject_line = '$subject_line',
+	more_news_1 = '$more_news_1',
+	more_news_1_url = '$more_news_1_url',
+	more_news_2 = '$more_news_2',
+	more_news_2_url = '$more_news_2_url',
+	more_news_3 = '$more_news_3',
+	more_news_3_url = '$more_news_3_url',
 	lift_note = '$lift_note'
 	WHERE hed_date='$headlines_date'";
 }
 else {
-	$run_qry = "INSERT INTO breaking_news(hed_date,subject_line, breaking, breaking_url, main_text, lift_note)
+	$run_qry = "INSERT INTO breaking_news(hed_date,subject_line, breaking, breaking_url, main_text,more_news_1,more_news_1_url,more_news_2,more_news_2_url,more_news_3,more_news_3_url lift_note)
 	VALUES('$headlines_date',
 	'$subject_line',
 	'$breaking_lead_hed',
 	'$breaking_lead_url',
-	'$main_text'
+	'$main_text',
+	'$more_news_1',
+	'$more_news_1_url',
+	'$more_news_2',
+	'$more_news_2_url',
+	'$more_news_3',
+	'$more_news_3_url',
 	'$lift_note')";
 }
 //flush query and close db connections

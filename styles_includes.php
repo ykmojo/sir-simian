@@ -9,6 +9,7 @@ $news_title_td = "padding: 10px 20px 0 20px !important;text-transform: uppercase
 $new_tag_line = "color: #969696;font-family: Georgia,Helvetica,Arial,sans-serif;font-size: .50em;font-style: italic;font-weight: 400;text-align: right;";
 $section_title = "padding: 10px 20px 10px 20px !important;text-transform: uppercase;font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: 600;color: #FF6900;";
 $standard_td = "padding: 10px 40px !important;";
+$breaking_nws_td = "padding:10px 20px !important;";
 $separator_border = "border:1px solid #e8e8e8;background-color: #f2eeed;width:100%;";
 $hed_styles = "font-family: Georgia, serif;font-size: 22px;line-height:24px;font-weight: 900;text-decoration:none;color:#000;";
 $hed_styles_main = "font-family: Georgia, serif;font-size: 30px;line-height:30px;font-weight: 900;text-decoration:none;color:#000;";

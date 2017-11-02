@@ -99,17 +99,36 @@ function breaking_news() {
 $breaking_news = <<<BREAKING
 <div class="head_types">
   <div class="columns">
-	<div id="items_left">
-	  <fieldset class="sections">
-	  <legend>Breaking News</legend>
-		<fieldset class="sub_sections">
-	      <p>Breaking News Lead: <input type="text" id="breaking" name="breaking" value="" size="45" maxlength="255" spellcheck="true" /></p>
-	      <p>Breaking News Lead URL: <input type="text" id="breaking_url" name="breaking_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
-	      <p>Breaking News Main Text:</p>
-	      <textarea rows="10" cols="45" id="main_text" name="main_text"></textarea>
-        </fieldset>
-	  </fieldset>
-	</div>
+		<div id="items_left">
+			<fieldset class="sections">
+			<legend>Breaking News</legend>
+			<fieldset class="sub_sections">
+					<p>Breaking News Lead: <input type="text" id="breaking" name="breaking" value="" size="45" maxlength="255" spellcheck="true" /></p>
+					<p>Breaking News Lead URL: <input type="text" id="breaking_url" name="breaking_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+					<p>Breaking News Main Text:</p>
+					<textarea rows="10" cols="45" id="main_text" name="main_text"></textarea>
+					</fieldset>
+			</fieldset>
+		</div>
+  </div>
+  <div class="columns">
+		<div id="items_right">
+			<fieldset class="sections">
+			<legend>More News Section</legend>
+			<h4><input type="text" class="section_titles" id="more_news_title" name="more_news_title" value="More News" /></h4>
+			<fieldset class="sub_sections">
+					<p>More News 1 Hed: <input type="text" id="more_news_1" name="more_news_1" value="" size="45" maxlength="255" spellcheck="true" /></p>
+					<p>More News 1 URL: <input type="text" id="more_news_1_url" name="more_news_1_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+			</fieldset>
+			<fieldset class="sub_sections">
+					<p>More News 2 Hed: <input type="text" id="more_news_2" name="more_news_2" value="" size="45" maxlength="255" spellcheck="true" /></p>
+					<p>More News 2 URL: <input type="text" id="more_news_2_url" name="more_news_2_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+			</fieldset>
+			<fieldset class="sub_sections">
+					<p>More News 3 Hed: <input type="text" id="more_news_3" name="more_news_3" value="" size="45" maxlength="255" spellcheck="true" /></p>
+					<p>More News 3 URL: <input type="text" id="more_news_3_url" name="more_news_3_url" value="" size="45" onblur="this.value=fixURL(this.value)" />
+			</fieldset>
+		</div>
   </div>
 </div>
 BREAKING;
