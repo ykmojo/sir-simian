@@ -603,7 +603,6 @@ VALUES('$headlines_date',
 }
 //flush query and close db connections
 mysqli_query($db_connect, $run_qry) or die("Query did not run correctly". mysqli_error($db_connect));
-mysql_query("set names 'utf8'");
 mysqli_close($db_connect);
 /* end db section */
 ?>

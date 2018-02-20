@@ -58,7 +58,7 @@ header("Content-Type: text/html;charset=UTF-8");
     <h2 id="head_text">Newsletters Archives</h2>
     <img src="../logo_inside.gif" border="0" style="border: 2px outset #ddd;" />
     <br />
-    <input style="clear:both;margin:20px auto;" type="button" value="Go to Newsletters Tool" onclick="location.href='../'" />
+    <input style="clear:both;margin:20px auto;" type="button" value="Go to Newsletters Tool" onclick="location.href='../'" />&nbsp;&nbsp;<input style="clear:both;margin:20px auto;" type="button" value="Go to archived newsletter stats" onclick="location.href='../news-stats/'" />
   </div>
 <?php
 error_reporting(E_ALL);
